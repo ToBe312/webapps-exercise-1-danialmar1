@@ -34,6 +34,39 @@
         border-bottom: 3px solid #797cc2;
     }
   </style>
+  <style>
+    .movie-row {
+      gap: 10px;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+
+    .movie-item {
+      width: 200px;
+      flex-shrink: 0;
+    }
+
+    .movie-poster {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .movie-poster:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: aquamarine;
+      text-shadow: #555;
+      padding-right: 2px;
+    }
+  </style>
 </head>
 <body dir="rtl">
   <!-- Top Navigation Bar -->
@@ -71,7 +104,15 @@
   </nav>
 
   <!-- Rest of the page is blank -->
-  <div style="height: calc(100vh - 56px);"></div> <!-- filler to keep page blank -->
+  <div style="height: calc(100vh - 56px);">
+    <div class="movie-feed-container my-4">
+      <h2 class="text-white mx-4">הכי שווים</h2>
+      <div class="movie-row d-flex overflow-auto px-4">
+        <!-- Movie/TV posters will be injected here -->
+      </div>
+    </div>
+
+  </div> <!-- filler to keep page blank -->
 
   <script>
     // Assume your profile name is stored in localStorage under 'profileName'
@@ -89,6 +130,87 @@
       localStorage.clear();
       window.location.href = 'login.html'; // change to your login page URL
     });
+  </script>
+
+  <script>
+    const movies = [
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      { title: "אלאדין", poster_path: "/ykUEbfpkf8d0w49pHh0AD2KrT52.jpg", media_type: "movie" },
+      { title: "קפטן אמריקה", poster_path: "/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", media_type: "tv" },
+      // add more items
+    ];
+
+    const baseImageUrl = "https://image.tmdb.org/t/p/w500"; // or your image base URL
+
+    const rowContainer = document.querySelector('.movie-row');
+
+    movies.forEach(movie => {
+      const itemDiv = document.createElement('div');
+      itemDiv.className = 'movie-item';
+
+      const img = document.createElement('img');
+      img.src = baseImageUrl + movie.poster_path;
+      img.alt = movie.title;
+      img.className = 'movie-poster';
+
+      const titleDiv = document.createElement('div');
+      titleDiv.className = 'movie-title';
+      titleDiv.textContent = movie.title;
+
+      itemDiv.appendChild(img);
+      itemDiv.appendChild(titleDiv);
+
+      // Optional: add click event
+      itemDiv.addEventListener('click', () => {
+        alert(`You clicked on ${movie.title}`);
+      });
+
+      document.querySelector('.movie-row').appendChild(itemDiv);
+
+    });
+
+    rowContainer.addEventListener('wheel', (e) => {
+      e.preventDefault(); // Prevent default page scroll
+      const delta = -Math.sign(e.deltaY);
+      // Scroll left or right based on wheel direction
+      const scrollAmount = delta * 300; // Adjust 100 for scroll speed
+      rowContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
   </script>
 
 </body>
