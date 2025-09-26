@@ -56,8 +56,19 @@
     }
 
     .profile-name {
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 1rem;
+      width: 100%;
+      border: none;
+      background: transparent;
+      color: #fff;
+      text-align: center;
+
+    }
+
+    .profile-name:focus {
+      outline: none;
+      border-bottom: 1px dashed #e50914;
     }
   </style>
 
@@ -69,27 +80,27 @@
       <!-- Profile 1 -->
       <div class="profile">
         <img src="bear.jpg" alt="דובי" class="profile-img" />
-        <div class="profile-name">דובי</div>
+        <input type="text" class="profile-name" value="דובי" />
       </div>
       <!-- Profile 2 -->
       <div class="profile">
         <img src="cat.jpg" alt="מיצי" class="profile-img" />
-        <div class="profile-name">מיצי</div>
+        <input type="text" class="profile-name" value="מיצי" />
       </div class="profile">
       <!-- Profile 3 -->
       <div class="profile">
         <img src="bald-eagle.jpg" alt="שמשון" class="profile-img" />
-        <div class="profile-name">שמשון</div>
+        <input type="text" class="profile-name" value="שמשון" />
       </div>
       <!-- Profile 4 -->
       <div class="profile">
         <img src="polar-bear.jpg" alt="נחמה" class="profile-img" />
-        <div class="profile-name">נחמה</div>
+        <input type="text" class="profile-name" value="נחמה" />
       </div>
       <!-- Profile 5 -->
       <div class="profile">
         <img src="penguin.jpg" alt="פיני" class="profile-img" />
-        <div class="profile-name">פיני</div>
+        <input type="text" class="profile-name" value="פיני" />
       </div>
     </div>
   </div>
