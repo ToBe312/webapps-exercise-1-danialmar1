@@ -95,11 +95,13 @@
       // Create the profile div
       const profileDiv = document.createElement('div');
       profileDiv.className = 'profile';
+      profileDiv.id = profile.id
 
       // Create the image element
       const img = document.createElement('img');
       img.src = profile.img;
       img.className = 'profile-img';
+      img.onclick = chooseProfile;
 
       // Create the input element
       const input = document.createElement('input');
@@ -114,6 +116,16 @@
       // Append the profile div to the container
       container.appendChild(profileDiv);
   });
+
+  function chooseProfile(event)
+  {
+    const profileElem = event.target.closest(".profile");
+    const profileId = profileElem.id;
+
+    localStorage.setItem("profileId", profileId);
+
+    window.location.href = "main_menu.html";
+  }
 </script>
 </body>
 </html>
