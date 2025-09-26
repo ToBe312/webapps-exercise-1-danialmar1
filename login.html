@@ -27,14 +27,16 @@
       <div class="col-md-4">
         <div class="card shadow p-4 rounded" style="background-color: antiquewhite; opacity: 0.8;">
           <h3 class="card-title text-center mb-4">כניסה לחשבון</h3>
-          <form>
+          <form id="loginForm">
             <div class="mb-3">
               <label for="email" class="form-label">כתובת אימייל</label>
               <input type="email" class="form-control" id="email" placeholder="הזן כאן אימייל..." required />
+              <div class="invalid-feedback" id="emailError"></div>
             </div>
             <div class="mb-3">
               <label for="password" class="form-label">סיסמא</label>
               <input type="password" class="form-control" id="password" placeholder="הזן כאן סיסמא..." required />
+              <div class="invalid-feedback" id="passwordError"></div>
             </div>
             <div class="d-flex justify-content-between align-items-center mb-3">
               <div class="form-check">
@@ -54,5 +56,58 @@
       </div>
     </div>
   </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault(); // prevent actual submission for validation
+
+      let valid = true;
+
+      // Reset previous errors
+      emailError.textContent = '';
+      emailInput.classList.remove('is-invalid');
+      passwordError.textContent = '';
+      passwordInput.classList.remove('is-invalid');
+
+      // Validate email
+      if (!emailInput.value) {
+        emailError.textContent = 'יש להזין כתובת אימייל.';
+        emailInput.classList.add('is-invalid');
+        valid = false;
+      } else {
+        // Additional email pattern validation if needed
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value)) {
+          emailError.textContent = 'נא להזין כתובת אימייל תקינה.';
+          emailInput.classList.add('is-invalid');
+          valid = false;
+        }
+      }
+
+      // Validate password length
+      if (!passwordInput.value) {
+        passwordError.textContent = 'יש להזין סיסמא.';
+        passwordInput.classList.add('is-invalid');
+        valid = false;
+      } else if (passwordInput.value.length < 6) {
+        passwordError.textContent = 'סיסמא חייבת להיות לפחות 6 תווים.';
+        passwordInput.classList.add('is-invalid');
+        valid = false;
+      }
+
+      // If all validations pass, you can proceed
+      if (valid) {
+        // You might want to submit the form here
+        // e.g., form.submit();
+        alert('Validation passed! You can submit the form now.');
+      }
+    });
+  </script>
 </body>
 </html>
