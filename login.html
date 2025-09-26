@@ -103,9 +103,14 @@
 
       // If all validations pass, you can proceed
       if (valid) {
-        // You might want to submit the form here
-        // e.g., form.submit();
-        alert('Validation passed! You can submit the form now.');
+        // Save login state
+        localStorage.setItem('isLoggedIn', 'true');
+
+        // User info
+        localStorage.setItem('userEmail', emailInput.value);
+
+        // Redirect
+        window.location.href = 'Profiles.html';
       }
     });
   </script>
