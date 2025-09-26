@@ -66,6 +66,22 @@
       text-shadow: #555;
       padding-right: 2px;
     }
+
+    /* Optional: add hover effect for the like container if you want to animate opacity */
+    .like-container {
+      opacity: 0;
+      transition: opacity 0.3s;
+      color: pink;
+    }
+
+    .movie-item:hover .like-container {
+      opacity: 1;
+    }
+
+    .like-b {
+      color: #ccc;
+      font-size: 30px;
+    }
   </style>
 </head>
 <body dir="rtl">
@@ -157,12 +173,55 @@
       titleDiv.className = 'movie-title';
       titleDiv.textContent = movie.title;
 
+      // Like button container
+      const likeContainer = document.createElement('div');
+      likeContainer.className = 'like-container d-flex align-items-center';
+
+      // Like icon using emoji
+      const likeIcon = document.createElement('button');
+      likeIcon.type = 'button';
+      likeIcon.className = 'btn btn-sm p-0 m-0 like-b';
+      likeIcon.style.fontSize = '1.5rem';
+
+      // Initialize liked state and count
+      let liked = false;
+      let count = 0;
+
+      // Set initial emoji
+      likeIcon.textContent = '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
+
+      // Like count span
+      const likeCount = document.createElement('span');
+      likeCount.className = 'ms-2';
+      likeCount.textContent = '0';
+
+      // Append icon and count
+      likeContainer.appendChild(likeIcon);
+      likeContainer.appendChild(likeCount);
+
+      // Toggle like on click
+      likeIcon.addEventListener('click', (e) => {
+        e.preventDefault();
+        likeIcon.textContent = '👍'; // filled thumbs-up
+        count++;
+        likeCount.textContent = count;
+      });
+
+
       itemDiv.appendChild(img);
       itemDiv.appendChild(titleDiv);
 
+      //likeContainer.style.bottom = '10px';
+      //likeContainer.style.right = '10px';
+      //likeContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+      likeContainer.style.padding = '5px 10px';
+      likeContainer.style.borderRadius = '20px';
+
+      itemDiv.appendChild(likeContainer);
+
       // Optional: add click event
       itemDiv.addEventListener('click', () => {
-        alert(`You clicked on ${movie.title}`);
+        //alert(`You clicked on ${movie.title}`);
       });
 
       document.querySelector('.movie-row').appendChild(itemDiv);
