@@ -90,6 +90,18 @@
       opacity: 0;
       max-height: 0;
     }
+
+    .sort-button {
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .movie-feed-container h2:hover .sort-button {
+      opacity: 1;
+    }
   </style>
 </head>
 <body dir="rtl">
@@ -130,7 +142,10 @@
   <!-- Rest of the page -->
   <div style="height: calc(100vh - 56px);">
     <div class="movie-feed-container my-4">
-      <h2 class="text-white mx-4">הכי שווים</h2>
+      <h2 class="text-white mx-4">
+        הכי שווים
+        <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+      </h2>
       <div class="movie-row d-flex overflow-auto px-4">
         <!-- Movie/TV posters will be injected here -->
       </div>
@@ -168,74 +183,78 @@
 
     const rowContainer = document.querySelector('.movie-row');
 
-    movies.forEach(movie => {
-      const itemDiv = document.createElement('div');
-      itemDiv.className = 'movie-item';
 
-      const img = document.createElement('img');
-      img.src = baseImageUrl + movie.poster_path;
-      img.alt = movie.title;
-      img.className = 'movie-poster';
+    function createFeed(moviesArr) {
+      moviesArr.forEach(movie => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'movie-item';
 
-      const titleDiv = document.createElement('div');
-      titleDiv.className = 'movie-title';
-      titleDiv.textContent = movie.title;
+        const img = document.createElement('img');
+        img.src = baseImageUrl + movie.poster_path;
+        img.alt = movie.title;
+        img.className = 'movie-poster';
 
-      // Like button container
-      const likeContainer = document.createElement('div');
-      likeContainer.className = 'like-container d-flex align-items-center';
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'movie-title';
+        titleDiv.textContent = movie.title;
 
-      // Like icon using emoji
-      const likeIcon = document.createElement('button');
-      likeIcon.type = 'button';
-      likeIcon.className = 'btn btn-sm p-0 m-0 like-b';
-      likeIcon.style.fontSize = '1.5rem';
+        // Like button container
+        const likeContainer = document.createElement('div');
+        likeContainer.className = 'like-container d-flex align-items-center';
 
-      // Initialize liked state and count
-      let count = localStorage.getItem('movies/'+movie.id) || 0;
-      let liked = count > 0 ? true: false;
+        // Like icon using emoji
+        const likeIcon = document.createElement('button');
+        likeIcon.type = 'button';
+        likeIcon.className = 'btn btn-sm p-0 m-0 like-b';
+        likeIcon.style.fontSize = '1.5rem';
 
-      // Set initial emoji
-      likeIcon.textContent = liked ? '👍' : '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
+        // Initialize liked state and count
+        let count = localStorage.getItem('movies/'+movie.id) || 0;
+        let liked = count > 0 ? true: false;
 
-      // Like count span
-      const likeCount = document.createElement('span');
-      likeCount.className = 'ms-2';
-      likeCount.textContent = count;
+        // Set initial emoji
+        likeIcon.textContent = liked ? '👍' : '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
 
-      // Append icon and count
-      likeContainer.appendChild(likeIcon);
-      likeContainer.appendChild(likeCount);
-
-      // Toggle like on click
-      likeIcon.addEventListener('click', (e) => {
-        //e.preventDefault();
-        likeIcon.textContent = '👍'; // filled thumbs-up
-        count++;
-        localStorage.setItem('movies/'+movie.id, count);
+        // Like count span
+        const likeCount = document.createElement('span');
+        likeCount.className = 'ms-2';
         likeCount.textContent = count;
+
+        // Append icon and count
+        likeContainer.appendChild(likeIcon);
+        likeContainer.appendChild(likeCount);
+
+        // Toggle like on click
+        likeIcon.addEventListener('click', (e) => {
+          //e.preventDefault();
+          likeIcon.textContent = '👍'; // filled thumbs-up
+          count++;
+          localStorage.setItem('movies/'+movie.id, count);
+          likeCount.textContent = count;
+        });
+
+
+        itemDiv.appendChild(img);
+        itemDiv.appendChild(titleDiv);
+
+        //likeContainer.style.bottom = '10px';
+        //likeContainer.style.right = '10px';
+        //likeContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+        likeContainer.style.padding = '5px 10px';
+        likeContainer.style.borderRadius = '20px';
+
+        itemDiv.appendChild(likeContainer);
+
+        // Optional: add click event
+        itemDiv.addEventListener('click', () => {
+          //alert(`You clicked on ${movie.title}`);
+        });
+
+        document.querySelector('.movie-row').appendChild(itemDiv);
+
       });
-
-
-      itemDiv.appendChild(img);
-      itemDiv.appendChild(titleDiv);
-
-      //likeContainer.style.bottom = '10px';
-      //likeContainer.style.right = '10px';
-      //likeContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
-      likeContainer.style.padding = '5px 10px';
-      likeContainer.style.borderRadius = '20px';
-
-      itemDiv.appendChild(likeContainer);
-
-      // Optional: add click event
-      itemDiv.addEventListener('click', () => {
-        //alert(`You clicked on ${movie.title}`);
-      });
-
-      document.querySelector('.movie-row').appendChild(itemDiv);
-
-    });
+    }
+    createFeed(movies);
 
     items = Array.from(document.querySelectorAll('.movie-row .movie-item'));
 
@@ -254,7 +273,7 @@
 
     searchInput.addEventListener('input', () => {
       const query = searchInput.value.toLowerCase();
-      
+
       items.forEach(item => {
         const text = item.querySelector('.movie-title').textContent.toLowerCase();
         if (text.includes(query)) {
@@ -277,6 +296,12 @@
         }
       });
 
+    });
+
+    document.getElementById('sortBtn').addEventListener('click', () => {
+      const m = movies.sort((a, b) => a.title.localeCompare(b.title));
+      rowContainer.innerHTML = '';
+      createFeed(m);
     });
 
   </script>
