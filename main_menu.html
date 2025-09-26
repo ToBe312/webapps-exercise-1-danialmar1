@@ -184,16 +184,16 @@
       likeIcon.style.fontSize = '1.5rem';
 
       // Initialize liked state and count
-      let liked = false;
-      let count = 0;
+      let count = localStorage.getItem('movies/'+movie.id) || 0;
+      let liked = count > 0 ? true: false;
 
       // Set initial emoji
-      likeIcon.textContent = '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
+      likeIcon.textContent = liked ? '👍' : '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
 
       // Like count span
       const likeCount = document.createElement('span');
       likeCount.className = 'ms-2';
-      likeCount.textContent = '0';
+      likeCount.textContent = count;
 
       // Append icon and count
       likeContainer.appendChild(likeIcon);
@@ -201,9 +201,10 @@
 
       // Toggle like on click
       likeIcon.addEventListener('click', (e) => {
-        e.preventDefault();
+        //e.preventDefault();
         likeIcon.textContent = '👍'; // filled thumbs-up
         count++;
+        localStorage.setItem('movies/'+movie.id, count);
         likeCount.textContent = count;
       });
 
