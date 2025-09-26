@@ -6,36 +6,90 @@
   <title>מסך פרופילים</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  
+  <style>
+    body {
+      background-color: #141414;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .profiles-container {
+      max-width: 900px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 40px;
+      font-weight: bold;
+    }
+
+    .profiles {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .profile {
+      cursor: pointer;
+      width: 150px;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+      border: 2px solid transparent;
+      transition: border 0.3s, transform 0.3s;
+    }
+
+    .profile-img:hover {
+      border-color: #e50914;
+      transform: scale(1.05);
+    }
+
+    .profile-name {
+      margin-top: 10px;
+      font-size: 1rem;
+    }
+  </style>
+
 </head>
 <body dir=rtl>
-  <div>
+  <div class="profiles-container">
     <h1>מי צופה?</h1>
-    <div>
+    <div class="profiles">
       <!-- Profile 1 -->
-      <div>
-        <img src="bear.jpg" alt="דובי" />
-        <div>דובי</div>
+      <div class="profile">
+        <img src="bear.jpg" alt="דובי" class="profile-img" />
+        <div class="profile-name">דובי</div>
       </div>
       <!-- Profile 2 -->
-      <div>
-        <img src="cat.jpg" alt="מיצי" />
-        <div>מיצי</div>
-      </div>
+      <div class="profile">
+        <img src="cat.jpg" alt="מיצי" class="profile-img" />
+        <div class="profile-name">מיצי</div>
+      </div class="profile">
       <!-- Profile 3 -->
-      <div>
-        <img src="bald-eagle.jpg" alt="שמשון" />
-        <div>שמשון</div>
+      <div class="profile">
+        <img src="bald-eagle.jpg" alt="שמשון" class="profile-img" />
+        <div class="profile-name">שמשון</div>
       </div>
       <!-- Profile 4 -->
-      <div>
-        <img src="polar-bear.jpg" alt="נחמה" />
-        <div>נחמה</div>
+      <div class="profile">
+        <img src="polar-bear.jpg" alt="נחמה" class="profile-img" />
+        <div class="profile-name">נחמה</div>
       </div>
       <!-- Profile 5 -->
-      <div>
-        <img src="penguin.jpg" alt="פיני" />
-        <div>פיני</div>
+      <div class="profile">
+        <img src="penguin.jpg" alt="פיני" class="profile-img" />
+        <div class="profile-name">פיני</div>
       </div>
     </div>
   </div>
