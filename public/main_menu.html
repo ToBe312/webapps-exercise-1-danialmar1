@@ -120,7 +120,7 @@
       </a>
       <!-- Navigation buttons -->
       <div class="d-flex ms-auto">
-        <button class="btn btn-link text-white mx-2">מסך הבית</button>
+        <button class="btn btn-link text-white mx-2" onclick="window.location.href='main_menu.html'">מסך הבית</button>
         <button class="btn btn-link text-white mx-2">סדרות</button>
         <button class="btn btn-link text-white mx-2">סרטים</button>
         <button class="btn btn-link text-white mx-2">חדש ופופולרי</button>
@@ -283,14 +283,84 @@
           </div>
         </div>
       `;
-/*
-onclick="()=>{
-              ${(m.type === 'Movie')?
-                "window.location.href = `/player.html?type=movie&id=${m.contentId}`":
-                "window.location.href = `/player.html?type=series&id=${m.seriesId}&episodeId=${m.contentId}`"
-              }
-                }"*/
+
     }
+
+    async function loadRecommendations(profileId) {
+      try {
+      const res = await fetch(`/recommendations?profileId=${profile._id.toString()}`);
+      const data = await res.json();
+
+      const shuffled = [...data.movies, ...data.series].sort(() => Math.random() - 0.5);
+
+      const container = document.getElementById('mainPanel');
+      container.innerHTML += `
+        <div class="movie-feed-container my-4">
+          <h2 class="text-white mx-4">
+            המלצות אישיות
+            <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+          </h2>
+          <div class="movie-row d-flex overflow-auto px-4">
+            ${shuffled.map(m =>
+              `
+              <div class="movie-item"  onclick="window.location.href = '/content_details.html?type=movie&id=${m._id}'">
+                <img src="${baseImageUrl + m.posterPath}" alt="${m.title}" class="movie-poster">
+                <div class="movie-title">
+                  ${m.title}
+                </div>
+                <div class="like-container d-flex align-items-center" style="padding: 5px 10px; border-radius: 20px;">
+                  <button type="button" class="btn btn-sm p-0 m-0 like-b" style="font-size: 1.5rem;">👍</button>
+                </div>
+              </div>`
+            ).join('')}
+          </div>
+        </div>
+      `;
+      }
+      catch(err) { console.log(err) }
+    }
+
+// load all genres dynamically
+async function loadAllGenres() {
+  try {
+    const res = await fetch('/genres');
+
+    for (let g of genres) {
+      await loadGenreRow(g.id, g.name);
+    }
+  } catch (err) {
+    console.error('Error loading genres:', err);
+  }
+}
+
+async function loadGenreRow(genreId, genreName) {
+  try {
+    const res = await fetch(`/genres/${genreId}`); 
+    const items = await res.json(); 
+    const moviesAndSeries = [...(items.movies || []), ...(items.series || [])];
+
+    const container = document.getElementById('mainPanel');
+    container.innerHTML += `
+      <div class="movie-feed-container my-4">
+        <h2 class="text-white mx-4">
+          ${genreName}
+          <a class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+        </h2>
+        <div class="movie-row d-flex overflow-auto px-4">
+          ${moviesAndSeries.map(m => `
+            <div class="movie-item" onclick="window.location.href='/content_details.html?type=movie&id=${m._id}'">
+              <img src="${baseImageUrl + m.posterPath}" alt="${m.title}" class="movie-poster">
+              <div class="movie-title">${m.title}</div>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  } catch (err) {
+    console.error(`Error loading genre ${genreName}:`, err);
+  }
+}
+
 
 
     async function load_feed() {
@@ -298,7 +368,10 @@ onclick="()=>{
       await loadMovies();
       await loadSeries();
       await loadContinueWatching();
+      await loadRecommendations();
 
+      await loadAllGenres();
+      
       const rowContainer = document.querySelectorAll('.movie-row');
       rowContainer.forEach(r => r.addEventListener('wheel', (e) => {
         e.preventDefault(); // Prevent default page scroll
@@ -312,113 +385,6 @@ onclick="()=>{
       }));
     }
     load_feed();
-    throw new Error('stop');
-    function createFeed(moviesArr) {
-      moviesArr.forEach(movie => {
-        const itemDiv = document.createElement('div');
-        itemDiv.className = 'movie-item';
-
-        const img = document.createElement('img');
-        img.src = baseImageUrl + movie.posterPath;
-        img.alt = movie.title;
-        img.className = 'movie-poster';
-
-        const titleDiv = document.createElement('div');
-        titleDiv.className = 'movie-title';
-        titleDiv.textContent = movie.title;
-
-        // Like button container
-        const likeContainer = document.createElement('div');
-        likeContainer.className = 'like-container d-flex align-items-center';
-
-        // Like icon using emoji
-        const likeIcon = document.createElement('button');
-        likeIcon.type = 'button';
-        likeIcon.className = 'btn btn-sm p-0 m-0 like-b';
-        likeIcon.style.fontSize = '1.5rem';
-
-        // Initialize liked state and count
-        let count = localStorage.getItem('movies/'+movie.id) || 0;
-        let liked = count > 0 ? true: false;
-
-        // Set initial emoji
-        likeIcon.textContent = liked ? '👍' : '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
-
-        // Like count span
-        const likeCount = document.createElement('span');
-        likeCount.className = 'ms-2';
-
-        // Append icon and count
-        likeContainer.appendChild(likeIcon);
-        likeContainer.appendChild(likeCount);
-
-        // Toggle like on click
-        likeIcon.addEventListener('click', (e) => {
-          //e.preventDefault();
-          likeIcon.textContent = '👍'; // filled thumbs-up
-          localStorage.setItem('movies/'+movie.id, liked);
-        });
-
-
-        itemDiv.appendChild(img);
-        itemDiv.appendChild(titleDiv);
-
-        //likeContainer.style.bottom = '10px';
-        //likeContainer.style.right = '10px';
-        //likeContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
-        likeContainer.style.padding = '5px 10px';
-        likeContainer.style.borderRadius = '20px';
-
-        itemDiv.appendChild(likeContainer);
-
-        // Optional: add click event
-        itemDiv.addEventListener('click', () => {
-          //alert(`You clicked on ${movie.title}`);
-        });
-
-        document.querySelector('.movie-row').appendChild(itemDiv);
-
-      });
-    }
-    //createFeed(movies);
-
-    items = Array.from(document.querySelectorAll('.movie-row .movie-item'));
-
-
-    const searchInput = document.getElementById('search');
-
-    searchInput.addEventListener('input', () => {
-      const query = searchInput.value.toLowerCase();
-
-      items.forEach(item => {
-        const text = item.querySelector('.movie-title').textContent.toLowerCase();
-        if (text.includes(query)) {
-          // Show
-          item.style.display = 'block'; // Make it visible
-          // Allow layout to update
-          requestAnimationFrame(() => {
-            item.classList.remove('hide');
-          });
-        } else {
-          // Animate out
-          item.classList.add('hide');
-
-          // After transition, set display:none
-          item.addEventListener('transitionend', () => {
-            if (item.classList.contains('hide')) {
-              item.style.display = 'none';
-            }
-          }, { once: true });
-        }
-      });
-
-    });
-
-    document.getElementById('sortBtn').addEventListener('click', () => {
-      const m = movies.sort((a, b) => a.title.localeCompare(b.title));
-      rowContainer.innerHTML = '';
-      createFeed(m);
-    });
 
   </script>
 

@@ -42,9 +42,38 @@ const profileLogin = async (req, res) => {
     }
 }
 
+
+// יצירת פרופיל חדש
+const createProfile = async (req, res) => {
+  const { name } = req.body;
+
+  const profile = new ProfileModel.Profile({ userId: req.session.userId, name });
+  await profile.save();
+  res.json(profile);
+};
+
+// עדכון פרופיל
+const updateProfile = async (req, res) => {
+  const { id } = req.params;
+  const { name } = req.body;
+  const profile = await ProfileModel.Profile.findByIdAndUpdate(id, { name }, { new: true });
+  res.json(profile);
+};
+
+// מחיקת פרופיל
+const deleteProfile = async (req, res) => {
+  const { id } = req.params;
+  await ProfileModel.Profile.findByIdAndDelete(id);
+  res.json({ success: true });
+};
+
+
 module.exports = {
     getProfilesByUserId,
-    profileLogin
+    profileLogin,
+    createProfile,
+    updateProfile,
+    deleteProfile
 };
 
 

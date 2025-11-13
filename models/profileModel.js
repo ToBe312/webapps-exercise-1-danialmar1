@@ -45,6 +45,7 @@ async function remove(id) {
 }
 
 module.exports = {
+  Profile,
   getAll,
   findById,
   findByUserAndId,

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>ניהול פרופילים</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { direction: rtl; background-color: #141414; color: #fff; }
+    .profile-card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 15px;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .profile-card input {
+      background: transparent;
+      border: none;
+      border-bottom: 1px solid #555;
+      color: #fff;
+      width: 150px;
+    }
+    .profile-card button {
+      margin-right: 5px;
+    }
+    #addProfile {
+      margin-top: 20px;
+    }
+    #stats {
+      margin-top: 40px;
+    }
+    canvas {
+      background-color: #222;
+      border-radius: 8px;
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">ניהול פרופילים</h1>
+    <div id="profiles"></div>
+    <div class="text-center">
+      <button id="addProfile" class="btn btn-danger">➕ הוסף פרופיל</button>
+    </div>
+
+    <div id="stats">
+      <h2 class="mt-5 mb-3 text-center">סטטיסטיקות צפייה</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <canvas id="chart1" width="400" height="200"></canvas>
+        </div>
+        <div class="col-md-6">
+          <canvas id="chart2" width="400" height="200"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    const profileContainer = document.getElementById('profiles');
+    const addBtn = document.getElementById('addProfile');
+
+    async function loadProfiles() {
+      const res = await fetch('/profile/get_all');
+      const profiles = await res.json();
+      profileContainer.innerHTML = '';
+
+      profiles.forEach((p, idx) => {
+        const div = document.createElement('div');
+        div.className = 'profile-card';
+        div.innerHTML = `
+          <div>
+            <input type="text" value="${p.name}" id="name-${p._id}">
+          </div>
+          <div>
+            <button class="btn btn-warning btn-sm" onclick="updateProfile('${p._id}')">ערוך</button>
+            <button class="btn btn-outline-light btn-sm" onclick="deleteProfile('${p._id}', ${profiles.length})">מחק</button>
+          </div>
+        `;
+        profileContainer.appendChild(div);
+      });
+
+      // הגבלת עד 5 פרופילים
+      addBtn.disabled = profiles.length >= 5;
+    }
+
+    async function updateProfile(id) {
+      const name = document.getElementById(`name-${id}`).value;
+      await fetch(`/profile/${id}`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name })
+      });
+      loadProfiles();
+    }
+
+    async function deleteProfile(id, count) {
+      if (count <= 1) {
+        alert('חייב להישאר לפחות פרופיל אחד');
+        return;
+      }
+      await fetch(`/profile/${id}`, { method: 'DELETE' });
+      loadProfiles();
+    }
+
+    addBtn.addEventListener('click', async () => {
+      const name = prompt('שם הפרופיל החדש:');
+      if (!name) return;
+      await fetch('/profile', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name })
+      });
+      loadProfiles();
+    });
+
+    loadProfiles();
+  </script>
+</body>
+</html>

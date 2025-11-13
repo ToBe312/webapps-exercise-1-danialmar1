@@ -5,6 +5,8 @@ const Movie = require('../models/movieModel');
 const Series = require('../models/seriesModel');
 const Episode = require('../models/episodeModel');
 const Genre = require('../models/genreModel');
+const User = require('../models/userModel');
+const Profile = require('../models/profileModel');
 
 const IMAGE_DIR = '';
 
@@ -91,7 +93,28 @@ async function loadGenres() {
   }
 }
 
+// make sure admin profile exists, if not then create one
+async function ensureAdminProfile() {
+    const adminUser = await User.findByUsername('admin');
+    if (!adminUser) return;
+
+    const profiles = await Profile.findByUserId(adminUser._id);
+    if (profiles.length === 0) {
+        await Profile.createMany([
+            {
+                userId: adminUser._id,
+                name: 'Admin',
+                img: 'cat.jpg'
+            }
+        ]);
+        console.log('Admin profile created.');
+    } else {
+        console.log('Admin profile already exists.');
+    }
+}
+
 async function loadData() {
+    await ensureAdminProfile();
     await loadMovies();
     await loadSeries();
     await loadEpisodes();

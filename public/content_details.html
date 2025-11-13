@@ -151,7 +151,7 @@
       </a>
       <!-- Navigation buttons -->
       <div class="d-flex ms-auto">
-        <button class="btn btn-link text-white mx-2">מסך הבית</button>
+        <button class="btn btn-link text-white mx-2" onclick="window.location.href='main_menu.html'">מסך הבית</button>
         <button class="btn btn-link text-white mx-2">סדרות</button>
         <button class="btn btn-link text-white mx-2">סרטים</button>
         <button class="btn btn-link text-white mx-2">חדש ופופולרי</button>
@@ -361,7 +361,7 @@
                 behavior: 'smooth'
             });
         })});
-
+        const ttype = type.charAt(0).toUpperCase() + type.slice(1);
         // לייק
         document.getElementById('like-btn').addEventListener('click', async () => {
           const res = await fetch(`/likes/toggle`, { method: 'POST', headers: {
@@ -369,7 +369,7 @@
             },
             body: JSON.stringify({ 
               contentId,
-              type
+              ttype
             }) });
           const data = await res.json();
           //alert('עודכן בהצלחה!');
