@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>נגן תוכן</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body { background:#000; color:#fff; }
+    .player-wrapper { max-width: 1100px; margin: 24px auto; }
+    video { width: 100%; background:#111; border-radius: 8px; }
+    .controls { display:flex; align-items:center; gap:12px; margin-top:12px; flex-wrap:wrap; }
+    .time { min-width: 96px; text-align:center; font-variant-numeric: tabular-nums; }
+    .seek { flex:1; }
+    .episode-bar { display:flex; align-items:center; gap:8px; margin-top:12px; }
+    .drawer {
+      position: fixed; right: 0; top: 0; height: 100vh; width: 360px;
+      background: rgba(24,24,24,0.98); backdrop-filter: blur(2px);
+      border-left: 1px solid #333; transform: translateX(100%);
+      transition: transform .25s ease; z-index: 9999; overflow-y: auto;
+    }
+    .drawer.open { transform: translateX(0); }
+    .drawer-header { display:flex; justify-content:space-between; align-items:center; padding:12px 16px; border-bottom:1px solid #333; }
+    .episode-item { padding:10px 16px; border-bottom:1px solid #272727; cursor:pointer; }
+    .episode-item:hover { background:#1c1c1c; }
+    .progress-badge { margin-right:8px; }
+    .overlay-tip { font-size: 13px; color:#bbb; padding: 8px 16px; border-bottom:1px dashed #333; }
+    .btn-icon { min-width:42px; }
+  </style>
+  <style>
+    body {
+      background-color: #000; /* black background for streaming vibe */
+      margin: 0;
+      padding: 0;
+    }
+    /* Style for the navbar */
+    .navbar {
+      background-color: #141414; /* dark background similar to Netflix */
+    }
+    /* Logo styling */
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar .btn {
+        text-decoration: none;
+    }
+
+    .navbar .btn:hover {
+        background-color: #343434;
+        transform: scale(1.03);
+        border-bottom: 3px solid #797cc2;
+    }
+  </style>
+</head>
+<body dir="rtl">
+    <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/CORNFLEX2.png" alt="Logo" />
+      </a>
+      <!-- Navigation buttons -->
+      <div class="d-flex ms-auto">
+        <button class="btn btn-link text-white mx-2">מסך הבית</button>
+        <button class="btn btn-link text-white mx-2">סדרות</button>
+        <button class="btn btn-link text-white mx-2">סרטים</button>
+        <button class="btn btn-link text-white mx-2">חדש ופופולרי</button>
+        <button class="btn btn-link text-white mx-2">הרשימה שלי</button>
+      </div>
+    </div>
+  </nav>
+  <div class="player-wrapper container">
+    <!-- Video -->
+    <video id="player" preload="metadata" controlslist="nodownload">
+      <!-- מקור הווידאו יוזן דינמית -->
+      הדפדפן שלך אינו תומך בניגון וידאו.
+    </video>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button id="playPause" class="btn btn-primary btn-icon">⏯️</button>
+      <button id="back10" class="btn btn-secondary btn-icon">⏩ 10</button>
+      <button id="fwd10" class="btn btn-secondary btn-icon">10 ⏪</button>
+
+      <input id="timeline" class="form-range seek" type="range" min="0" max="100" step="0.1" value="0" />
+      <div class="time"><span id="currentTime">00:00</span> / <span id="duration">00:00</span></div>
+
+      <button id="fullscreen" class="btn btn-outline-light btn-icon">⛶ מסך מלא</button>
+    </div>
+
+    <!-- Episode actions -->
+    <div class="episode-bar">
+      <button id="nextEpisode" class="btn btn-success">פרק הבא</button>
+      <button id="openDrawer" class="btn btn-outline-info">רשימת פרקים</button>
+    </div>
+  </div>
+
+  <!-- Episodes Drawer -->
+  <div id="drawer" class="drawer">
+    <div class="drawer-header">
+      <strong>רשימת פרקים</strong>
+      <button id="closeDrawer" class="btn btn-sm btn-outline-light">סגור</button>
+    </div>
+    <div class="overlay-tip">לחיצה על פרק תעביר לניגון הפרק הנבחר</div>
+    <div id="episodesList"></div>
+  </div>
+
+  <script>
+    // Params: player.html?id=<contentId>&type=<movie|series>&episodeId=<optional>
+    const params = new URLSearchParams(window.location.search);
+    const contentId = params.get('id');
+    const type = params.get('type'); // 'movie' | 'series'
+    const initialEpisodeId = params.get('episodeId'); // לסדרות
+
+    // Elements
+    const video = document.getElementById('player');
+    const playPauseBtn = document.getElementById('playPause');
+    const back10Btn = document.getElementById('back10');
+    const fwd10Btn = document.getElementById('fwd10');
+    const timeline = document.getElementById('timeline');
+    const currentTimeEl = document.getElementById('currentTime');
+    const durationEl = document.getElementById('duration');
+    const fullscreenBtn = document.getElementById('fullscreen'
+
+
+
+    );
+    const nextEpisodeBtn = document.getElementById('nextEpisode');
+    const drawer = document.getElementById('drawer');
+    const openDrawerBtn = document.getElementById('openDrawer');
+    const closeDrawerBtn = document.getElementById('closeDrawer');
+    const episodesList = document.getElementById('episodesList');
+
+    // Helpers
+    const fmt = (sec) => {
+      if (!isFinite(sec)) return '00:00';
+      const h = Math.floor(sec / 3600);
+      const m = Math.floor((sec % 3600) / 60);
+      const s = Math.floor(sec % 60);
+      return (h > 0 ? String(h).padStart(2,'0') + ':' : '') +
+             String(m).padStart(2,'0') + ':' + String(s).padStart(2,'0');
+    };
+
+    // Load source + resume from watch history
+    async function loadSource() {
+      try {
+        // בקשת מקור ווידאו: מחזירה url + נקודת התחלה (lastPosition) לפי פרופיל
+        // דוגמה: /player/source?type=series&id=...&episodeId=...
+        const qs = new URLSearchParams({ type, id: contentId });
+        if (type === 'series' && initialEpisodeId) qs.set('episodeId', initialEpisodeId);
+        const res = await fetch(`/player/source?${qs.toString()}`);
+        const data = await res.json();
+
+        // צפי ל: { url: '...', lastPosition: 0, episodeId: '...', nextEpisodeId: '...' }
+        video.src = data.url;
+        //video.src = 'https://www.w3schools.com/html/mov_bbb.mp4';
+        if (data.lastPosition && data.lastPosition > 0) {
+          // נבצע seek לאחר שהמטא-דאטה נטענת
+          video.addEventListener('loadedmetadata', () => {
+            video.currentTime = Math.min(data.lastPosition, video.duration || data.lastPosition);
+          }, { once: true });
+        }
+
+        // שמור מזהי פרקים
+        video.dataset.episodeId = data.episodeId || null;
+        video.dataset.nextEpisodeId = data.nextEpisodeId || null;
+
+        // אם זה סרט, הסתר "פרק הבא"
+        if (type === 'movie') {
+          nextEpisodeBtn.style.display = 'none';
+          openDrawerBtn.style.display = 'none';
+        }
+
+        // טען רשימת פרקים למגירה במקרה של סדרה
+        if (type === 'series') {
+          //await loadEpisodes();
+        }
+      } catch (err) {
+        console.error('Load source failed', err);
+        alert('שגיאה בטעינת מקור הניגון');
+      }
+    }
+
+    async function loadEpisodes() {
+      try {
+        const res = await fetch(`/content/series/${contentId}/episodes`);
+        const episodes = await res.json();
+        episodesList.innerHTML = episodes.map(e => {
+          const progress = e.lastPosition ? Math.round((e.lastPosition / (e.duration || 1)) * 100) : 0;
+          const badge = e.completed ? 'bg-success' : (progress ? 'bg-info' : 'bg-secondary');
+          const label = e.completed ? 'סיום' : (progress ? `${progress}%` : 'לא נצפה');
+          return `
+            <div class="episode-item" data-episode-id="${e._id}">
+              עונה ${e.seasonNumber}, פרק ${e.episodeNumber} – ${e.title}
+              <span class="badge ${badge} progress-badge">${label}</span>
+            </div>`;
+        }).join('');
+
+        episodesList.querySelectorAll('.episode-item').forEach(item => {
+          item.addEventListener('click', async () => {
+            const episodeId = item.dataset.episodeId;
+            await switchEpisode(episodeId);
+          });
+        });
+      } catch (err) {
+        console.error('Load episodes failed', err);
+      }
+    }
+
+    async function switchEpisode(episodeId) {
+      try {
+        const qs = new URLSearchParams({ type: 'series', id: contentId, episodeId });
+        const res = await fetch(`/player/source?${qs.toString()}`);
+        const data = await res.json();
+        video.src = data.url;
+        video.dataset.episodeId = data.episodeId || episodeId;
+        video.dataset.nextEpisodeId = data.nextEpisodeId || null;
+        drawer.classList.remove('open');
+        video.play().catch(()=>{});
+      } catch (err) {
+        console.error('Switch episode failed', err);
+      }
+    }
+
+    // Controls: play/pause
+    playPauseBtn.addEventListener('click', () => {
+      if (video.paused) video.play().catch(()=>{}); else video.pause();
+    });
+
+    // +/- 10 seconds
+    back10Btn.addEventListener('click', () => { video.currentTime = Math.max(0, video.currentTime - 10); });
+    fwd10Btn.addEventListener('click', () => { video.currentTime = Math.min(video.duration || Infinity, video.currentTime + 10); });
+
+    // Timeline sync
+    video.addEventListener('loadedmetadata', () => {
+      durationEl.textContent = fmt(video.duration);
+    });
+    video.addEventListener('timeupdate', () => {
+        console.log('dd')
+      currentTimeEl.textContent = fmt(video.currentTime);
+      if (isFinite(video.duration) && video.duration > 0) {
+        timeline.value = (video.currentTime / video.duration) * 100;
+      }
+      // שמירת נקודת צפייה (throttle קל ע"י כל 2 שניות)
+      if (!video._lastSync || Math.abs(video.currentTime - video._lastSync) > 2) {
+        video._lastSync = video.currentTime;
+        saveProgress(video.currentTime);
+      }
+    });
+    timeline.addEventListener('input', () => {
+      if (isFinite(video.duration) && video.duration > 0) {
+        video.currentTime = (timeline.value / 100) * video.duration;
+      }
+    });
+
+    // Fullscreen
+    fullscreenBtn.addEventListener('click', async () => {
+      const container = document.querySelector('.player-wrapper');
+      if (!document.fullscreenElement) await container.requestFullscreen().catch(()=>{});
+      else await document.exitFullscreen().catch(()=>{});
+    });
+
+    // Next episode
+    nextEpisodeBtn.addEventListener('click', async () => {
+      const nextId = video.dataset.nextEpisodeId;
+      if (!nextId) return;
+      await switchEpisode(nextId);
+    });
+
+    // Drawer
+    openDrawerBtn.addEventListener('click', () => drawer.classList.add('open'));
+    closeDrawerBtn.addEventListener('click', () => drawer.classList.remove('open'));
+
+    // Save progress to server
+    async function saveProgress(position) {
+      try {
+        const payload = {
+          type,
+          contentId,
+          episodeId: video.dataset.episodeId || null,
+          position
+        };
+        await fetch('/watch/progress', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+      } catch (_) { /* שקט – לא חוסם ניגון */ }
+    }
+
+    // Mark completed when video ends
+    video.addEventListener('ended', async () => {
+      try {
+        const payload = { type, contentId, episodeId: video.dataset.episodeId || null };
+        await fetch('/watch/complete', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        // אם יש פרק הבא – להציע מעבר אוטומטי
+        const nextId = video.dataset.nextEpisodeId;
+        if (type === 'series' && nextId) {
+          const auto = confirm('האם לעבור לפרק הבא?');
+          if (auto) await switchEpisode(nextId);
+        }
+      } catch (_) {}
+    });
+
+    // Init
+    loadSource();
+  </script>
+</body>
+</html>

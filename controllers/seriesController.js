@@ -30,8 +30,36 @@ const getEpisodesBySeries = async (req, res) => {
   }
 };
 
+
+const getSeriesWithEpisodes = async (req, res) => {
+  try {
+    const id = req.params.id;
+    const series = await Series.findById(req.params.id);
+    if (!series) return res.status(404).json({ error: 'Series not found' });
+
+    // שליפת כל הפרקים של הסדרה
+    const episodes = await Episode.find({ seriesId: id })
+      .sort({ seasonNumber: 1, episodeNumber: 1 });
+
+    // קיבוץ לפי עונה
+    const seasons = {};
+    episodes.forEach(ep => {
+      if (!seasons[ep.seasonNumber]) seasons[ep.seasonNumber] = [];
+      seasons[ep.seasonNumber].push(ep);
+    });
+
+    res.json({
+      series,
+      seasons
+    });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 module.exports = {
     getSeries,
     getSeriesById,
-    getEpisodesBySeries
+    getEpisodesBySeries,
+    getSeriesWithEpisodes
 }
