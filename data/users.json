@@ -2,7 +2,34 @@
   {
     "email": "asdg@asdg.sadg",
     "username": "1234",
-    "password": "1234567"
+    "password": "1234567",
+    "profiles": [
+      {
+          "id": 1,
+          "name": "דובי",
+          "img": "bear.jpg"
+      },
+      {
+          "id": 2,
+          "name": "מיצי",
+          "img": "cat.jpg"
+      },
+      {
+          "id": 3,
+          "name": "שמשון",
+          "img": "bald-eagle.jpg"
+      },
+      {
+          "id": 4,
+          "name": "נחמה",
+          "img": "polar-bear.jpg"
+      },
+      {
+          "id": 5,
+          "name": "פיני",
+          "img": "penguin.jpg"
+      }
+    ]
   },
   {
     "email": "sadg@asdg.sadg",
