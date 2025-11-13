@@ -17,7 +17,20 @@ const register = async (req, res) => {
   res.status(201).json(newUser);
 };
 
+const loginDemo = async (req, res) => {
+    const { email, password } = req.body;
+
+    console.log({ email, password });
+
+    const user = User.findByEmail(email);
+    if (!user || user.password !== password) {
+        return res.status(401).json({ error: 'incorrect' });
+    }
+    res.status(200).json(user);
+}
+
 
 module.exports = {
-    register
+    register,
+    loginDemo
 };
