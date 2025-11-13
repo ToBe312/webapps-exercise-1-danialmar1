@@ -1,0 +1,6078 @@
+[
+  {
+    "id": 1062722,
+    "title": "פרנקנשטיין",
+    "releaseDate": "2025-10-17",
+    "genres": [
+      18,
+      27,
+      14
+    ],
+    "overview": "עיבוד של הבמאי זוכה האוסקר גיירמו דל טורו לסיפור הקלאסי של מרי שלי על ויקטור פרנקנשטיין, מדען מבריק ויהיר שמפיח חיים בגוף שיצר, אך הניסוי המפלצתי מוביל בסופו של דבר למפלה של היוצר ושל יצירתו הטרגית.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rfe7s2V1BKIVUOvMdz5dMoqXxlp.jpg",
+    "popularity": 1005.0134,
+    "rating": 7.929,
+    "cast": [
+      {
+        "name": "אוסקר אייזק",
+        "character": "Victor Frankenstein",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dW5U5yrIIPmMjRThR9KT2xH6nTz.jpg"
+      },
+      {
+        "name": "ג'ייקוב אלורדי",
+        "character": "The Creature",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/khfLyxY9gsKiLFoz2zj0h3uhDFJ.jpg"
+      },
+      {
+        "name": "כריסטוף ואלץ",
+        "character": "Harlander",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hrSWzM1IGbj9OfohFPTX0HcLecz.jpg"
+      },
+      {
+        "name": "מיה גות",
+        "character": "Elizabeth",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xB8fVduiFtgu35ieEjiTiFx8ylv.jpg"
+      },
+      {
+        "name": "Felix Kammerer",
+        "character": "William Frankenstein",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/T12faHW0QXunSZbv6YNmDWG7bC.jpg"
+      },
+      {
+        "name": "צ'ארלס דאנס",
+        "character": "Leopold Frankenstein",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3xHwq5lchAI6mfW0aGQOEijexv6.jpg"
+      },
+      {
+        "name": "David Bradley",
+        "character": "Blind Man",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/znpkwHitb3pcaJbUmgDqG0YenYp.jpg"
+      },
+      {
+        "name": "Lars Mikkelsen",
+        "character": "Captain Anderson",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xw3bJxjf8yT8TS8zigEGWQYSaXH.jpg"
+      },
+      {
+        "name": "כריסטיאן קונברי",
+        "character": "Young Victor Frankenstein",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tOR2tSrvHPVDltE4jBDEva3GNqY.jpg"
+      },
+      {
+        "name": "Nikolaj Lie Kaas",
+        "character": "Chief Officer Larsen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zRu68e0GSwHJC7QOcbO77xIAM9J.jpg"
+      },
+      {
+        "name": "Kyle Gatehouse",
+        "character": "Young Hunter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sSyo8IKwF7SJLN4N9JIwULTlVC9.jpg"
+      },
+      {
+        "name": "Lauren Collins",
+        "character": "Hunter's Wife",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qQD7iQZObGSw1zherrXQEAfLlKe.jpg"
+      },
+      {
+        "name": "Sofia Galasso",
+        "character": "Anna-Maria",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6grWokRCH7ACgRQAE4zenc88Vp3.jpg"
+      },
+      {
+        "name": "Joachim Fjelstrup",
+        "character": "Dr. Udsen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yg4X8prL56KuuutWnYIAplysZvo.jpg"
+      },
+      {
+        "name": "ראלף אינסון",
+        "character": "Professor Krempe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sn3ONJw2pJxMHiCqPwvkaiWr5mc.jpg"
+      },
+      {
+        "name": "Peter Millard",
+        "character": "Professor Stokeld",
+        "profileUrl": null
+      },
+      {
+        "name": "Peter MacNeill",
+        "character": "Professor Maurus",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9Y2O97Awq5BUH3qfWL3EUveurqI.jpg"
+      },
+      {
+        "name": "Burn Gorman",
+        "character": "Executioner",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/udgACYWqCSuu6nvtrSjmyU28B0V.jpg"
+      },
+      {
+        "name": "Sean Sullivan",
+        "character": "Old Hunter #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4Wd5kbhuduN6ZswesPMwprv5zt2.jpg"
+      },
+      {
+        "name": "Stuart Hughes",
+        "character": "Old Hunter #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pmlPYQYJPykTRTUHU4f0XB15UHK.jpg"
+      },
+      {
+        "name": "Gord Rand",
+        "character": "Silversmith",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tv4RPO2Ga5z2sWWvCQoLW5wCFxo.jpg"
+      },
+      {
+        "name": "Kenton Craig",
+        "character": "Harlander's Butler",
+        "profileUrl": null
+      },
+      {
+        "name": "Val Ovtcharov",
+        "character": "Outpost Clerk",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8XNJXavYe2yEHaUJQIDUWSWADe1.jpg"
+      },
+      {
+        "name": "Anders Yates",
+        "character": "Torfussen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yAZNbctNelAgnKnsJYkExlTXnVd.jpg"
+      },
+      {
+        "name": "Adam Brown",
+        "character": "Prisoner #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yveDcolh1BE8DoV2RZ2p31be9VQ.jpg"
+      },
+      {
+        "name": "Santiago Segura",
+        "character": "Prisoner #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/w5gSHzLWoivAN2g4z2yaxCSFyTY.jpg"
+      },
+      {
+        "name": "Dexter Stokes-Mellor",
+        "character": "Prisoner #3",
+        "profileUrl": null
+      },
+      {
+        "name": "Shian Denovan",
+        "character": "Nymph",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uojgxOBLKT68tpwV1BAM0kwCbKB.jpg"
+      },
+      {
+        "name": "Mark Steger",
+        "character": "Spinal Corpse",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3EeztYq3OfdeHsqjYSwRuNHrvnk.jpg"
+      },
+      {
+        "name": "Rafe Harwood",
+        "character": "Young William Frankenstein",
+        "profileUrl": null
+      },
+      {
+        "name": "Gregory Mann",
+        "character": "Head Urchin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/j2CUCIhS3N7JsVHOUXVxPQT0kxC.jpg"
+      },
+      {
+        "name": "Roberto Campanella",
+        "character": "Dark Angel",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sby0yb4QPdzSxnS4MTGERvTl35U.jpg"
+      },
+      {
+        "name": "Rebecca Lawson-Turner",
+        "character": "Woman in Confessional",
+        "profileUrl": null
+      },
+      {
+        "name": "Warren Albert",
+        "character": "Professor Kugelmann",
+        "profileUrl": null
+      },
+      {
+        "name": "קים מורגן",
+        "character": "Guest at Wedding and Bistro",
+        "profileUrl": null
+      },
+      {
+        "name": "Chris Andrews",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Lewis Landini",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "William John Banks",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Tess Letham",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Alexandros Beshonges",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Maria Peneva",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Kieran Brown",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Jessica Roberts Smith",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Rachel Elderkin",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Jennifer Steele",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Jorja Follina",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Malcolm Sutherland",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Alex Henderson",
+        "character": "Bistro Dancer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fTtjVZhpd2eh21LZ3J8QV8Qf9K8.jpg"
+      },
+      {
+        "name": "Luke Watson",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Yasmin Hepburn",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Pawel Wieczorek",
+        "character": "Bistro Dancer",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1197137,
+    "title": "בלאק-פון 2",
+    "releaseDate": "2025-10-15",
+    "genres": [
+      27,
+      53
+    ],
+    "overview": "ארבע שנים לאחר שברח מציפורניו של ה\"חוטף\", פיני בלייק מתקשה להתמודד עם חייו לאחר השבי. כאשר אחותו, גוון, מתחילה לקבל בחלומותיה שיחות טלפון מסתוריות מהטלפון השחור ולראות חזיונות מצמררים של שלושה נערים נרדפים במחנה חורף, השניים נחושים לפתור את התעלומה ולהתעמת עם רוצח שחזר מן המתים עוצמתי יותר ומקושר אליהם יותר מכפי שיכלו לדמיין.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/ve9UIb3sEYGEXU6LjCZh1rsyTWr.jpg",
+    "popularity": 372.7679,
+    "rating": 7.228,
+    "cast": [
+      {
+        "name": "אית'ן הוק",
+        "character": "The Grabber",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2LoTr6x0TEM7L5em4kSx1VmGDgG.jpg"
+      },
+      {
+        "name": "מייסון ת'יימז",
+        "character": "Finney Blake",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kPVWuKlDR0wkCSvv5iHLkaEQS0L.jpg"
+      },
+      {
+        "name": "מדלין מקגרו",
+        "character": "Gwen Blake",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hINjETTkpTc4xIvz1InzvT9vyBo.jpg"
+      },
+      {
+        "name": "Demián Bichir",
+        "character": "Mando",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dur9tX8tbDDJE5mSOZkuW2VDGz4.jpg"
+      },
+      {
+        "name": "Miguel Mora",
+        "character": "Ernesto Arellano",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yVjtjXQ4WWlN8XiDYsHKdwcBRXU.jpg"
+      },
+      {
+        "name": "Jeremy Davies",
+        "character": "Terrence Blake",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tNtcpQnMxzl0OqVDsyA63oAgPbI.jpg"
+      },
+      {
+        "name": "Arianna Rivas",
+        "character": "Mustang",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/a4dRvxh2csK8pnMVz5Xrh8MrE8X.jpg"
+      },
+      {
+        "name": "Maev Beaty",
+        "character": "Barbara",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xu1NcOTmT3gNPgjcIu1UJxLaNPD.jpg"
+      },
+      {
+        "name": "Graham Abbey",
+        "character": "Kenneth",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6xLpD2Ap69mphaqCKPirRLNPf1l.jpg"
+      },
+      {
+        "name": "James Ransone",
+        "character": "Max",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/n1O0RnxKPfxvVJUh13Gr0pPGlvd.jpg"
+      },
+      {
+        "name": "Anna Lore",
+        "character": "Hope",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zNurGVtAxvVGnpgyG9kvBUG4nVf.jpg"
+      },
+      {
+        "name": "Simon Webster",
+        "character": "Felix",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8K8D5ZQIb4fDSGxTKL2FVjFloWW.jpg"
+      },
+      {
+        "name": "Shepherd Munroe",
+        "character": "Cal",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fvIRwPz0uFRGjzSGkHLMy8TchcO.jpg"
+      },
+      {
+        "name": "Chase B. Robertson",
+        "character": "Spike",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9uEEXlrnGdPU6YnHAkzQDSMOxwl.jpg"
+      },
+      {
+        "name": "Dexter Bolduc",
+        "character": "New Kid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wTSt7dKzTwPgi1LMeENaO3BmMpl.jpg"
+      },
+      {
+        "name": "Jazlyn Wong-Lee",
+        "character": "Mean Girl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zR0wctAjXk1fgAnc49wCPws79As.jpg"
+      },
+      {
+        "name": "Julien Norman",
+        "character": "Wild Bill",
+        "profileUrl": null
+      },
+      {
+        "name": "Jacob Moran",
+        "character": "Billy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9omAbMVVWUgpsckvLcFqlLvVAYq.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1025527,
+    "title": "Six jours",
+    "releaseDate": "2024-12-11",
+    "genres": [
+      53,
+      28
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/foyiQu23zq4WhmffnQkFiNAvqcJ.jpg",
+    "popularity": 271.1414,
+    "rating": 5.875,
+    "cast": [
+      {
+        "name": "Sami Bouajila",
+        "character": "Malik",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xq8TMMCA4RI2omGxbPtLVsBMWX8.jpg"
+      },
+      {
+        "name": "Julie Gayet",
+        "character": "Anna",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wt2ZtI2RFcOWcaUoXp8O5jv1bmx.jpg"
+      },
+      {
+        "name": "Anne Azoulay",
+        "character": "Catherine",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eqwsTTjZRXOH0RiWGQWVeiW5R0m.jpg"
+      },
+      {
+        "name": "Yannick Choirat",
+        "character": "Fred",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/e731ITPWEOjD1xY4TH6VvO8qY7v.jpg"
+      },
+      {
+        "name": "Manon Azem",
+        "character": "Nowak",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/81ZofzaZlQ4XKOR9PklmJKEdhcA.jpg"
+      },
+      {
+        "name": "Dimitri Storoge",
+        "character": "Joubert",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iOKXXQW3bn1BKAZQbTaztWfw8sJ.jpg"
+      },
+      {
+        "name": "Marilyne Canto",
+        "character": "Le Goff",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/i7QyFcQALRzG0gdzbqVw0X10kZb.jpg"
+      },
+      {
+        "name": "Gilles Cohen",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/df8YyJdBcritBlohD9AEOQZDsPd.jpg"
+      },
+      {
+        "name": "Philippe Résimont",
+        "character": "Frank",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aPtKQWC0sNUIBpsKvlKjSCFuUIG.jpg"
+      },
+      {
+        "name": "Olivia Bonamy",
+        "character": "Juge Salvo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cV2dPwnEFBv4sReDUxN0TpAKiYy.jpg"
+      },
+      {
+        "name": "Sophie Vannier",
+        "character": "Chloé Voutyras",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1242898,
+    "title": "הטורף: שטח פראי",
+    "releaseDate": "2025-11-05",
+    "genres": [
+      28,
+      878,
+      12
+    ],
+    "overview": "בעתיד, על כוכב לכת מרוחק, טורף צעיר שנודה מהשבט שלו נאלץ לחבור לת'יה, אנדרואידית מסתורית, ולצאת למסע באדמות ההפקר בחיפוש אחר היריב האולטימטיבי.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7gRYUXB8wNkDfVbwhWv0JN8fMxk.jpg",
+    "popularity": 335.5226,
+    "rating": 7.117,
+    "cast": [
+      {
+        "name": "אל פנינג",
+        "character": "Thia / Tessa",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/e8CUyxQSE99y5IOfzSLtHC0B0Ch.jpg"
+      },
+      {
+        "name": "Dimitrius Schuster-Koloamatangi",
+        "character": "Dek / Father",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rmIZTT1AZK3C9fYhEOtGKtSrF8E.jpg"
+      },
+      {
+        "name": "Rohinal Nayaran",
+        "character": "Bud",
+        "profileUrl": null
+      },
+      {
+        "name": "Michael Homick",
+        "character": "Kwei (Suit)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/a7IFYVtmNvBMJ7c20BVMc0LX6PT.jpg"
+      },
+      {
+        "name": "Stefan Grube",
+        "character": "Kwei (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Reuben De Jong",
+        "character": "Father (Suit)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/opjLobu1AKKspKfYzY6AXrjUglt.jpg"
+      },
+      {
+        "name": "Cameron Brown",
+        "character": "Drone Synth",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jLEKQbppMDHeiFX23bxrcmT5dmh.jpg"
+      },
+      {
+        "name": "אליסון רייט",
+        "character": "MU/TH/UR (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yVdCk5eWk5syRrBdxjrnJ1O2Rpg.jpg"
+      },
+      {
+        "name": "Matt Duffer",
+        "character": "Kwei's Ship Computer (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kXO5CnSxC0znMAICGxnPeuGP73U.jpg"
+      },
+      {
+        "name": "רוס דאפר",
+        "character": "Kwei's Ship Computer (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kN1HdFViQkcJOQlNcvvFJIx9Uju.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1096563,
+    "title": "End of Loyalty",
+    "releaseDate": "2023-03-07",
+    "genres": [
+      80,
+      28
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/c4QA1rFQcyBZKaOOdUrDeL1G9Er.jpg",
+    "popularity": 266.6347,
+    "rating": 5,
+    "cast": [
+      {
+        "name": "Braxton Angle",
+        "character": "Ray",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yqKXLMS31dfof7ZNF3GBbEp39F0.jpg"
+      },
+      {
+        "name": "Justice Joslin",
+        "character": "Grant",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1rqHEYlyYz6cNoGFNQaH3Lo4hk.jpg"
+      },
+      {
+        "name": "Simon Phillips",
+        "character": "Vincent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uGD1Wm0AIFCOcOoY9kdONGdpXMC.jpg"
+      },
+      {
+        "name": "Tenley Kellogg",
+        "character": "Jada",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jAfBpbuTWahtyVEXS2mzUwSLBtg.jpg"
+      },
+      {
+        "name": "生島翔",
+        "character": "Yukio",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wwCweYxYIWdXcEpgCeBngyl6Nt2.jpg"
+      },
+      {
+        "name": "Michael Paré",
+        "character": "Pops",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jxrXW8OL6hwJgtJgePdMO5yHuAM.jpg"
+      },
+      {
+        "name": "Vernon Wells",
+        "character": "Rooker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rpKjskAbftBMFi1HWZ0Jo6lZgod.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1161617,
+    "title": "Code 3",
+    "releaseDate": "2025-09-12",
+    "genres": [
+      28,
+      35
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/gIAYMDb5mIAeCAj76q1sRsKjkzo.jpg",
+    "popularity": 271.0866,
+    "rating": 7.12,
+    "cast": [
+      {
+        "name": "ריין וילסון",
+        "character": "Randy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yRTElSeC3q9nBqBuleI6OODlDMS.jpg"
+      },
+      {
+        "name": "ליל ריי הווארי",
+        "character": "Mike",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9MDi35Fy6ym7SYbO3B04vf1vBnm.jpg"
+      },
+      {
+        "name": "Aimee Carrero",
+        "character": "Jessica",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xiLYyWjTftBQ9RrPj4d4g5itUL8.jpg"
+      },
+      {
+        "name": "איווט ניקול בראון",
+        "character": "Shanice",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7cJowCcDPnyXqHJ46GgSNHomUGo.jpg"
+      },
+      {
+        "name": "Rob Riggle",
+        "character": "Dr. Serano",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hQgOp8vWxl6KPZbqzKSSL4k6G1j.jpg"
+      },
+      {
+        "name": "Page Kennedy",
+        "character": "Officer Tagert",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hM7yB43TFtzKg8W3rW0LOceVnok.jpg"
+      },
+      {
+        "name": "Xolo Mariduena",
+        "character": "Rookie",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tJMI7BpjlhHSMpzSz9e1XxygnKd.jpg"
+      },
+      {
+        "name": "Eric Jungmann",
+        "character": "Nurse Chad",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lDtdxbzwdqESLKZTV2yrjYp0uvB.jpg"
+      },
+      {
+        "name": "Ayesha Harris",
+        "character": "Kim",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2JUv9fQTpRbLxJJH4NcJ1ES7IS5.jpg"
+      },
+      {
+        "name": "Luka Jones",
+        "character": "Motorcycle Matt",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/x2C6I1GJDwI7NV43XySiKgL4JaO.jpg"
+      },
+      {
+        "name": "Andy Milder",
+        "character": "Bruce",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/z7sCgA9TiyVuBosmgBJbAxgm05K.jpg"
+      },
+      {
+        "name": "Dalia Rooni",
+        "character": "Rachel",
+        "profileUrl": null
+      },
+      {
+        "name": "Cameron Fuller",
+        "character": "Jimmy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tVBShiBn4QLtvJgWocuBdzGXqWb.jpg"
+      },
+      {
+        "name": "Michael J. Sielaff",
+        "character": "Johnny",
+        "profileUrl": null
+      },
+      {
+        "name": "Joaquin Veizaga",
+        "character": "Vicente",
+        "profileUrl": null
+      },
+      {
+        "name": "Liam Oh",
+        "character": "Chip (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lFohLkLwkmXrIdNACq4tWYkU63c.jpg"
+      },
+      {
+        "name": "Michael Monks",
+        "character": "Officer White",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jlSNQND26pDrxFih2ImhgqGOirn.jpg"
+      },
+      {
+        "name": "Patrick Pianezza",
+        "character": "Paramedic Patrick",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rVwpb50eITz7RTY6NvDpogrfg2L.jpg"
+      },
+      {
+        "name": "Rafael Castillo",
+        "character": "Charlie(Mr. President)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uCExuAVhwblXf5ea8N8s8NoAfRj.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1218925,
+    "title": "チェンソーマン レゼ篇",
+    "releaseDate": "2025-09-19",
+    "genres": [
+      16,
+      28,
+      10749,
+      14
+    ],
+    "overview": "דנג’י, עבד כצייד שדים עבור היאקוזה בניסיון לשלם את החוב שירש מהוריו, עד שהיאקוזה בגדו בו והביאו למותו.  כשכבר היה על סף אובדן ההכרה, כלבו האהוב פוצ’יטה – (שד בעל כוחות), כרת עמו ברית והציל את חייו, כך התאחדו השניים לגוף אחד ויצרו את “צ’יינסו מן” הבלתי ניתן לעצירה.  כעת, בעיצומה של מלחמה אכזרית בין שדים, ציידים ואויבים נסתרים, נערה מסתורית בשם רזה נכנסת לעולמו של דנג’י – והוא עומד בפני הקרב הקשה ביותר בחייו, קרב המונע מאהבה, בעולם שבו כדי לשרוד, כל האמצעים כשרים.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/A7J9KaSC3BYAqMoR0TKJXDbm0QX.jpg",
+    "popularity": 203.2403,
+    "rating": 8.2,
+    "cast": [
+      {
+        "name": "戸谷菊之介",
+        "character": "Denji (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tSAHe7tjN7luUD1Tx5yPSCuCnuD.jpg"
+      },
+      {
+        "name": "ריינה אואדה",
+        "character": "Reze (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cddK6dQtVCg6ToQRpETbRYRJK4G.jpg"
+      },
+      {
+        "name": "井澤詩織",
+        "character": "Pochita (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/f9V38OeDvRGevWuKc4dN6LB62TH.jpg"
+      },
+      {
+        "name": "楠木ともり",
+        "character": "Makima (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/t5aBzyYiJZDE6DWeTcGMrcQpiI5.jpg"
+      },
+      {
+        "name": "坂田将吾",
+        "character": "Aki (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fRRPNBz3OCNRdmLdUTdpq7dGqxM.jpg"
+      },
+      {
+        "name": "פאירוז אי",
+        "character": "Power (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/coFu6WOVBZvqd1fw89vbHkiC0zB.jpg"
+      },
+      {
+        "name": "高橋花林",
+        "character": "Kobeni (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/40eynav2SoYcfd0McfiF46Hu16o.jpg"
+      },
+      {
+        "name": "花江夏樹",
+        "character": "Beam (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/alTb0DlcPIbcwM08WSmxFai58sd.jpg"
+      },
+      {
+        "name": "内田夕夜",
+        "character": "The Violence Fiend (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4xLLQGEDWtmLWUapo0UnfvCdsXp.jpg"
+      },
+      {
+        "name": "内田真礼",
+        "character": "Angel Devil (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rq4glg2SZwGyt3TIxR3ElalKmhH.jpg"
+      },
+      {
+        "name": "津田健次郎",
+        "character": "Kishibe (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yBlT8FzQqZYbDcJlnCEayNQHrzS.jpg"
+      },
+      {
+        "name": "高橋英則",
+        "character": "Vice Captain (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uwtvViVOTBpqjgv90YSls2xoQy7.jpg"
+      },
+      {
+        "name": "赤羽根健治",
+        "character": "Nomo (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sBduxft8NwdbASvtL14bMx86cPq.jpg"
+      },
+      {
+        "name": "乃村健次",
+        "character": "Mysterious Man (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rmTziYxlPje4PiKhPgqMEHu9Axd.jpg"
+      },
+      {
+        "name": "喜多村英梨",
+        "character": "Typhoon Devil (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9WWqr734lWfs6YOQikkBBs7Rgo4.jpg"
+      }
+    ]
+  },
+  {
+    "id": 755898,
+    "title": "מלחמת העולמות",
+    "releaseDate": "2025-07-29",
+    "genres": [
+      878,
+      53
+    ],
+    "overview": "פלישה ענקית מגיעה עם הגרסה החדשה הזאת של הרומן המפורסם בעל אותו השם. השחקנית הנודעת אווה לונגוריה משתפת פעולה עם הראפר והשחקן האייקוני אייס קיוב, וביחד עם מייקל אוניל ואימאן בנסון יוצאים להרפתקה מותחת שלא מהעולם הזה, מלאה בנושאים עכשוויים של טכנולוגיה, מעקב ופרטיות.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yvirUYrva23IudARHn3mMGVxWqM.jpg",
+    "popularity": 237.8122,
+    "rating": 4.3,
+    "cast": [
+      {
+        "name": "אייס קיוב",
+        "character": "William Radford",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9EghwabQ1wIQT4oN69qtPlzqGn4.jpg"
+      },
+      {
+        "name": "אווה לונגוריה",
+        "character": "NASA Scientist Sandra Salas",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1u26GLWK1DE7gBugyI9P3OMFq4A.jpg"
+      },
+      {
+        "name": "קלארק גרג",
+        "character": "NSA Director Donald Briggs",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mq686D91XoZpqkzELn0888NOiZW.jpg"
+      },
+      {
+        "name": "Iman Benson",
+        "character": "Faith Radford",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6s8Cyc4rxDRpX1vYnczU52RM4IM.jpg"
+      },
+      {
+        "name": "הנרי האנטר הול",
+        "character": "David Radford",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qZEv8RIGC9yLwY29Vo4KQzpO9Dt.jpg"
+      },
+      {
+        "name": "Devon Bostick",
+        "character": "Mark Goodman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zAdSA85Plp7NzhQeM2w8heHWgEd.jpg"
+      },
+      {
+        "name": "Andrea Savage",
+        "character": "FBI Field Agent Sheila Jeffries",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dh2prcwPU9U1PBdCNu5SSd4Of9j.jpg"
+      },
+      {
+        "name": "Nicole Pulliam",
+        "character": "News Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/XcJAw0P7bPE9ET52P4fZ2hdokk.jpg"
+      },
+      {
+        "name": "מייקל אוניל",
+        "character": "Secretary of Defense Walter Crystal",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/u9Ejl9iS4ZJ36Y653UCe8huLaOn.jpg"
+      },
+      {
+        "name": "ג'ים מסקימן",
+        "character": "POTUS",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/18eXUo8DfTwannhq8FOwgVdFs9Y.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1311031,
+    "title": "קוטל השדים: טירת האינסוף",
+    "releaseDate": "2025-07-18",
+    "genres": [
+      16,
+      28,
+      14,
+      53
+    ],
+    "overview": "טנג'ירו והקבוצה השלימו את אימוני השיקום שלהם באחוזת הפרפר, והם מגיעים למשימה הבאה שלהם ברכבת ה’מוגן’, שם נעלמו יותר מ-40 אנשים בפרק זמן קצר מאוד.  טנג'ירו ונזוקו, יחד עם זניצו ואינוסקה, מצטרפים לאחד החרבנים החזקים ביותר באגודת קוטלי השדים — עמוד הלהבה קיוג'ורו רנגוקו — כדי להתמודד עם השד שעל סיפון רכבת ה’מוגן’.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tlNFKrkb0LzhnwvyiMSOoCB5dbj.jpg",
+    "popularity": 164.2514,
+    "rating": 7.8,
+    "cast": [
+      {
+        "name": "花江夏樹",
+        "character": "Tanjiro Kamado (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/alTb0DlcPIbcwM08WSmxFai58sd.jpg"
+      },
+      {
+        "name": "下野紘",
+        "character": "Zenitsu Agatsuma (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yrSDcgFefHtWkFmLnTrcw2t0MV.jpg"
+      },
+      {
+        "name": "櫻井孝宏",
+        "character": "Giyu Tomioka (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8s8owcKmpRAuhzEGjSdRpztthUg.jpg"
+      },
+      {
+        "name": "石田彰",
+        "character": "Akaza (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jnW2Gn2NlR2uwOCeyOuzypnTmkH.jpg"
+      },
+      {
+        "name": "松岡禎丞",
+        "character": "Inosuke Hashibira (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ugDwdWEXnmv43jcbnfAi4XwiQ8C.jpg"
+      },
+      {
+        "name": "関俊彦",
+        "character": "Muzan Kibutsuji (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7jUPvx4hxWZWZJgyiCwd8KxWuvI.jpg"
+      },
+      {
+        "name": "ריינה אואדה",
+        "character": "Kanao Tsuyuri (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cddK6dQtVCg6ToQRpETbRYRJK4G.jpg"
+      },
+      {
+        "name": "岡本信彦",
+        "character": "Genya Shinazugawa (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7s1K2yQVF5iIWILaOfG7QrMZkXA.jpg"
+      },
+      {
+        "name": "小西克幸",
+        "character": "Tengen Uzui (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nYM5cH6U7cp4x9dIzW0enmEKmeV.jpg"
+      },
+      {
+        "name": "鬼頭明里",
+        "character": "Nezuko Kamado (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/AoRQOZRC0yINB0WeKnM569rV1wF.jpg"
+      },
+      {
+        "name": "河西健吾",
+        "character": "Muichiro Tokito (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/u59FdPSHlA7JCWNnX1m10neLfT.jpg"
+      },
+      {
+        "name": "早見沙織",
+        "character": "Shinobu Kocho (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gLv9lO7dlUbIsmyJUvgegqAAXki.jpg"
+      },
+      {
+        "name": "花澤香菜",
+        "character": "Mitsuri Kanroji (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5bK9ttcRydQBWmyZp7gXDmJYOPF.jpg"
+      },
+      {
+        "name": "鈴村健一",
+        "character": "Obanai Iguro (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vFqjmIjxfgBkh3ZmUin7QETV0sy.jpg"
+      },
+      {
+        "name": "杉田智和",
+        "character": "Gyomei Himejima (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cv5zuPZySNsHXu24pjKLYCRzJ2J.jpg"
+      },
+      {
+        "name": "置鮎龍太郎",
+        "character": "Kokushibo (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qbj3cFQqWwZ6x7S1jEpOJa57sEZ.jpg"
+      },
+      {
+        "name": "מאמורו מיאנו",
+        "character": "Doma (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nuok8ueG7k9hPZ09Tpr8e7Qn0ah.jpg"
+      },
+      {
+        "name": "יושימאסה הוסויה",
+        "character": "Kaigaku (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lUR5oN1LrqGgp25IOcI1qOH1Ud5.jpg"
+      },
+      {
+        "name": "中村悠一",
+        "character": "Keizo (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wb8behVKjBHX9XXrEydvNINCYwH.jpg"
+      },
+      {
+        "name": "Lynn",
+        "character": "Koyuki (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eJ2NqgzpnzNbT6Nt9EpDfzqNeZM.jpg"
+      },
+      {
+        "name": "山下大輝",
+        "character": "Yushiro (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rQNdJdZewk7VGP16ZNbpfJ9ZeMd.jpg"
+      },
+      {
+        "name": "大塚芳忠",
+        "character": "Sakonji Urokodaki (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3RHQcrsWnAFK6AifSis1lMq08cR.jpg"
+      },
+      {
+        "name": "森川智之",
+        "character": "Kagaya Ubuyashiki (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hrzGBe4nokgkBNFekNo5hlXB2Bv.jpg"
+      },
+      {
+        "name": "שין אינצ'יקו מיקי",
+        "character": "Tanjuro Kamado (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yL9Tx2HZgK7t5AssYl6oGE9bjdj.jpg"
+      },
+      {
+        "name": "千葉繁",
+        "character": "Jigoro Kuwajima (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mF5YJxApTYKBVFJDrEC9IrJ5ooV.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1561969,
+    "title": "ברמולה",
+    "releaseDate": "2025-11-06",
+    "genres": [
+      27
+    ],
+    "overview": "בעיירה השלווה ברמולה, שוטר שחוקר מקרים של ילדים חטופים חושף סודות מקפיאי דם, ואירועים על-טבעיים מתחילים לסכן את משפחתו.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/2raITTyjXVUcsbJ7lJAQt8HzjDK.jpg",
+    "popularity": 167.1835,
+    "rating": 5.917,
+    "cast": [
+      {
+        "name": "Manav Kaul",
+        "character": "DSP Ridwaan Sayyed",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xzb8QK85p7jqJaTqaTJORW6QLXj.jpg"
+      },
+      {
+        "name": "Neelofar Hamid",
+        "character": "Zainab",
+        "profileUrl": null
+      },
+      {
+        "name": "Masoom Mumtaz Khan",
+        "character": "Abbas Tilgami",
+        "profileUrl": null
+      },
+      {
+        "name": "Arista Mehta",
+        "character": "Noorie Sayyed",
+        "profileUrl": null
+      },
+      {
+        "name": "Baby Kiara Khanna",
+        "character": "Eela Sapru",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uFMxAQ0B6vbkk4EE7BzDiKr7szp.jpg"
+      },
+      {
+        "name": "Ashwini Koul",
+        "character": "Khalid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/877pGO9yQeuTj9sJOika1hHQ9uf.jpg"
+      },
+      {
+        "name": "Nazneen Madan",
+        "character": "Mansi Sapru",
+        "profileUrl": null
+      },
+      {
+        "name": "Mir Sarwar",
+        "character": "Ansari",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vyyRELWNWFOWKq9ubWIqWpF6KCj.jpg"
+      },
+      {
+        "name": "Vikas Shukla",
+        "character": "Shaukat",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lMgWpj3BwrSgeP4IUNdj5Z99Y2O.jpg"
+      },
+      {
+        "name": "Bhasha Sumbli",
+        "character": "Gulnaar Sayyed",
+        "profileUrl": null
+      },
+      {
+        "name": "Priyank Tatariya",
+        "character": "Kamalanand Sapru",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ekvHIctEGLPDnJx6Ose28Z2WNRJ.jpg"
+      },
+      {
+        "name": "Sanjay Suri",
+        "character": "Sharad Sapru",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8TYltbXF7cKRnH719rSek6YznJQ.jpg"
+      }
+    ]
+  },
+  {
+    "id": 507244,
+    "title": "ציידי סוף העולם",
+    "releaseDate": "2025-08-20",
+    "genres": [
+      878,
+      28,
+      35
+    ],
+    "overview": "10 שנים לאחר שהתפרצות סולארית החריבה את כלל היכולות הטכנולוגיות על פני כדור הארץ, ג'ייק, צייד אוצרות המאתר פריטים יקרי ערך מהעולם הישן עבור עשירי הפלנטה, נשכר למשימה חדשה – לחבור ללוחמת החירות דראה במסע לאיתור יצירת המופת ה\"מונה ליזה\", לפני שתיפול לידיו של ברון מלחמה מסוכן.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/l3edIyvPEOwgYw5UfgAbAgEax07.jpg",
+    "popularity": 143.2936,
+    "rating": 6.9,
+    "cast": [
+      {
+        "name": "דייב בטיסטה",
+        "character": "Jake",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/snk6JiXOOoRjPtHU5VMoy6qbd32.jpg"
+      },
+      {
+        "name": "אולגה קורילנקו",
+        "character": "Drea",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ei6eYUhQFw2AaV6U5fyPptBaPF0.jpg"
+      },
+      {
+        "name": "כריסטופר היביו",
+        "character": "General Volkov",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bACL39GihNmBnFRay78rS3PUHsH.jpg"
+      },
+      {
+        "name": "סמואל ל. ג'קסון",
+        "character": "Valentine",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aF7jIjZ66M0af5c02P9Duzq1zO7.jpg"
+      },
+      {
+        "name": "Daniel Bernhardt",
+        "character": "Gorynych",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b59qhg5VJOCypx9eMXrXHAjauLd.jpg"
+      },
+      {
+        "name": "Eden Epstein",
+        "character": "Fuentes",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6ZYbrwHUR3VyGeWx7obPKDASGCJ.jpg"
+      },
+      {
+        "name": "George Somner",
+        "character": "Pilot",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9FocanO4wogWLjxxNiLk3dP84Aa.jpg"
+      },
+      {
+        "name": "Sergio Freijo",
+        "character": "Occupied City Megaphone Officer",
+        "profileUrl": null
+      },
+      {
+        "name": "Lukáš Frlajs",
+        "character": "Chessplaying Thin Man",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3JMimJWhNPNlpg86Wew4xuqqqsE.jpg"
+      },
+      {
+        "name": "Phil Zimmerman",
+        "character": "Bird Skull",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9kYoNUQ1Gb9cZ8JfN2IsiW9KHH8.jpg"
+      },
+      {
+        "name": "Robert Holik",
+        "character": "War Train Conductor",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vERa5UfARcXz0BW1viSDxFRnS1u.jpg"
+      },
+      {
+        "name": "Paula Argüelles",
+        "character": "Desolate Road Mother (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aNanGGzwrDToM8xgEsUhufK70Zg.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1511789,
+    "title": "Captain Hook: The Cursed Tides",
+    "releaseDate": "2025-07-11",
+    "genres": [
+      12,
+      28,
+      27
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/bcP7FtskwsNp1ikpMQJzDPjofP5.jpg",
+    "popularity": 143.537,
+    "rating": 5.057,
+    "cast": [
+      {
+        "name": "Sean Cronin",
+        "character": "Admiral Smee",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nj3ptvRuVB0wHlLeMDq0g39JRdh.jpg"
+      },
+      {
+        "name": "Ewen Weatherburn",
+        "character": "Ymirskald",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oKW0yxxTBO7TC8fRiQEpF4yo95K.jpg"
+      },
+      {
+        "name": "Cameron Ashplant",
+        "character": "Private Turley",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7J8YluqxL2DlrFMmxFoPmxSrRpl.jpg"
+      },
+      {
+        "name": "Richard Rowden",
+        "character": "Captain James Hook",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dhPqtrWbwCGW7a63uRRzj4i0LsW.jpg"
+      },
+      {
+        "name": "Destiny Viva",
+        "character": "Akila Blackweather",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iU1M2y0iU6wAuIp6HSCBM0DRs5W.jpg"
+      },
+      {
+        "name": "Brandon Ashplant",
+        "character": "Private Mullins",
+        "profileUrl": null
+      },
+      {
+        "name": "Dean Marshall",
+        "character": "Benoit Le Pelley",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/che3C6ZnOAGQimCgXWIZwnf56iW.jpg"
+      },
+      {
+        "name": "Dave Hyett",
+        "character": "Edgar Worley",
+        "profileUrl": null
+      },
+      {
+        "name": "John Craggs",
+        "character": "King George II",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7WlvLJ56v15onRnd3CmdRkl7yjr.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7451,
+    "title": "טריפל אקס",
+    "releaseDate": "2002-08-09",
+    "genres": [
+      28,
+      12,
+      53,
+      80,
+      18
+    ],
+    "overview": "מקועקע. מגולח ראש. שרירן. בטחון עם הרבה רזרבות. פרסומת מהלכת לאנטי ממסדיות. וקיצוני בכל מעשיו. זנדר קייג' הוא טריפל אקס. את פרנסתו המפוקפקת הוא מוצא ממכירות וידיאו באינטרנט המתעדות את הרפתקאותיו הנועזים, בין אם זה צניחה מתוך מכונית גנובה הנופלת מגשר בגובה 700 רגל, או מזימות מרדניות אחרות הדורשות זרם מקסימלי של אדרנלין או, אפילו, מוות מוקדם מדי. זאנדר מוקף ע\"י חוג מעריצים הסוגדים לתרבות המרדנית, אבל אחרי הרבה מאד הסתבכויות עם החוק, עולמו עומד לבצע את המעקף האתגרי ביותר שידע עד כה...",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xeEw3eLeSFmJgXZzmF2Efww0q3s.jpg",
+    "popularity": 139.0093,
+    "rating": 5.967,
+    "cast": [
+      {
+        "name": "וין דיזל",
+        "character": "Xander Cage",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nZdVry7lnUkE24PnXakok9okvL4.jpg"
+      },
+      {
+        "name": "Asia Argento",
+        "character": "Yelena",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dYbYNxMnqhNyAJyrPU7e2C9jcRz.jpg"
+      },
+      {
+        "name": "Marton Csokas",
+        "character": "Yorgi",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gmeUY7FR0bFLdu7Ma5kvpH3Gt6B.jpg"
+      },
+      {
+        "name": "סמואל ל. ג'קסון",
+        "character": "Agent Augustus Gibbons",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aF7jIjZ66M0af5c02P9Duzq1zO7.jpg"
+      },
+      {
+        "name": "Michael Roof",
+        "character": "Agent Toby Lee Shavers",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qhP35tsTTuAPUFcKYMGOxaw1s4j.jpg"
+      },
+      {
+        "name": "Richy Müller",
+        "character": "Milan Sova",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/69W9VO478asbTZJrhqOfHddyunF.jpg"
+      },
+      {
+        "name": "Werner Daehn",
+        "character": "Kirill",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7AVQ2pesALZjo5J0KsYADzoms9Z.jpg"
+      },
+      {
+        "name": "Petr Jákl",
+        "character": "Kolya",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8zi7MXdHXWBIP6IuMFZB1HdWnGX.jpg"
+      },
+      {
+        "name": "Jan Filipenský",
+        "character": "Viktor",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lQtE0gsFf6T7QXFnq3InuIG9WE9.jpg"
+      },
+      {
+        "name": "Tom Everett",
+        "character": "Senator Dick Hotchkiss",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lJIlLkadJ62eRai5BRgmmyObeiC.jpg"
+      },
+      {
+        "name": "דני טרחו",
+        "character": "El Jefe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7JrUkRGBscZ1Hy5JinaaXjjzSCF.jpg"
+      },
+      {
+        "name": "Thomas Ian Griffith",
+        "character": "Agent Jim McGrath",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4h1qQeZMG2drwEEat6WKG0rbPVC.jpg"
+      },
+      {
+        "name": "Eve",
+        "character": "J.J.",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eRr3rTcVaRfZziKrIJl2Y7cB9M5.jpg"
+      },
+      {
+        "name": "Leila Arcieri",
+        "character": "Jordan King",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ly1UGt7QuRSUIM0o68w1L500qji.jpg"
+      },
+      {
+        "name": "William Hope",
+        "character": "Agent Roger Donnan",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/blKMEeCftWVBPI2hqvzycmdE9nS.jpg"
+      },
+      {
+        "name": "Ted Maynard",
+        "character": "James Tannick",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wmdwrUjuSL1KuhZTTR484Lg77lB.jpg"
+      },
+      {
+        "name": "Joe Bucaro III",
+        "character": "Virg",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gvJs1YQZRrSbkiSGAiCAugaXyzl.jpg"
+      },
+      {
+        "name": "Chris Gann",
+        "character": "T.J.",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jX73lEGi5TNjordeEEZRKjqGL9x.jpg"
+      },
+      {
+        "name": "Martin Hub",
+        "character": "Ivan Podrov",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/udBteEYEksf6Icrrx7cAhGcq1r0.jpg"
+      },
+      {
+        "name": "Radek Tomečka",
+        "character": "Ivan Pedgrag",
+        "profileUrl": null
+      },
+      {
+        "name": "Mary-Pat Green",
+        "character": "Waitress",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cLqn3eEGnE5zGxT2KBXRSkahrPE.jpg"
+      },
+      {
+        "name": "Tanner Gill",
+        "character": "Trucker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aGJWKkwedyhdEG6hyAbumQX6xfl.jpg"
+      },
+      {
+        "name": "Scott Waugh",
+        "character": "Stockbroker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/i84mhk9KQndHi5c1IhomNdRnvFw.jpg"
+      },
+      {
+        "name": "Václav Chalupa",
+        "character": "Nervous Hacker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1lDgt4Pl0Hk00G7ltEVlIk13TDM.jpg"
+      },
+      {
+        "name": "Martina Šmuková",
+        "character": "Female Czech Cop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yPvLFxOYTcVd2KwtAsxG4m9MIeJ.jpg"
+      },
+      {
+        "name": "TeeJay Boyce",
+        "character": "Bimbo Intern",
+        "profileUrl": null
+      },
+      {
+        "name": "Tony Hawk",
+        "character": "Caddy Driver",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gYNmD0a7LemMX6zDZ1lyDs6YYwd.jpg"
+      },
+      {
+        "name": "Mat Hoffman",
+        "character": "Extreme Guy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/WgS8zMOBNtocZo1HXbFN7rPIt3.jpg"
+      },
+      {
+        "name": "Brian Deegan",
+        "character": "Extreme Guy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8thAOydGmGflicy9z8s9O3kFx7U.jpg"
+      },
+      {
+        "name": "Mike Vallely",
+        "character": "Skater",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/swAZzsNkLiuTbbRUGlOSaytfsRu.jpg"
+      },
+      {
+        "name": "Mike Escamilla",
+        "character": "Ramp Truck Passenger",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vqB5xC5xeCE8SgnNCpFvSotnxTU.jpg"
+      },
+      {
+        "name": "Rob Wells",
+        "character": "Hillside Video Shooter",
+        "profileUrl": null
+      },
+      {
+        "name": "Rick Thorne",
+        "character": "Caddy Passenger",
+        "profileUrl": null
+      },
+      {
+        "name": "Carey Hart",
+        "character": "Caddy Passenger",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vM43fEY0CCfPpbiSRJOnhysaRIN.jpg"
+      },
+      {
+        "name": "W. Colin McKay",
+        "character": "Van Driver",
+        "profileUrl": null
+      },
+      {
+        "name": "Jason Ellis",
+        "character": "Van Video Shooter",
+        "profileUrl": null
+      },
+      {
+        "name": "Marek Vašut",
+        "character": "Czech General",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1gaHNNG8MuA3meaDHGi6Tb3Vw1K.jpg"
+      },
+      {
+        "name": "Luboš Pospíšil",
+        "character": "Czech Major",
+        "profileUrl": null
+      },
+      {
+        "name": "Ivo Niederle",
+        "character": "Head Chemist",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8pUMOLU6ilYHiPLI1o4JBf2NyXm.jpg"
+      },
+      {
+        "name": "Vítězslav Bouchner",
+        "character": "Head Technician",
+        "profileUrl": null
+      },
+      {
+        "name": "Esteban Cueto",
+        "character": "Gold Tooth Narco",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/y3f5U7YuUQHKuXFpbH7dcmiwQdR.jpg"
+      },
+      {
+        "name": "Martin Bárta",
+        "character": "Male Opera Singer (Don Giovanni)",
+        "profileUrl": null
+      },
+      {
+        "name": "Martina Bauerová",
+        "character": "Female Opera Singer (Zerlina)",
+        "profileUrl": null
+      },
+      {
+        "name": "Rich Wilkes",
+        "character": "Tall Guy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/s1SVBPxNUHHBQND25dWe7YlqscW.jpg"
+      },
+      {
+        "name": "F. Valentino Morales",
+        "character": "Short Order Cook/NSA Agent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3rqEJlOs5qdfxb1P4OYKGHiYzDO.jpg"
+      },
+      {
+        "name": "Leonard L. Thomas",
+        "character": "NSA Agent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tz9fJ5O7aa3a1vBt52bIZKYdaSK.jpg"
+      },
+      {
+        "name": "Ivan Rueda",
+        "character": "Child Field Worker",
+        "profileUrl": null
+      },
+      {
+        "name": "Joshua Montero",
+        "character": "Child Field Worker",
+        "profileUrl": null
+      },
+      {
+        "name": "Armando Cantina",
+        "character": "Field Worker",
+        "profileUrl": null
+      },
+      {
+        "name": "Roman Matrka",
+        "character": "Czech Agent",
+        "profileUrl": null
+      },
+      {
+        "name": "Alena Cihalikova",
+        "character": "Xander's Bedroom Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Till Lindemann",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mhbcRcw5KRFxUbKFglHDHuo4XNI.jpg"
+      },
+      {
+        "name": "Richard Kruspe",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gvFc5geScokaG0kZAiM65jPpvin.jpg"
+      },
+      {
+        "name": "Christian Lorenz",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eVFwuhuOg2bejR5RLEqZb8aM9WR.jpg"
+      },
+      {
+        "name": "Paul Landers",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hSgkxg65eAVEWauIjbImY6CKwqL.jpg"
+      },
+      {
+        "name": "Oliver Riedel",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8vLuztIqxATiJLdTeD2WXmjN4tU.jpg"
+      },
+      {
+        "name": "Christoph Schneider",
+        "character": "Self [Rammstein]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9MQQaHddJR7df99fJFzxbQXBWO8.jpg"
+      },
+      {
+        "name": "Paul Hartnoll",
+        "character": "Self [Orbital]",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/533FE98wNOWzL9BJWkscRUx2NZn.jpg"
+      },
+      {
+        "name": "Phil Hartnoll",
+        "character": "Self [Orbital]",
+        "profileUrl": null
+      },
+      {
+        "name": "Michal Müller",
+        "character": "Zither Player",
+        "profileUrl": null
+      },
+      {
+        "name": "Rob Cohen",
+        "character": "Columbian Horseman (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kVbB8Q0g8eXsn8l81flyC6TgMPW.jpg"
+      },
+      {
+        "name": "Olga Lounová",
+        "character": "Waitress (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dNJn4jVfnE3tRqymwUmdtH3dON7.jpg"
+      },
+      {
+        "name": "Frank Mercuri",
+        "character": "Copter Skid Gunner (uncredited)",
+        "profileUrl": null
+      },
+      {
+        "name": "Christopher Eric Ruiz",
+        "character": "F.A.R.C. Soldier (uncredited)",
+        "profileUrl": null
+      },
+      {
+        "name": "Rob Roy",
+        "character": "Navy SEAL (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/diao0XmXzdotjyZmeU9n0rkv3Yi.jpg"
+      },
+      {
+        "name": "David Asman",
+        "character": "Agent Polk",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 617126,
+    "title": "ארבעת המופלאים: צעדים ראשונים",
+    "releaseDate": "2025-07-23",
+    "genres": [
+      878,
+      12,
+      28
+    ],
+    "overview": "על רקע עולם רטרו-עתידני בהשראת שנות ה-60, משפחת-העל הראשונה של מארוול נאלצים לאזן בין תפקידם כגיבורים לבין עוצמת הקשר המשפחתי שלהם, הם חייבים להגן על כדור הארץ מפני אל חלל רעב ששמו גלקטוס ושליחתו המסתורית, הגולשת הכסופה. ואם לא די בכך שתוכניתו של גלקטוס היא לטרוף את כוכב הלכת כולו ואת כל מי שחי עליו, העניינים הופכים לאישיים מאוד.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/oHUqFXJCwDfmc5pLSV9OV58A7SQ.jpg",
+    "popularity": 124.4198,
+    "rating": 7.087,
+    "cast": [
+      {
+        "name": "פדרו פסקל",
+        "character": "Reed Richards / Mister Fantastic",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oKcMbVn0NJTNzQt0ClKKvVXkm60.jpg"
+      },
+      {
+        "name": "ונסה קירבי",
+        "character": "Sue Storm / Invisible Woman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5fbvIkZ02RdcXfZHUUk4cQ9kILK.jpg"
+      },
+      {
+        "name": "אבון מוס-בכרך",
+        "character": "Ben Grimm / The Thing",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xD8GVNayMpiTZxLfahy2DseYcQq.jpg"
+      },
+      {
+        "name": "ג'וזף קווין",
+        "character": "Johnny Storm / Human Torch",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zshhuioZaH8S5ZKdMcojzWi1ntl.jpg"
+      },
+      {
+        "name": "ראלף אינסון",
+        "character": "Galactus",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sn3ONJw2pJxMHiCqPwvkaiWr5mc.jpg"
+      },
+      {
+        "name": "ג'וליה גארנר",
+        "character": "Shalla-Bal / Silver Surfer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ud1RXbvW70J89iqeic7no8olxvb.jpg"
+      },
+      {
+        "name": "פול וולטר האוזר",
+        "character": "Harvey Elder / Mole Man",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nmBdzJpfHMRHsT3VrjyXAxMFLZA.jpg"
+      },
+      {
+        "name": "נטשה ליון",
+        "character": "Rachel Rozman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2QJoTBEIeYyjGSDot9qxv2ayPH3.jpg"
+      },
+      {
+        "name": "שרה ניילס",
+        "character": "Lynne Nichols / F4 Chief of Staff",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ySelhnmCCX9VnlPvceO9c5XOelK.jpg"
+      },
+      {
+        "name": "מארק גאטיס",
+        "character": "Ted Gilbert",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rkZKKDRbnGqqg2fjd5iPYDS4syy.jpg"
+      },
+      {
+        "name": "Ada Scott",
+        "character": "Franklin Richards",
+        "profileUrl": null
+      },
+      {
+        "name": "מת'יו וווד",
+        "character": "H.E.R.B.I.E. (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/u1UjHLTeS5Dregg85A3GICf7Nkf.jpg"
+      },
+      {
+        "name": "Angela Jones",
+        "character": "Mole Man Attack Witness",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jO5ULvqa6CeilVGLdVK6kVvlVsv.jpg"
+      },
+      {
+        "name": "Maisie Shakman",
+        "character": "Donna / Saved Girl",
+        "profileUrl": null
+      },
+      {
+        "name": "Jay Underwood",
+        "character": "Power Plant Worker #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9CAXVrvUV2SKMLbtL42sI3ps3Tf.jpg"
+      },
+      {
+        "name": "Michael Bailey Smith",
+        "character": "Power Plant Worker #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9ajqFWi9JN6LBE0tb0RU3UfwaQu.jpg"
+      },
+      {
+        "name": "Alex Hyde-White",
+        "character": "ABC Newscaster William Russell",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/AjLhPmtUs94sQeHZ7PPnU7yK8o8.jpg"
+      },
+      {
+        "name": "Rebecca Staab",
+        "character": "Channel 9 Newscaster Carolyn Haynes",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/AavKqTvgAjqoJHFc4xOipmZJXiV.jpg"
+      },
+      {
+        "name": "Patrick Miller",
+        "character": "Larry the Lobbyist",
+        "profileUrl": null
+      },
+      {
+        "name": "Mather Zickel",
+        "character": "Boston Newscaster",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/i8LGye7othWAbIs3tyUuVhOdJph.jpg"
+      },
+      {
+        "name": "Firdous Bamji",
+        "character": "Yancy Street Man",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4uVT12pe527eKclNpiyCyPqaGwh.jpg"
+      },
+      {
+        "name": "Bertie Caplan",
+        "character": "Wiseass Kid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wywpfwvj4iZ4PfPNXhGB59oXxQ9.jpg"
+      },
+      {
+        "name": "Max Lester",
+        "character": "Yancy Street Kid",
+        "profileUrl": null
+      },
+      {
+        "name": "Hunter del Valle Marfo",
+        "character": "Yancy Street Kid",
+        "profileUrl": null
+      },
+      {
+        "name": "Riotafari Gardner",
+        "character": "Yancy Street Kid",
+        "profileUrl": null
+      },
+      {
+        "name": "Isla McRae",
+        "character": "Yancy Street Kid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/t39ROabYVn1fmcA8TUWWyfDy6xN.jpg"
+      },
+      {
+        "name": "Martin Wilkinson",
+        "character": "Timely Employee #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Greg Haiste",
+        "character": "Timely Employee #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/y9jxYjLKUKaGD9BssevaOUZNXw0.jpg"
+      },
+      {
+        "name": "Nathaniel Brimmer-Beller",
+        "character": "WHIH Reporter Albert Taft",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5FXkQjvYEFxS4FuHZZENMwVSGRW.jpg"
+      },
+      {
+        "name": "Mark Weinman",
+        "character": "Baxter Reporter #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2ayDjV3HaYsovWqcDkBySm06Wrt.jpg"
+      },
+      {
+        "name": "Lizzie Clarke",
+        "character": "Baxter Reporter #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vQW3JEJ6c0B9EDl8JeRgeAjE8OV.jpg"
+      },
+      {
+        "name": "Richard Summers-Calvert",
+        "character": "Baxter Reporter #3",
+        "profileUrl": null
+      },
+      {
+        "name": "Macaulay Cooper",
+        "character": "Hooligan",
+        "profileUrl": null
+      },
+      {
+        "name": "Ankur Bahl",
+        "character": "Pundit",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ywZK8HEbRdxoJEd8b0cijq1FLbn.jpg"
+      },
+      {
+        "name": "Edward Bennett",
+        "character": "Pundit",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jrCeR95ksxWzEuvwqS39t41pf77.jpg"
+      },
+      {
+        "name": "Krysten Peck",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Fintan Shevlin",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Louis Sparks",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Dana Myzer",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Iverson Yabut",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Russ Whismore",
+        "character": "Sue Speech Crowd",
+        "profileUrl": null
+      },
+      {
+        "name": "Patricia García Rodríguez",
+        "character": "Interpreter",
+        "profileUrl": null
+      },
+      {
+        "name": "Dede Ma",
+        "character": "Interpreter",
+        "profileUrl": null
+      },
+      {
+        "name": "Kasra Farahani",
+        "character": "Interpreter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6NdXEZVLjHCuMWBFg1rilpHI0sL.jpg"
+      },
+      {
+        "name": "Ortis Deley",
+        "character": "Lagos Family",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/n59Iys0uk63MQveDLYact4LJSdj.jpg"
+      },
+      {
+        "name": "Florence Odumosu",
+        "character": "Lagos Family",
+        "profileUrl": null
+      },
+      {
+        "name": "Ihla Omohegbe",
+        "character": "Lagos Family",
+        "profileUrl": null
+      },
+      {
+        "name": "Aamaya Oyedele",
+        "character": "Lagos Family",
+        "profileUrl": null
+      },
+      {
+        "name": "Isaiah Oyedele",
+        "character": "Lagos Family",
+        "profileUrl": null
+      },
+      {
+        "name": "Joseph Davidson",
+        "character": "New York Family",
+        "profileUrl": null
+      },
+      {
+        "name": "Cecilia Blair",
+        "character": "New York Family",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dcMtz3mS3iJQCcOjU8GGvKHE79W.jpg"
+      },
+      {
+        "name": "Dale Mathurin",
+        "character": "New York Apartment Father",
+        "profileUrl": null
+      },
+      {
+        "name": "Iliana Norris",
+        "character": "Shalla-Bal's Daughter",
+        "profileUrl": null
+      },
+      {
+        "name": "Vienna Norris",
+        "character": "Shalla-Bal's Daughter",
+        "profileUrl": null
+      },
+      {
+        "name": "Ecow Smith-Asante",
+        "character": "Ghanian Anchor",
+        "profileUrl": null
+      },
+      {
+        "name": "Simon Thorp",
+        "character": "Australian Anchor",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6rrcqHppJQhaGrrrgWYoRAk36jm.jpg"
+      },
+      {
+        "name": "Kiff VandenHeuvel",
+        "character": "Newscaster",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5vf1cIWjqH3xgbHWPhyIIEKDgdN.jpg"
+      },
+      {
+        "name": "קוריי בורטון",
+        "character": "Ted Gilbert Announcer (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wcpFwdL7m01cZoBJiUSMQVakK2G.jpg"
+      },
+      {
+        "name": "Cheyenne Dasri",
+        "character": "Sally the Makeup Artist",
+        "profileUrl": null
+      },
+      {
+        "name": "Eric Stroud",
+        "character": "Stagehand",
+        "profileUrl": null
+      },
+      {
+        "name": "John Schwab",
+        "character": "The Thing Acting Double",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kGk7a436cznoZNeRdzigItdYQKl.jpg"
+      },
+      {
+        "name": "Jack Parker",
+        "character": "H.E.R.B.I.E. Puppeteer",
+        "profileUrl": null
+      },
+      {
+        "name": "Sarah Mardel",
+        "character": "H.E.R.B.I.E. Puppeteer",
+        "profileUrl": null
+      },
+      {
+        "name": "Arina Ii",
+        "character": "H.E.R.B.I.E. Puppeteer",
+        "profileUrl": null
+      },
+      {
+        "name": "Alex J Sturman",
+        "character": "Ted Gilbert Show Dancer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6nx2QvE8Qf0JguMCbSNERhfJmoP.jpg"
+      },
+      {
+        "name": "Grace Durkin",
+        "character": "Ted Gilbert Show Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Nahum McLean",
+        "character": "Ted Gilbert Show Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "Redmand Rance",
+        "character": "Ted Gilbert Show Dancer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eJehylAGbMfyl2TNjOkdk4z9qxr.jpg"
+      },
+      {
+        "name": "Savannah Ffrench",
+        "character": "Ted Gilbert Show Dancer",
+        "profileUrl": null
+      },
+      {
+        "name": "רוברט דאוני ג'וניור",
+        "character": "Victor von Doom / Doctor Doom (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5qHNjhtjMD4YWH3UP0rm4tKwxCL.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1038392,
+    "title": "לזמן את הרוע 4: הפרק האחרון",
+    "releaseDate": "2025-09-03",
+    "genres": [
+      27
+    ],
+    "overview": "\"לזמן את הרוע: הפרק האחרון\" ממשיך את יקום האימה האייקוני ומחזיר את פטריק וילסון וורה פרמיגה לנעליהם של חוקרי העל טבעי, אד ולוריין וורן, בהרפתקה מצמררת במיוחד.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/X1BsFk45MDjEeO4v8jSof5AyRN.jpg",
+    "popularity": 132.1021,
+    "rating": 6.997,
+    "cast": [
+      {
+        "name": "ורה פרמיגה",
+        "character": "Lorraine Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5Vs7huBmTKftwlsc2BPAntyaQYj.jpg"
+      },
+      {
+        "name": "פטריק וילסון",
+        "character": "Ed Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oym6H2QD9esk4yABjCHaUoNAOa8.jpg"
+      },
+      {
+        "name": "Mia Tomlinson",
+        "character": "Judy Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9OoCftD6TAImFAUnvSC445toavW.jpg"
+      },
+      {
+        "name": "Ben Hardy",
+        "character": "Tony Spera",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/s8UEIomgY5AaEmPHkcPAScp68Fw.jpg"
+      },
+      {
+        "name": "Rebecca Calder",
+        "character": "Janet Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/A43USnarLnfWXDvWimT24cPVfEm.jpg"
+      },
+      {
+        "name": "Tilly Walker",
+        "character": "Carin Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/u0nMsP0WuWPqSwbEm1VH1PZqRQu.jpg"
+      },
+      {
+        "name": "Elliot Cowan",
+        "character": "Jack Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zxewsfDGYuCqV7gsZjMQct6BXMJ.jpg"
+      },
+      {
+        "name": "Shannon Kook",
+        "character": "Drew Thomas",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gBJmrtY2fBFfkQRfosLv2MNWx2J.jpg"
+      },
+      {
+        "name": "סטיב קולטר",
+        "character": "Father Gordon",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ng01ren9pCYPIsIwRqC1xHzD5IG.jpg"
+      },
+      {
+        "name": "Kíla Lord Cassidy",
+        "character": "Heather Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7vUPASAuPkgfXzS9DQhOo9uTLJc.jpg"
+      },
+      {
+        "name": "Beau Gadsdon",
+        "character": "Dawn Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bAM9QcpAvlXxhjSFCPfWz2SX4Fh.jpg"
+      },
+      {
+        "name": "Molly Cartwright",
+        "character": "Shannon Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sOFf57RrJmbknX7wZhIbSnp5gac.jpg"
+      },
+      {
+        "name": "Leigh Jones",
+        "character": "Abner",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qelAC52aPC2DtvSIUGRoGifUNRk.jpg"
+      },
+      {
+        "name": "John Brotherton",
+        "character": "Brad Hamilton",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9LX6rRtiCjkTMT30PJh1dg1jx56.jpg"
+      },
+      {
+        "name": "פיטר וייט",
+        "character": "Grandpa Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wE77RhCuPoE45LrqEfZuAg0KIIp.jpg"
+      },
+      {
+        "name": "Kate Fahy",
+        "character": "Grandma Smurl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/66yNJtngMwfhXFY8R0q9cMGFWg2.jpg"
+      },
+      {
+        "name": "Orion Smith",
+        "character": "Young Ed Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jliOoVAWHrcIVR47w9afcTiCQf6.jpg"
+      },
+      {
+        "name": "Madison Lawlor",
+        "character": "Young Lorraine Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sXeIgJQ590hLYgnu5z6NO3sKsYw.jpg"
+      },
+      {
+        "name": "Emmy Nolan",
+        "character": "Young Judy Warren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jYOHLmz7Q5R9heZzqq4znxOLut9.jpg"
+      },
+      {
+        "name": "Guy Oliver-Watts",
+        "character": "Doctor",
+        "profileUrl": null
+      },
+      {
+        "name": "Tomas Bennett",
+        "character": "Lecture Attendee #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Ingrid Bisu",
+        "character": "Wedding Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/q7C8VKaQMOgilncOc2gf1oMGBKE.jpg"
+      },
+      {
+        "name": "Michael Clear",
+        "character": "Wedding Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8RftlJWKL5ktLGDHADoAciZGNdP.jpg"
+      },
+      {
+        "name": "Natalia Safran",
+        "character": "Wedding Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3luVtifpeQvF54jEf6NbK2Oz0dE.jpg"
+      },
+      {
+        "name": "לילי טיילור",
+        "character": "Caroline Perron",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vWcMUi3QyvCr3QuFbjtwyPx7WtU.jpg"
+      },
+      {
+        "name": "Mackenzie Foy",
+        "character": "Cindy Perron",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wzH60SrqWp2XMkBfLgdBhx5EJ82.jpg"
+      },
+      {
+        "name": "פרנסס אוקונור",
+        "character": "Peggy Hodgson",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tWGMS7DciV43tlxA6UEc2UqxrhL.jpg"
+      },
+      {
+        "name": "Madison Wolfe",
+        "character": "Janet Hodgson",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ir4dNcm1mmTuK4knqT8XivkwJPo.jpg"
+      },
+      {
+        "name": "Julian Hilliard",
+        "character": "David Glatzel",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lp1IJliBZb9OFP5KK09HjSGOsau.jpg"
+      },
+      {
+        "name": "ג'יימס וואן",
+        "character": "Wedding Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bNJccMIKzCtYnndcOKniSKCzo5Y.jpg"
+      },
+      {
+        "name": "Tony Spera",
+        "character": "Party Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/r2VrHSz8PBD9yShYaLANgccVM5F.jpg"
+      },
+      {
+        "name": "Judy Warren",
+        "character": "Party Guest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xH7QsF8NMnbVDn4B4C41G6vDV1Q.jpg"
+      },
+      {
+        "name": "Ed Warren",
+        "character": "Self (archive footage)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5GlgF1UbfmWwfk6A3bVQINWFbu1.jpg"
+      },
+      {
+        "name": "Lorraine Warren",
+        "character": "Self (archive footage)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tz4MjdJNJC0S4oHAsGT0rMUmIL9.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1305717,
+    "title": "אזור צייד",
+    "releaseDate": "2025-05-16",
+    "genres": [
+      28,
+      53
+    ],
+    "overview": "נואשת למצוא מחסה לילדיה, קלואי מרבינו בורחת מבעלה הקשור למאפיה ומוצאת מקלט בבקתה מבודדת עם נווד מתבודד בשם ג'ייק. אך כשאנשיו של בעלה מתקרבים אליה, מתברר שג'ייק הוא האויב המסוכן מכולם.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/cgZjpqRQt9sk6XMCwZ3B1NPAaoy.jpg",
+    "popularity": 113.9509,
+    "rating": 6.7,
+    "cast": [
+      {
+        "name": "Emily Alatalo",
+        "character": "Chloe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/u9Ir0RZ9czYik7luqZ8cn4YRs9Z.jpg"
+      },
+      {
+        "name": "Tim Rozon",
+        "character": "Jake",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/i43AGRDzYoMPqhTyRKL96H3PSxx.jpg"
+      },
+      {
+        "name": "Patrick Garrow",
+        "character": "Mick",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gWu8E3zYnwBVa5zTZzQP3JO1uLI.jpg"
+      },
+      {
+        "name": "Jon McLaren",
+        "character": "Vincent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qqwkwlLaXcevLJdscwrnTNn8ROx.jpg"
+      },
+      {
+        "name": "Milton Barnes",
+        "character": "Zach",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qCP3CVoEQmLopSHuHLOUooP1RDY.jpg"
+      },
+      {
+        "name": "Mikaël Conde",
+        "character": "Carl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zjg10lLfFsKxi8MWVokUBtMxgWg.jpg"
+      },
+      {
+        "name": "Greg Bryk",
+        "character": "Donny",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1I3SxKFvQSam6KOMT4j5f0nFxRg.jpg"
+      },
+      {
+        "name": "Eman Ayaz",
+        "character": "Ocean",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9OGuopTnmxUxvS1NBz3fet1hL4r.jpg"
+      },
+      {
+        "name": "Khalid Karim",
+        "character": "Sam",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hbITlhVxW8Vu6b0ohkyk53MY6lo.jpg"
+      },
+      {
+        "name": "Alex Jade",
+        "character": "Rosetta",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b4475ZB4wTOA55DH3ArQvZXH6VU.jpg"
+      },
+      {
+        "name": "Simona Severino",
+        "character": "Mia",
+        "profileUrl": null
+      },
+      {
+        "name": "Ryan Bainbridge",
+        "character": "Lance",
+        "profileUrl": null
+      },
+      {
+        "name": "Nathaniel Wainman",
+        "character": "John",
+        "profileUrl": null
+      },
+      {
+        "name": "Russell Yuen",
+        "character": "Harold",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yFYpcN2YxJLCFr9p7kaOwunN1Cb.jpg"
+      },
+      {
+        "name": "David MacInnis",
+        "character": "Nicky",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sIqdonn5NvUvJoWQbTWO7NDCgE3.jpg"
+      }
+    ]
+  },
+  {
+    "id": 861451,
+    "title": "Martin",
+    "releaseDate": "2024-10-11",
+    "genres": [
+      28,
+      18,
+      53
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/rmCJCFrEwPC0u0Y1smihwDo4Cf1.jpg",
+    "popularity": 101.3117,
+    "rating": 3.5,
+    "cast": [
+      {
+        "name": "Dhruva Sarja",
+        "character": "Martin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eGRgr3Ek4iCGpzInpjV5DKbEjEH.jpg"
+      },
+      {
+        "name": "Vaibhavi Shandilya",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jVWMGmmOhRfwW4dvCBrkIFoKp6G.jpg"
+      },
+      {
+        "name": "Anveshi Jain",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7l2h5QyFc0dloUTlsIOPoSHz1ZM.jpg"
+      },
+      {
+        "name": "Giorgia Andriani",
+        "character": "Dance Cameo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2NF0vzA8hUDTUu09agvhnboJnys.jpg"
+      },
+      {
+        "name": "Chikkanna",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/v4QpNWbElJtYrS9yUVXLgpYT7iE.jpg"
+      },
+      {
+        "name": "Malavika Avinash",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1D3J1HIRP4gm0bYzrOdF2AmreV5.jpg"
+      },
+      {
+        "name": "Achyuth Kumar",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zO1MoCgaz0RxILjga8VYXguROMp.jpg"
+      },
+      {
+        "name": "Nikitin Dheer",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gAHNWVtStTGsqf2uxCegxvn6ILe.jpg"
+      },
+      {
+        "name": "Nawab Shah",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mx168p9eqjrGyaAc3TM6viLIG4L.jpg"
+      },
+      {
+        "name": "Rohit Pathak",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/j2tcAbQxjtErT6gtnWgmh2VQdUt.jpg"
+      },
+      {
+        "name": "Rubiel Mosquera",
+        "character": "Fighter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/buHLmPLDcFoX9eapAsNgx8evrNk.jpg"
+      },
+      {
+        "name": "נתן ג'ונס",
+        "character": "Fighter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hlu4qYy9JGPxGn0wT8Ea6mTWR8R.jpg"
+      },
+      {
+        "name": "Sriram Reddy Polasane",
+        "character": "Surgeon",
+        "profileUrl": null
+      },
+      {
+        "name": "Girija Lokesh",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gZVLWoTo8GVjf5QDCw2vweTBMRR.jpg"
+      },
+      {
+        "name": "Sadhu Kokila",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wy1kpfqGoxja5469Ft4HZoU2QHw.jpg"
+      },
+      {
+        "name": "Sukrutha Wagle",
+        "character": "Shabnam",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/c5rn9f6LSC44Z8OUuBGidqX720t.jpg"
+      },
+      {
+        "name": "Akshay Punse",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Aarash Shah",
+        "character": "Fighter",
+        "profileUrl": null
+      },
+      {
+        "name": "Prathap Narayan",
+        "character": "Vivek",
+        "profileUrl": null
+      },
+      {
+        "name": "Vajrang Shetty",
+        "character": "Munna",
+        "profileUrl": null
+      },
+      {
+        "name": "Daniel Caltagirone",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2LUz4M9PVRxMePqJ74hP05Wdwi3.jpg"
+      },
+      {
+        "name": "Vinay Gowda",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Kavya Shastri",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "MK Matta",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Sidlingu Sridhar",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Sandeep Neenasam",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Telina Mahima",
+        "character": "",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1373276,
+    "title": "Eran brujas",
+    "releaseDate": "2025-09-08",
+    "genres": [
+      27
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/85rlLCjpHbY0puR1FSL7jYyN1cu.jpg",
+    "popularity": 105.1861,
+    "rating": 3,
+    "cast": [
+      {
+        "name": "Tania Niebla",
+        "character": "Mia",
+        "profileUrl": null
+      },
+      {
+        "name": "Karina Lechuga",
+        "character": "Sara",
+        "profileUrl": null
+      },
+      {
+        "name": "Sebastián Ladrón de Guevara",
+        "character": "Mikel",
+        "profileUrl": null
+      },
+      {
+        "name": "Daniela Porras",
+        "character": "Luna",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5AaqWR12nisOOw37FGAu3n5OAb8.jpg"
+      },
+      {
+        "name": "Micho Camacho",
+        "character": "Fabian",
+        "profileUrl": null
+      },
+      {
+        "name": "José Salof",
+        "character": "Nico",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uRnJsszbqevYiZeoaJRvWLdQItS.jpg"
+      },
+      {
+        "name": "Renée Venencie",
+        "character": "Nadia",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1280450,
+    "title": "נערה חטופה",
+    "releaseDate": "2025-09-04",
+    "genres": [
+      53,
+      28,
+      12
+    ],
+    "overview": "אישה אמריקאית יוצאת למסע חיפוש בלתי-נלאה שנמשך יותר מעשר שנים, במטרה לאתר את בתה הקטנה שנחטפה על ידי אביה ונלקחה למזרח התיכון.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/fZlNXEHZsBp7unqw009MeBbMv87.jpg",
+    "popularity": 97.4408,
+    "rating": 6.667,
+    "cast": [
+      {
+        "name": "קייט בקינסייל",
+        "character": "Maureen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nUZuC2chd5PVw2tLxePZ6uaLbhx.jpg"
+      },
+      {
+        "name": "סקוט איסטווד",
+        "character": "Robeson",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tKJEy1bFNxvIj7sivsB7Us2ThmY.jpg"
+      },
+      {
+        "name": "Jordan Duvigneau",
+        "character": "Carl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/radXw5TVvfcKLRptZTKewHXshdz.jpg"
+      },
+      {
+        "name": "Matt Craven",
+        "character": "Joe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tWF8B3Dj7zvKRmkTplp7ice6Wo9.jpg"
+      },
+      {
+        "name": "Nowar Yusuf",
+        "character": "Dasia",
+        "profileUrl": null
+      },
+      {
+        "name": "Arvin Kananian",
+        "character": "Karim",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hcjxh1ouEnWgDGiiW7ihcEXE8ba.jpg"
+      },
+      {
+        "name": "Robert Farrior",
+        "character": "Lewis",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/e6oe7eswcUTYfeq2otaIgAtfzor.jpg"
+      },
+      {
+        "name": "Alejandra Howard",
+        "character": "Amina (11)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uQyvQlzqsBCe7t0SuLF6zYtRtCd.jpg"
+      },
+      {
+        "name": "Yasmine Bouabid",
+        "character": "Isra",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/se6ekKmcLZEWrGhpk0XobwUTVu2.jpg"
+      },
+      {
+        "name": "Maria Laila Fernandez",
+        "character": "Maya",
+        "profileUrl": null
+      },
+      {
+        "name": "Zeljko Matovina",
+        "character": "Jd’s Father",
+        "profileUrl": null
+      },
+      {
+        "name": "Maria Georgette Saliba",
+        "character": "Grandmother",
+        "profileUrl": null
+      },
+      {
+        "name": "Giovanni Cadoni",
+        "character": "Security Guard Albania",
+        "profileUrl": null
+      },
+      {
+        "name": "Antonio Fasano",
+        "character": "Amina’s Grandfather",
+        "profileUrl": null
+      },
+      {
+        "name": "Ana Golja",
+        "character": "Nora",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nAbK9EeAXXzlbABwBeVTBzEQPPE.jpg"
+      },
+      {
+        "name": "Craig Peritz",
+        "character": "Detective 1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cTLl8FX2msgR2z1Kd445QA8PBCn.jpg"
+      },
+      {
+        "name": "Paten Hughes",
+        "character": "Detective 2",
+        "profileUrl": null
+      },
+      {
+        "name": "Linda Hand",
+        "character": "Receptionist",
+        "profileUrl": null
+      },
+      {
+        "name": "Giulia Bartoli",
+        "character": "Petra",
+        "profileUrl": null
+      },
+      {
+        "name": "Talia Asseraf",
+        "character": "Natalie",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qO9bluzeNVtHqVeF5x8vc7QxfPP.jpg"
+      }
+    ]
+  },
+  {
+    "id": 803796,
+    "title": "ציידות השדים של הקיי פופ",
+    "releaseDate": "2025-06-20",
+    "genres": [
+      14,
+      10402,
+      35,
+      16
+    ],
+    "overview": "אלילות הקיי‑פופ רומי, מירה וזואי ממלאות אולמות – ועל הדרך גם משתמשות בכוחותיהן הסודיים כדי להגן על המעריצים מפני סכנות על‑טבעיות.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/sIqLazIN2hrqemBgekJH7CgvP89.jpg",
+    "popularity": 96.4117,
+    "rating": 8.229,
+    "cast": [
+      {
+        "name": "ארדן צ'ו",
+        "character": "Rumi (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uPtfAFoEYeNGRl6n0GdxLPxdM9u.jpg"
+      },
+      {
+        "name": "May Hong",
+        "character": "Mira (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hnWIn2hxnJt16j0rDTiqdbG5LQo.jpg"
+      },
+      {
+        "name": "Ji-young Yoo",
+        "character": "Zoey (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4jgtqpNWhMx8XOKQ9qQJvDdzbxG.jpg"
+      },
+      {
+        "name": "안효섭",
+        "character": "Jinu (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ynu1x6RQnpKvsOLTvB2WhDo26D9.jpg"
+      },
+      {
+        "name": "יונג'ין קים",
+        "character": "Celine (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xS7eco56mUiZGJGWDZ0pwzrUAei.jpg"
+      },
+      {
+        "name": "קן ג'ונג",
+        "character": "Bobby (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dfuDZ2m2A8nBb0TdyeqmlPOobJA.jpg"
+      },
+      {
+        "name": "이병헌",
+        "character": "Gwi-Ma (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/j7SUd9Qi8iOxgrQGb3nQyEYcXur.jpg"
+      },
+      {
+        "name": "דניאל דיי קים",
+        "character": "Healer Han / Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/AtKRWsC4UhEjzorWlL2eguzZ9XM.jpg"
+      },
+      {
+        "name": "ג'ואל קים בוסטר",
+        "character": "Variety Show Host 1 / Idol Host / Romance Saja (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gKJHnWnnEoN85aC9UzAlg7XFnSG.jpg"
+      },
+      {
+        "name": "ליזה קושי",
+        "character": "Host (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pPu4TYkuNGmPEykWzFwCz55pAWB.jpg"
+      },
+      {
+        "name": "Alan Lee",
+        "character": "Pilot Demon / Variety Show Host 2 / Mystery Saja (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zybJn5XVGO0P4ckztuMdGSdpK4O.jpg"
+      },
+      {
+        "name": "Rumi Oak",
+        "character": "Young Rumi / Young Fan (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "SungWon Cho",
+        "character": "Abs Saja / Bathhouse Patron / Social Media Fan (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jh5Au9smnPwfLoPNrcJ2VsJnbhU.jpg"
+      },
+      {
+        "name": "Maggie Kang",
+        "character": "Flight Attendant Demon / Crying Demon / Newscaster (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8OU7VfVMY7tfxUVFiBuy0zY9V3t.jpg"
+      },
+      {
+        "name": "Nathan Schauf",
+        "character": "Tattoo Fan / Security Guard(voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Charlene Ramos",
+        "character": "Fan Girl (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Kira Tamagawa",
+        "character": "Fan Girl (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "EJAE",
+        "character": "Rumi (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/60EMOECdOTLK3K06yQpphosKpu9.jpg"
+      },
+      {
+        "name": "Audrey Nuna",
+        "character": "Mira (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cr1vqIoqoqpiHRkuioQVrj5D3Ay.jpg"
+      },
+      {
+        "name": "Rei Ami",
+        "character": "Zoey (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dff0HoG4igDLiSXBdxidVIseLzi.jpg"
+      },
+      {
+        "name": "Andrew Choi",
+        "character": "Jinu (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kNQkWiEHrm4AN41NpacFosLQekI.jpg"
+      },
+      {
+        "name": "Danny Chung",
+        "character": "Baby Saja (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wjNiSSjw4HV9gsPzMxtReMvLFcO.jpg"
+      },
+      {
+        "name": "케빈",
+        "character": "Mystery Saja (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/88hRos3xJhGqGYVWOLOcYVeu2li.jpg"
+      },
+      {
+        "name": "samUIL Lee",
+        "character": "Romance Saja (Original Songs Performance) (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Neckwav",
+        "character": "Abs Saja (Original Songs Performance) (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Lea Salonga",
+        "character": "Celine (Original Songs Performance) (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nK9DqbXGPVnaET6I6u0IHL89DjP.jpg"
+      },
+      {
+        "name": "Cori Baik",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Jennifer Sun Bell",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/thiVEpJMCRY35LDqtfs90ZrgTnA.jpg"
+      },
+      {
+        "name": "John Eric Bentley",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2r2ybtn1qDCl3JlKFYklODelvW8.jpg"
+      },
+      {
+        "name": "Ranjani Brow",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zvhcwnrvDpa4iZGgdKgQ8GWdYJI.jpg"
+      },
+      {
+        "name": "Esther K. Chae",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eEh8ZMla9vOzGcGCt4D0BqoPIz8.jpg"
+      },
+      {
+        "name": "Claudia Choi",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/BFzjnrPVJHtnMzerum18Lp8Foo.jpg"
+      },
+      {
+        "name": "Alexandra Bokyun Chun",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eNgfe3wBJpj5ZFW42J9cCohruPx.jpg"
+      },
+      {
+        "name": "Eddie Frierson",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sBU1xhSxlnStueCWFD8x8fIRnYD.jpg"
+      },
+      {
+        "name": "Jonathon Ha",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Josh Han",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Jason Her",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Chase Kim",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qBCL3znRI2OMwfhDEAzU9InKzAx.jpg"
+      },
+      {
+        "name": "Monique Kim",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zCxhFWY6PsAeyt0Yu2iCCBy2cmT.jpg"
+      },
+      {
+        "name": "Yong Kim",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "James Kyson",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jpV8eFgigwHbhyEL9eZ4czbgMoy.jpg"
+      },
+      {
+        "name": "Ashley Lambert",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ucsdNz1pdVWwRFwf4dtjfaXE8nR.jpg"
+      },
+      {
+        "name": "Judy Alice Lee",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2NOl1s40NkgpHJ6WKcIMIgH8fEU.jpg"
+      },
+      {
+        "name": "Josiah D. Lee",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uHoh8DgzseNJWLpwqdIsGc15OG1.jpg"
+      },
+      {
+        "name": "Megan Lee",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "פיוטר מייקל",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/r9ddS7WpHoLLb0KMEeRE3QSECnW.jpg"
+      },
+      {
+        "name": "Andrew Morgado",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rDkWTPcsFtw5MQCi1qxSXXZlXG2.jpg"
+      },
+      {
+        "name": "Clarissa Park",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Cathy Shim",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ydWqpO2ZqOfynb9r8nLsKIEhdtP.jpg"
+      },
+      {
+        "name": "Yong Yea",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mZX1dsTJBtiSE5LMCGAdq94UZsP.jpg"
+      },
+      {
+        "name": "Eugene Young",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/huyeokrJXwgPyroMqWCtnD9gMNo.jpg"
+      },
+      {
+        "name": "Johnny Young",
+        "character": "Additional Voices (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2YpFlmT4cM9gY5GmlZSpaU0Rvx8.jpg"
+      },
+      {
+        "name": "채영",
+        "character": "Self (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3oZcRnI0CGdHB0ZgVAMJTE7g3ig.jpg"
+      },
+      {
+        "name": "정연",
+        "character": "Self (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rJDDjUO2uOBX5OygFnSrnivLL5q.jpg"
+      },
+      {
+        "name": "지효",
+        "character": "Self (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/50xrC5pnYU6E6uSonOa8hIy2rH7.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1284120,
+    "title": "האחות המכוערת",
+    "releaseDate": "2025-03-07",
+    "genres": [
+      27,
+      35,
+      14,
+      18
+    ],
+    "overview": "אלווירה היא צעירה ענייה וחולמנית, שלא מוכנה להסתפק במה שהטבע נתן לה. נחושה לכבוש את לבו של הנסיך בנשף המלכותי, היא נוקטת באמצעים קיצוניים כדי להשיג את מה שלדעתה מגיע לה, כשהמכשול היחידי שעומד בדרכה היא אחותה החורגת היפיפיה. האם אלווירה תצליח לשנות את גורלה?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/zXzY6uz54IWWwiLGmyQz5P4Tcl6.jpg",
+    "popularity": 85.6565,
+    "rating": 7.332,
+    "cast": [
+      {
+        "name": "Lea Mathilde Skar-Myren",
+        "character": "Elvira",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/87JjXfxo773nv2l8yravc9NFr5J.jpg"
+      },
+      {
+        "name": "Ane Dahl Torp",
+        "character": "Rebekka",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/t3hvq05o8oz9qJSI3KelxSkGXXO.jpg"
+      },
+      {
+        "name": "Thea Sofie Loch Næss",
+        "character": "Agnes",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fzd0RI8Vnsw1LoG81YthvdnaeJD.jpg"
+      },
+      {
+        "name": "Flo Fagerli",
+        "character": "Alma",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yem43JCCG9xpjTT1IuosGtmZVNA.jpg"
+      },
+      {
+        "name": "Isac Calmroth",
+        "character": "Prince Julian",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/doyeUwvMsSkNuNzak9kBt26fNuP.jpg"
+      },
+      {
+        "name": "מלטה גורדינייר",
+        "character": "Isak",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vDtILRvipBzF2bVqZBiqMQ1HehP.jpg"
+      },
+      {
+        "name": "Ralph Carlsson",
+        "character": "Otto",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iTvT8uyyVrWbyczhSGRYHeOmb9Z.jpg"
+      },
+      {
+        "name": "Cecilia Forss",
+        "character": "Sophie von Kronenberg",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mutGaRS2YbySqxyUvGQNYWLeJKX.jpg"
+      },
+      {
+        "name": "Katarzyna Herman",
+        "character": "Madam Vanja",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yD23VXf4IGH89jSBrOfJYY4Q7GW.jpg"
+      },
+      {
+        "name": "Adam Lundgren",
+        "character": "Dr. Esthétique",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hB62780sPK5HpHBylShEsrtfIh1.jpg"
+      },
+      {
+        "name": "Willy Ramnek Petri",
+        "character": "Frederik von Bluckfish",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wxBH04VtvbWt2mB2O9kz5E7f0oV.jpg"
+      },
+      {
+        "name": "Kyrre Hellum",
+        "character": "Jan",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pFhPPKfngoI6D08aUm5c8dKgV7h.jpg"
+      },
+      {
+        "name": "Isac Aspberg",
+        "character": "Finsmakeren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eL16agzse7z78mMzGpJSNb7yDkK.jpg"
+      },
+      {
+        "name": "Albin Weidenbladh",
+        "character": "Alteteren",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/y3jUFUHgc8DVYlWgcw2TONcGHE4.jpg"
+      },
+      {
+        "name": "Oksana Czerkasyna",
+        "character": "Kokk",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/y2bmkGPKRnonXIClDxH8ew69dlz.jpg"
+      },
+      {
+        "name": "Richard Forsgren",
+        "character": "Hovmester",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aoZ4qgn6LaMwZRnGfWngN3rlugP.jpg"
+      },
+      {
+        "name": "Paweł Janyst",
+        "character": "Bankmann",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3I6wbyBPvX40taQWjS7KghvZ7NG.jpg"
+      },
+      {
+        "name": "Piotr Czarnecki",
+        "character": "Grensevankt",
+        "profileUrl": null
+      },
+      {
+        "name": "Agnieszka Żulewska",
+        "character": "Agnes's Mother",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4rvcJMkl1Test5C6DFFpqJY2CrJ.jpg"
+      },
+      {
+        "name": "Staffan Kolhammar",
+        "character": "Budbringer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/srGgXVoyQZ42vrcXuCymcteUy9V.jpg"
+      },
+      {
+        "name": "Philip Lenkowsky",
+        "character": "Baron Von Bluckfish",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1XXxBOgGrtRyUQahEb0CjTQBv0x.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1072699,
+    "title": "פוריוזה 2",
+    "releaseDate": "2025-10-14",
+    "genres": [
+      28,
+      80,
+      53
+    ],
+    "overview": "אחרי הרצח, המנהיג החדש של פוריוזה תובע לעצמו את השליטה בכנופיית הפורעים האימתנית ונושא את עיניו אל מעבר לגבול.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/yOLnV1lM3NuMsgYwIhz454fQRgt.jpg",
+    "popularity": 77.9799,
+    "rating": 6.549,
+    "cast": [
+      {
+        "name": "Mateusz Damięcki",
+        "character": "'Golden'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bJTVPMPVpYts0g5klIiCgttMWWj.jpg"
+      },
+      {
+        "name": "Szymon Bobrowski",
+        "character": "Marcin 'Mrówka' Mrówczyński",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tqtEbh3LZL2MTBOpmDQTwP8JLFq.jpg"
+      },
+      {
+        "name": "Pola Gonciarz",
+        "character": "Eli",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/g7KXyzwxPtkkyB3zoWDgOsNNgUa.jpg"
+      },
+      {
+        "name": "Weronika Książkiewicz-Nathaniel",
+        "character": "Ewa 'Dzika' Drzewiecka",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ltNynTRFPGfSZOwStrowGOmfRTq.jpg"
+      },
+      {
+        "name": "Łukasz Simlat",
+        "character": "Jacek Bauer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/m1CH1TFVkSfHmwzZcZNtoa1GXzG.jpg"
+      },
+      {
+        "name": "Mateusz Banasiuk",
+        "character": "Dawid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/htagP1QvjTuSEeenZp1P04vwNzk.jpg"
+      },
+      {
+        "name": "Cezary Łukaszewicz",
+        "character": "'Krzywy'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8ASklhZgDAllY4iWqhfRMaRuipz.jpg"
+      },
+      {
+        "name": "וויצ'ך זיילנסקי",
+        "character": "'Kaszub'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yt48QlTQm123yfk2y4R20d8r4ay.jpg"
+      },
+      {
+        "name": "Konrad Eleryk",
+        "character": "'Olo'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/q1pfFnOYGUysIpFES0MHrVnDe7S.jpg"
+      },
+      {
+        "name": "Paulina Gałązka",
+        "character": "'Mimi'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/diQYiFu59qhDrLNmt5F0aYNTeK.jpg"
+      },
+      {
+        "name": "Sebastian Stankiewicz",
+        "character": "'Buła'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hLN0Ca09KwQOFLZLPIEzgTIbqqg.jpg"
+      },
+      {
+        "name": "Janusz Chabior",
+        "character": "Andrzej Polański",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2FqjGdNKEiAFpfn8GbZQVV9Vg9R.jpg"
+      },
+      {
+        "name": "Małgorzata Pieczyńska",
+        "character": "Mother of 'Golden'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b8TOorlOlomLiDZqgvbc6p1vkZW.jpg"
+      },
+      {
+        "name": "Sylwia Juszczak-Krawczyk",
+        "character": "Kamila",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7jm7i5uYKNNdABSnqU4xrwITArT.jpg"
+      },
+      {
+        "name": "Orinka Olencka",
+        "character": "Zuzia",
+        "profileUrl": null
+      },
+      {
+        "name": "Kacper Sasin",
+        "character": "'Messi'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jk4Ua1MEoKYcMxaSKhHs0KGMxUR.jpg"
+      },
+      {
+        "name": "Maciej Wizner",
+        "character": "'Figo'",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Witkowski",
+        "character": "'Beckham'",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wOc1zX0nlfuZaZasX0Bb9Lq90IJ.jpg"
+      },
+      {
+        "name": "Mateusz Łasowski",
+        "character": "'Carlos'",
+        "profileUrl": null
+      },
+      {
+        "name": "Liam Carney",
+        "character": "Shane",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ylXqOxfNMPFXSJQJ3BOrGho2rHp.jpg"
+      },
+      {
+        "name": "Donal Brophy",
+        "character": "Brian",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tY4KPkCP9s5yCGhkFpIWQeox3gH.jpg"
+      },
+      {
+        "name": "Dominic Knight",
+        "character": "Jimmy",
+        "profileUrl": null
+      },
+      {
+        "name": "Дмитрий Мальков",
+        "character": "Dima",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iFH3n8INVU9uoGb2tr5f8AP9nij.jpg"
+      },
+      {
+        "name": "Hanna Novak",
+        "character": "Irina",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xUYGV5fiJIPepzozvGWMZa5Z7rz.jpg"
+      },
+      {
+        "name": "Jarosław Stachera",
+        "character": "'Jezusek'",
+        "profileUrl": null
+      },
+      {
+        "name": "Jan Napieralski",
+        "character": "'Zeta'",
+        "profileUrl": null
+      },
+      {
+        "name": "Wiktoria Kluska",
+        "character": "Madzia",
+        "profileUrl": null
+      },
+      {
+        "name": "Jessica Polak",
+        "character": "Szadzia",
+        "profileUrl": null
+      },
+      {
+        "name": "Michał Burdan",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Damian Majewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Tykhon Shevtsov",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Patryk Michalak",
+        "character": "Dariusz 'Daro' Drzewiecki",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iPqJwMXvBXqh67RBwBG8jP7dBxg.jpg"
+      },
+      {
+        "name": "Daniel Szczypa",
+        "character": "Car Dealer",
+        "profileUrl": null
+      },
+      {
+        "name": "Wojciech Urbański",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cxCqKISVIerkTqKMK72pwfVi92I.jpg"
+      },
+      {
+        "name": "Krzysztof Pyziak",
+        "character": "Security Guard",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dmTyMjOEziWAGtDiywLKA7eCN6c.jpg"
+      },
+      {
+        "name": "Mariusz Ostrowski",
+        "character": "Policeman from Traffic Department",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cAhKMI7RxqSjbmief7DhiUC4CF3.jpg"
+      },
+      {
+        "name": "Katarzyna Żak",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gkJA0hhGh77x2NNYw1kZ0IG97FI.jpg"
+      },
+      {
+        "name": "Anna Bielecka",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Adam Graczyk",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9QKMbCA4bYecrauVjAWm3SaqNVM.jpg"
+      },
+      {
+        "name": "Piotr Orzechowski",
+        "character": "Piotr",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3t7xcVwz0UpOrkLTto9PTUxXSVu.jpg"
+      },
+      {
+        "name": "Miłosz Majchrzak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Cejnóg",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "David Materson",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Jacek Reda",
+        "character": "Technician #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Marek Gałęziowski",
+        "character": "Technician #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Mariusz Pawełek",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Weronika Dzierżyńska",
+        "character": "Waitress",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pIOrGLNGEA6mz1ztRYiOwXDhtTq.jpg"
+      },
+      {
+        "name": "Katarzyna Borodkina",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Magdalena Adamczyk",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Ilya Ivanov",
+        "character": "German Policeman",
+        "profileUrl": null
+      },
+      {
+        "name": "Michał Szulejewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Andrzej Kęsicki",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Grzegorz Strzeszewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Michael Veselý",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Natalia Szostak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Michał Nowak",
+        "character": "Policeman #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Bartłomiej Bilski",
+        "character": "Policeman #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Tomasz Mikołajewski",
+        "character": "Policeman #3",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xVBGuOKVLpg67TiZSyeSYBuWdz2.jpg"
+      },
+      {
+        "name": "Katarzyna Bogdańska",
+        "character": "Policewoman",
+        "profileUrl": null
+      },
+      {
+        "name": "Magdalena Spławska",
+        "character": "Girl in the Car",
+        "profileUrl": null
+      },
+      {
+        "name": "Patryk Dąbrowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Lidia Sadowa",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/f60N9aey1eHLPSj6L8y2FSJ0Ghm.jpg"
+      },
+      {
+        "name": "Paweł Adamczak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Maksymilian Michasiów",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wtg16Yxzzd3B3Yw1cI4in0SkEBl.jpg"
+      },
+      {
+        "name": "Łukasz Dedyński",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Nikola Zientarska",
+        "character": "Dancer #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Agata Kuczyńska",
+        "character": "Dancer #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Zuzanna Kamińska",
+        "character": "Dancer #3",
+        "profileUrl": null
+      },
+      {
+        "name": "Magda Groszek",
+        "character": "Dancer #4",
+        "profileUrl": null
+      },
+      {
+        "name": "Katarzyna Młynarczyk",
+        "character": "Dancer #5",
+        "profileUrl": null
+      },
+      {
+        "name": "Gabriel Piotrowski",
+        "character": "Dancer #6",
+        "profileUrl": null
+      },
+      {
+        "name": "Bartosz Dopytalski",
+        "character": "Dancer #7",
+        "profileUrl": null
+      },
+      {
+        "name": "Ernest Walczyński",
+        "character": "Delivery Man",
+        "profileUrl": null
+      },
+      {
+        "name": "Song Bai",
+        "character": "Chinese Restaurant Worker",
+        "profileUrl": null
+      },
+      {
+        "name": "Maciej Karczewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Maciej Miedzianowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Maksymilian Malesa",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Marta Stobnicka",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Stanisław Chmielewski",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rk92rah6hg1QXKnraa2mZEc2c4R.jpg"
+      },
+      {
+        "name": "Klaudia Wantanowska",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Natalia Kuc",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Karol Safianik",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Grzegorz Żaglewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Bąk",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gmBZPEn9Fu59Ov86XRWqZgqV4yK.jpg"
+      },
+      {
+        "name": "Grzegorz Kowalczyk",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cHuvjW0qL4ech7cRTaqgvNMd2qF.jpg"
+      },
+      {
+        "name": "Tomasz Przybysz",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Izabela Markiewicz",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Srebrowski",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/t83DEvLhoA704QyUZltRjDmz6JA.jpg"
+      },
+      {
+        "name": "Galvo Parker",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Łukasz Wójcik",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mYTyvbiWTCKa1lGqaegK4ZMIBop.jpg"
+      },
+      {
+        "name": "Angelika Smyrgała",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zNOC1fgxNMPK2J52Vy787DTgrOB.jpg"
+      },
+      {
+        "name": "Marcin Velinov",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Magdalena Perlińska",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jZFnTc4FH296UobCsD5AkF6MVgx.jpg"
+      },
+      {
+        "name": "Jan Sadowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Marta Bryła",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6GSXzxPzMe4AwNE5QiI9R61VUqr.jpg"
+      },
+      {
+        "name": "Dariusz Szymaniak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Ignacy Bobrowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Marek Michalak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Julia Narwojsz",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Wojciech Szafrański",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Jacek Jakubowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Rafał Rusiński",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Arkadiusz Jędraczka",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Michał Kubiak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Aleksander Grzymkowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Karol Remiszewski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Kacper Laszczyk",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Petlak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Piotr Dymek",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Michał Jeżak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Szymon Nowakowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Hoang Nghi Nguen",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Ngoc Diep Sławińska",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Julita Kozak",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Sebastian Dudek",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Rafał Kijańczuk",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/l6EM8OWNbyLzT1qnnw1Rz7hDIAM.jpg"
+      },
+      {
+        "name": "Ewa Tułacz",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Mariya Severilova",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Oksana Vodopyanova",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Paulina Szyłejko",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Marta Janek",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Tomasz Smokowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Sean Keany",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Shane McDaid",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Oisín Nolan",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4CVqqiNKvOnJjwYzuC7oH7FoXeK.jpg"
+      },
+      {
+        "name": "Jessica Cervi",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Volodymyr Makovskyi",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Oleksandr Solovniuk",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Caroline Cossy",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Bianca Glazebrook",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Wiktoria Dzika",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Mikołaj Stokowski",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Kalina Samborska",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Laura Samborska",
+        "character": "",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 338969,
+    "title": "טוקסיק אוונג'ר",
+    "releaseDate": "2025-08-28",
+    "genres": [
+      28,
+      35,
+      878
+    ],
+    "overview": "כשוינסטון גוס, מנקה כושל, נופל לתוך מיכל פסולת רעילה – הוא הופך לגיבור מסוג חדש: טוקסיק אוונג’ר. מול קהל משתולל הוא הופך ממנודה למציל ויוצא להילחם בפושעים ובתאגידים מושחתים המאיימים על בנו, על חבריו ועל העיר כולה. בעולם שבו אלימות ותאוות בצע שולטים – הצדק מוגש קר, עם תיבול רדיואקטיבי.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/p7kDlool6Y0a3KhvfLlkthFqr6Y.jpg",
+    "popularity": 75.9656,
+    "rating": 6.301,
+    "cast": [
+      {
+        "name": "פיטר דינקלג'",
+        "character": "Winston / Toxie, the Hero",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9CAd7wr8QZyIN0E7nm8v1B6WkGn.jpg"
+      },
+      {
+        "name": "ג'ייקוב טרמבלי",
+        "character": "Wade, the Kid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/h8CXDp86Y36CUENF4SXJq5ZRTsf.jpg"
+      },
+      {
+        "name": "טיילור פייג'",
+        "character": "J.J. Doherty, the Wild Card",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kCSH5Ihy22arcQFUBzSsMVnguBX.jpg"
+      },
+      {
+        "name": "ג'וליה דייוויס",
+        "character": "Kissy Sturnevan, his Associate",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wsUNCSKoNQTgSdlr9FIeIR6hRAd.jpg"
+      },
+      {
+        "name": "Jonny Coyne",
+        "character": "Thad Barkabus, the Big Boss",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6PSW0qaoY3KSnWUUv6f54NOuPC0.jpg"
+      },
+      {
+        "name": "אלייז'ה ווד",
+        "character": "Fritz Garbinger, his Creepy Brother",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7UKRbJBNG7mxBl2QQc5XsAh6F8B.jpg"
+      },
+      {
+        "name": "קווין בייקון",
+        "character": "Bob Garbinger, the Villain",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rjX2Oz3tCZMfSwOoIAyEhdtXnTE.jpg"
+      },
+      {
+        "name": "David Yow",
+        "character": "Guthrie Stockins, the Wise Hobo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rbL8wH5G8gBd93RjOcfcFLC3e2l.jpg"
+      },
+      {
+        "name": "שרה ניילס",
+        "character": "Mayor Togar",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ySelhnmCCX9VnlPvceO9c5XOelK.jpg"
+      },
+      {
+        "name": "שון דולי",
+        "character": "Mel Ferd, the Crusading Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uWiw28ARiLkvL6xUjKDLDlSsfkY.jpg"
+      },
+      {
+        "name": "Luisa Guerreiro",
+        "character": "Toxie, the Bod",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fXtfyWUwneLT5rn02lltjU4CLEh.jpg"
+      },
+      {
+        "name": "Annette Badland",
+        "character": "Daisy, the Shopkeeper",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6ZoUX6K4WI2MZrhXb21vU5Mtc6P.jpg"
+      },
+      {
+        "name": "Sunil Patel",
+        "character": "Dr. Walla, who means well",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rMU27StIa7FvpjyPMHXfZG2JaQo.jpg"
+      },
+      {
+        "name": "Margo Cargill",
+        "character": "Agent Sarah Weatherwax, aka Sneaky Cheetah",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4yQT9G67h1W5CLXFzKAXXJdDoDS.jpg"
+      },
+      {
+        "name": "Rebecca O'Mara",
+        "character": "Shelly, dearly missed",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uIlgKmFDIp5jWuBaGlkeCTor4Cn.jpg"
+      },
+      {
+        "name": "מייקון בלייר",
+        "character": "Dennis, the Noisy Slob",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sNhgAh7TBBYNGR2ExnINXIQ4U5x.jpg"
+      },
+      {
+        "name": "Lloyd Kaufman",
+        "character": "Lloyd, the Hospital Grump",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4jNIqeZBK2YbpPupBhl4l1moQn5.jpg"
+      },
+      {
+        "name": "Spencer Wilding",
+        "character": "Monster Garbinger, his Imperfect Self / Him Under the Hood, mysterious guitar",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4NMcve4Nckpi653znyYOnoS4Mci.jpg"
+      },
+      {
+        "name": "Kitodar Todorov",
+        "character": "Kupp, a Science Geek",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1FYR7SwtL4r7a55CHkxbk1PdoJx.jpg"
+      },
+      {
+        "name": "Sophia Vassili",
+        "character": "Sawser, another Geek",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rurd9wZxN60wfg9dyfJxAtZeVJz.jpg"
+      },
+      {
+        "name": "Константин Икономов",
+        "character": "Wally, the Butler",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4po6xF4Wz7IhMG6g4xhQ6wSPkQ3.jpg"
+      },
+      {
+        "name": "ג'וליאן קוסטוב",
+        "character": "Budd Berserk, crazy/dangerous",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ra0wJCPaxx1YeyhcAmz3yqH6J5Z.jpg"
+      },
+      {
+        "name": "Neda Spasova",
+        "character": "DJ Cool Cthulu, tables & black magic",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/47ip77iXCsRBpnBw4nuN33sz8qy.jpg"
+      },
+      {
+        "name": "Nencho Stefanov",
+        "character": "Nightmare Josh, rhythm of madness",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sIDQSV3HpUPYaS97Xvoi76zNh8o.jpg"
+      },
+      {
+        "name": "Duke Nwamerue",
+        "character": "Venus Devalero, sex bass",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/podFtLLdgiGeovI37x3BDlPIZoM.jpg"
+      },
+      {
+        "name": "Dimitar Bozhilov",
+        "character": "Zodiac 3000, hype & parkour",
+        "profileUrl": null
+      },
+      {
+        "name": "Abraham Lewis",
+        "character": "Spence, his Shithead Heir",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qQEpWdy35gp9MF8OYFKCyrX6LZg.jpg"
+      },
+      {
+        "name": "Ioan Lov",
+        "character": "Ponytail, a Thug",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oaY8KMTFKEDjBhfMpaGqGKmBYXt.jpg"
+      },
+      {
+        "name": "Leart Dokle",
+        "character": "Keg-Stand, another Thug",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/waeY8aMSwJ5iLjO1Rpe1atbGIHB.jpg"
+      },
+      {
+        "name": "Svetoslav Dobrev",
+        "character": "Incompetent Mob Doctor",
+        "profileUrl": null
+      },
+      {
+        "name": "Valentin Ganev",
+        "character": "Cardinal Rooney",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9mS8rtog7pDBEgM9zk1Lc5cID3G.jpg"
+      },
+      {
+        "name": "Atanas Srebrev",
+        "character": "Chief Wormer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aW9keIvjMkH9YAMQDEyJayAs7oy.jpg"
+      },
+      {
+        "name": "Derek Morse",
+        "character": "Detective Swofford",
+        "profileUrl": null
+      },
+      {
+        "name": "Nikola Mutafov",
+        "character": "Officer Dingus",
+        "profileUrl": null
+      },
+      {
+        "name": "Emmanuel Todorov",
+        "character": "Beat Cop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hwLZdcEeeeMAbbfz5VjAUfVgysd.jpg"
+      },
+      {
+        "name": "Euan Macnaughton",
+        "character": "Fritz Cop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/r4hFWEoB8bTxChHac6oRNYLpXhd.jpg"
+      },
+      {
+        "name": "Nathan Cooper",
+        "character": "\"Cornholed\"",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rjkq191kx9xQF8D5zdPG95QEkcv.jpg"
+      },
+      {
+        "name": "Max Kraus",
+        "character": "\"Youse!\"",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/eNDO5cOfyZDmzhadXl4bIUp8OEW.jpg"
+      },
+      {
+        "name": "Adam Othman",
+        "character": "\"Seriously!\"",
+        "profileUrl": null
+      },
+      {
+        "name": "Simon Feek",
+        "character": "\"Triggered?\"",
+        "profileUrl": null
+      },
+      {
+        "name": "Owen Davis",
+        "character": "Louis, the Brave Fry Cook",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dwba9m7wEZ4SkNXWY0wAbgDPMKJ.jpg"
+      },
+      {
+        "name": "Nikolay Stanoev",
+        "character": "Gut-Shot Manager",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b72UeQG6Qo47dHrzd1eYsTK1NSP.jpg"
+      },
+      {
+        "name": "Kexin Wang",
+        "character": "Cashier",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5Z9jEar8hjJke4neyjnLI5sJclo.jpg"
+      },
+      {
+        "name": "Alen Angelov",
+        "character": "Bike Helmet Kid, no car for you",
+        "profileUrl": null
+      },
+      {
+        "name": "Laura Giosh",
+        "character": "Distraught Mother",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fT6HzFduj1zmWgekWGKpz29yQD2.jpg"
+      },
+      {
+        "name": "Mariana Kovacheva",
+        "character": "Toxie Fan Hostage",
+        "profileUrl": null
+      },
+      {
+        "name": "Ulyana Chan",
+        "character": "Protective Hostage",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/reIeIIqyVvw5lrb5k5sBCKuwizS.jpg"
+      },
+      {
+        "name": "Lee Eddy",
+        "character": "CJ Doons, formerly Miss Fall Harvest",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gIcP0EGRB0BmKyanp2VK9RyoGtA.jpg"
+      },
+      {
+        "name": "Ev Lunning",
+        "character": "Rick Feet, the Silver Pro",
+        "profileUrl": null
+      },
+      {
+        "name": "Rachel Grode",
+        "character": "Bonnie Dimble, on the beat!",
+        "profileUrl": null
+      },
+      {
+        "name": "JR Esposito",
+        "character": "J.R. Gile, reporting live!",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zPlXdFuXUz7TP6IBgQh5IdEXfbc.jpg"
+      },
+      {
+        "name": "Brent Werzner",
+        "character": "Toxie Witness",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xAbIE3RwIBF69SWI7CIwRJ9kPbR.jpg"
+      },
+      {
+        "name": "John Riho",
+        "character": "Stuart, a Sympathetic Stagehand",
+        "profileUrl": null
+      },
+      {
+        "name": "Randy E. Aguebor",
+        "character": "Coach Bobby Stanwyck, on fire",
+        "profileUrl": null
+      },
+      {
+        "name": "David Kanov",
+        "character": "Student Judge, hard to impress",
+        "profileUrl": null
+      },
+      {
+        "name": "Mariah Rozeva",
+        "character": "Student Judge, hard to impress",
+        "profileUrl": null
+      },
+      {
+        "name": "Anh Kamenov",
+        "character": "Student Judge, hard to impress",
+        "profileUrl": null
+      },
+      {
+        "name": "Goran Simeonov",
+        "character": "Student Judge, hard to impress",
+        "profileUrl": null
+      },
+      {
+        "name": "Chris Sharp",
+        "character": "C.S. Hawley, the Payroll Guard",
+        "profileUrl": null
+      },
+      {
+        "name": "Byron Brown",
+        "character": "Sad Commercial Man, \"thank you, Bob\"",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lhBln5kP2FeaqzOZobnEaASLKqU.jpg"
+      },
+      {
+        "name": "Jane Levy",
+        "character": "Cheerful Insurance Rep (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7eGX3HbChmEn8G8nGzB7nvthlfI.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1380998,
+    "title": "The Book",
+    "releaseDate": "2024-11-08",
+    "genres": [
+      27,
+      53
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/w8f8RqWg4SFrwf4YVbqkYLTygSI.jpg",
+    "popularity": 70.141,
+    "rating": 0,
+    "cast": [
+      {
+        "name": "Nahia Laiz",
+        "character": "Verónica",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zhPVK93hZjRqDwGCY0EE4uc8gEz.jpg"
+      },
+      {
+        "name": "Abdelatif Hwidar",
+        "character": "Anticuario",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zeJjozJIvaa0qlZRufSC0J2sr86.jpg"
+      },
+      {
+        "name": "Miguel Ramiro",
+        "character": "Álex",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/v0RIRMLLBCzh0qOcaSZPGqICzc.jpg"
+      },
+      {
+        "name": "Celina Ruiz",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Moncha Molina",
+        "character": "",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1328913,
+    "title": "Padre no hay más que uno 5: Nido repleto",
+    "releaseDate": "2025-06-26",
+    "genres": [
+      35,
+      10751
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7H27uvaPZfq794qVcLFrSEgHseZ.jpg",
+    "popularity": 80.2144,
+    "rating": 6.471,
+    "cast": [
+      {
+        "name": "Santiago Segura",
+        "character": "Javier García",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/w5gSHzLWoivAN2g4z2yaxCSFyTY.jpg"
+      },
+      {
+        "name": "Toni Acosta",
+        "character": "Marisa Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bEZcHLjWD8aA8UTq1YIcubNtSoJ.jpg"
+      },
+      {
+        "name": "Leo Harlem",
+        "character": "Paco García",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nVlxRKjijyxLOslF8xCNGt20EBv.jpg"
+      },
+      {
+        "name": "Silvia Abril",
+        "character": "Carmen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8Pd4oN6jagHpLjbNnYSy8wlV2i7.jpg"
+      },
+      {
+        "name": "Loles León",
+        "character": "Abuela Milagros",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tGzS0iV3K4fTGIiOb1UJRpMOL8u.jpg"
+      },
+      {
+        "name": "Carlos Iglesias",
+        "character": "Abuelo Agustín Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gElCYmYDSvlplt2JXHY7EPvGHaE.jpg"
+      },
+      {
+        "name": "El Cejas",
+        "character": "Ocho",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nUl8NlSRJHnocElW3N31Y4oE6QW.jpg"
+      },
+      {
+        "name": "Marta González de Vega",
+        "character": "Leticia",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dPwpafNoOpzyXsoMZDwnDMSBtux.jpg"
+      },
+      {
+        "name": "Martina D’Antiochia",
+        "character": "Sara García Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sJyrFPUMkEd6g767p60qfF1MwHD.jpg"
+      },
+      {
+        "name": "Luna Fulgencio",
+        "character": "Rocío García Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bg4TTV3Ix4S3AQWtvxDC0AkwwIw.jpg"
+      },
+      {
+        "name": "Sirena Segura",
+        "character": "Paula García Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/c4dxHAAQXtndI0TwSjEP0DzfdPe.jpg"
+      },
+      {
+        "name": "Calma Segura",
+        "character": "Carlota García Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/twxeQepXaugGx0sP2vt11PUm32U.jpg"
+      },
+      {
+        "name": "Carlos González Morollón",
+        "character": "Dani García Loyola",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/myFeWWXxYFJ7pU3Ca0n2mBuwg9m.jpg"
+      },
+      {
+        "name": "Blanca Ramírez",
+        "character": "Cris García Loyola",
+        "profileUrl": null
+      },
+      {
+        "name": "Wendy Ramos",
+        "character": "Rosaura",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dVFAhKizJ1Gnm2I6gsPKiCYhjLu.jpg"
+      },
+      {
+        "name": "Neus Asensi",
+        "character": "Nora",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nNFuh8H8YYJAGCu3QgWI71vIDup.jpg"
+      },
+      {
+        "name": "Cloe Ruiz",
+        "character": "Cloe",
+        "profileUrl": null
+      },
+      {
+        "name": "Antonio Resines",
+        "character": "Toño",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jm4yMnneOWa5diykiBV13qbMsS2.jpg"
+      },
+      {
+        "name": "Xavier Deltell",
+        "character": "Pedro",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8JCBRGsTfqI5rWlj9JUyh2PU22H.jpg"
+      },
+      {
+        "name": "David Fernández",
+        "character": "R.C.",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nJhOpZAHBU6i3cqdefnJh06qGEU.jpg"
+      },
+      {
+        "name": "Florentino Fernández",
+        "character": "Cura",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5rJ7JI1v1R2Z4uSyhtwKeTG6woO.jpg"
+      },
+      {
+        "name": "Valeria Ros",
+        "character": "Profesora Paulita 1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nmkyobIGMG1gaaQXaOLRhL0lj59.jpg"
+      },
+      {
+        "name": "Nieves Herrero",
+        "character": "Profesora Cris 1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/egNWJfgZY0P7jhVC3o3HMS0QzKQ.jpg"
+      },
+      {
+        "name": "David Guapo",
+        "character": "Agente Inmobiliario",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zeZyXMdsYtt5kOCC89Ed2em7uQa.jpg"
+      },
+      {
+        "name": "Rosanna Walls",
+        "character": "Señora Concierto",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sLcJ1rVGj9aWuGHZDrcQ2Tg3Oas.jpg"
+      },
+      {
+        "name": "Omar Montes",
+        "character": "Big Bamini",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gFJqtt84JOVdAbqzagxAXmIGvw2.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1156594,
+    "title": "אשמתנו",
+    "releaseDate": "2025-10-15",
+    "genres": [
+      10749,
+      18
+    ],
+    "overview": "חתונתם של ג'נה וליאון מובילה לאיחוד המיוחל בין נואה לניק לראשונה מאז הפרידה שלהם. העובדה שניק לא מסוגל לסלוח לנואה ניצבת כמחסום בלתי עביר ביניהם. הוא יורש את עסקי סבו והיא בתחילת דרכה המקצועית. שניהם מנסים להתנגד לליבוי הלהבה שעדיין בוערת. אבל עכשיו, כשהדרכים שלהם שוב מצטלבות, האם האהבה תצליח לגבור על הטינה?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/l1QQnRHSjaUEf6kKeS5M9Dpuhrp.jpg",
+    "popularity": 70.2998,
+    "rating": 7.558,
+    "cast": [
+      {
+        "name": "ניקול וואלאס",
+        "character": "Noah Morán",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xlvq6OYCN6yQef4fpJQtwVyQxqr.jpg"
+      },
+      {
+        "name": "Gabriel Guevara",
+        "character": "Nick Leister",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pviRYKEEmoPUfLYwP1VHJ6LQcRg.jpg"
+      },
+      {
+        "name": "Gabriela Andrada",
+        "character": "Sofía Zabala",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/h8cAdDqbDK2ayGIuxQQdNCzyCsb.jpg"
+      },
+      {
+        "name": "Marta Hazas",
+        "character": "Rafaella Leister",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1dbeTFRCbWBt70dIGjYHKVLnpaG.jpg"
+      },
+      {
+        "name": "Goya Toledo",
+        "character": "Anabel",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ygZpmXYB1fDSnpeJx1PadEQLgA5.jpg"
+      },
+      {
+        "name": "Iván Sánchez",
+        "character": "William Leister",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/woVz8D7t1VUKjFJnsTAdc8tyz5C.jpg"
+      },
+      {
+        "name": "Felipe Londoño",
+        "character": "Luca",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gUKu2bla3ZKtwuzfymMbyzUsobC.jpg"
+      },
+      {
+        "name": "Fran Berenguer",
+        "character": "Ronnie",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uYi3MOwqtNdfZt82DdvzKCZku50.jpg"
+      },
+      {
+        "name": "Alex Bejar",
+        "character": "Briar",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kPeFa6xX57IyhAfoT8dtgfPMgmX.jpg"
+      },
+      {
+        "name": "Javier Morgade",
+        "character": "Michael",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hcDV10bTZlm1rTi0NRhoGIpdicw.jpg"
+      },
+      {
+        "name": "Sergi Mateu",
+        "character": "Andrew Leister",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vyHK0gKYY0USW0vycjORVGvRZ5J.jpg"
+      },
+      {
+        "name": "Gary Anthony Stennette",
+        "character": "Baxwell",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/AgtXWf3Ph4itjIyehy2eJdYwTSu.jpg"
+      },
+      {
+        "name": "Noah Casas",
+        "character": "Maggie",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pCLSPCIQq1Re4Qv2LtTSP6kvPXx.jpg"
+      },
+      {
+        "name": "Vianessa Castaños",
+        "character": "Rosi",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3CI9aNCNTxmmTdfGhKKxmgipA3j.jpg"
+      },
+      {
+        "name": "Eva Ruiz",
+        "character": "Jenna",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bcu0nmQvhxwTzh4csc4kuxJsQee.jpg"
+      },
+      {
+        "name": "Mariano Venancio",
+        "character": "Martin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aZT4jP35s7hwOspb4nW1wqKZpmE.jpg"
+      },
+      {
+        "name": "Víctor Varona",
+        "character": "Lion",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lcwFAjHjhJXkxf59TXGSjGGOlLj.jpg"
+      },
+      {
+        "name": "Jaime Ordóñez",
+        "character": "Esteban",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/x46hVHDEGrX6148QT9fdQYK5pdu.jpg"
+      },
+      {
+        "name": "Fran Morcillo",
+        "character": "Simón",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ovPzGuRvMQhB4OrC6lfxlEGLewD.jpg"
+      }
+    ]
+  },
+  {
+    "id": 793387,
+    "title": "לילה קדוש: ציידי שדים",
+    "releaseDate": "2025-04-30",
+    "genres": [
+      28,
+      14,
+      27,
+      53
+    ],
+    "overview": "הלילה הקדוש הוא צוות שנלחם בקבוצות שסוגדות לשדים.\r חברי צוות הלילה הקדוש הם באו (מא דונג סוק), שרון (סו היון) וקים גאן (דיוויד יי).היכולת המיוחדת של באו היא הכוח הפיזי החזק שלו.\r לשרון יש יכולת לזהות שדים ומבצעת גירוש שדים.\r קים גאן עוזר לבאו ושרון.בינתיים, הפסיכיאטרית ג'אנג און (קיונג סו ג'ין) מבקרת בצוות הלילה הקדוש כדי להציל את אחותה הצעירה, און סו (ג'נג ג'י סו), ששד שוכן בגופה.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/7MGnHpfhF8savUsrUJoI8Q7dTk9.jpg",
+    "popularity": 71.4275,
+    "rating": 6.6,
+    "cast": [
+      {
+        "name": "마동석",
+        "character": "Ba Woo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zt1vx7FesNA4x6mTZtyzu2uco8E.jpg"
+      },
+      {
+        "name": "서현",
+        "character": "Sharon",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4FeVieGVZEfvwvFuz2lrrFr1529.jpg"
+      },
+      {
+        "name": "이다윗",
+        "character": "Kim Gun",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qWGDFlr47d2AJLtJsOEmfmaC21l.jpg"
+      },
+      {
+        "name": "경수진",
+        "character": "Jung-won",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5gdThWkpzuNkNyQ6Cw29oOefvXO.jpg"
+      },
+      {
+        "name": "정지소",
+        "character": "Eun-seo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jsUPFmY1HlML92ubVtSE8L8ovz6.jpg"
+      },
+      {
+        "name": "최광일",
+        "character": "Father Marco",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6vkA8s4XDPwZBRzNhN9xSLzb3II.jpg"
+      },
+      {
+        "name": "류승수",
+        "character": "Choi",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/x9XcfwqcXNpk2hIrP6qeR0DDkOs.jpg"
+      },
+      {
+        "name": "전익령",
+        "character": "Catalina",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aBfBZ4JqmFBoLSDah860sEX5ggE.jpg"
+      },
+      {
+        "name": "송요셉",
+        "character": "Old Man",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/x3Cq8BGfRVxProIlpgSJniqbfWs.jpg"
+      },
+      {
+        "name": "박옥출",
+        "character": "Auntie",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sQJ9nn0akUylBQGtDGYUA8S0Zh4.jpg"
+      },
+      {
+        "name": "한기중",
+        "character": "Police Chief",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/v5daHMmm4aRP6nnhbGEEf7fqKPo.jpg"
+      },
+      {
+        "name": "이다일",
+        "character": "Weirdo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iIep0LRoypbvSlyTEZ1XvpyBuGS.jpg"
+      },
+      {
+        "name": "윤지원",
+        "character": "Su-jin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tjVwuQ299dBa42NpAfmuw7DLoS5.jpg"
+      },
+      {
+        "name": "차우진",
+        "character": "CCTV",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ambmGZpVUPJDEgU0hHVFczrPcW3.jpg"
+      },
+      {
+        "name": "김도건",
+        "character": "Delivery Driver",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cchdKEF0Qw1twUQWu1Yu036hKSU.jpg"
+      },
+      {
+        "name": "나경철",
+        "character": "Announcer",
+        "profileUrl": null
+      },
+      {
+        "name": "남미정",
+        "character": "House Owner",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aOsCReV9mqQUF0dza0AN3C5bcs8.jpg"
+      },
+      {
+        "name": "박기선",
+        "character": "House Owner",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aVVyYDhayBgD0D6Ps7UbaF6WQMn.jpg"
+      },
+      {
+        "name": "서문호",
+        "character": "Nurse",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6DbzN1s0WVhliTbcvivSRASx0p.jpg"
+      },
+      {
+        "name": "임용순",
+        "character": "Pastor",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/e8UATWd3KoYuSLwgemusELnqP4E.jpg"
+      },
+      {
+        "name": "이성우",
+        "character": "Devil",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/54uuDbyOFq0JLYppoHSkANey0My.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1549512,
+    "title": "Nympho",
+    "releaseDate": "2025-11-07",
+    "genres": [
+      18,
+      10749
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/tWFUt3THd6QbSdp4GZekes7Tbv1.jpg",
+    "popularity": 68.9747,
+    "rating": 8.3,
+    "cast": [
+      {
+        "name": "Jenn Rosa",
+        "character": "Meg",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/f2EItX0kOXJjDzZFZSFmGOVS8HB.jpg"
+      },
+      {
+        "name": "Vince Rillon",
+        "character": "Carlo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/27v6NYgbADSUZmPbTh9FLziUm7L.jpg"
+      },
+      {
+        "name": "Allen Legazpi",
+        "character": "Waiter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/socApl9YcP094i9Zj7fbtDZL26y.jpg"
+      },
+      {
+        "name": "John Knox Vill",
+        "character": "Strangerman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cYORySVULRUMlCNCFz1wQ2cupug.jpg"
+      },
+      {
+        "name": "Yan Serna",
+        "character": "Event Staff",
+        "profileUrl": null
+      },
+      {
+        "name": "Rene Durian",
+        "character": "Psychiatrist",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/k5xJLhimMaxhSERsJ7B3Mo9HTcK.jpg"
+      },
+      {
+        "name": "Tommy Samonte",
+        "character": "Grab Driver",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/l1SjgGkjtUPgyZQWkjL6TU1RTxy.jpg"
+      },
+      {
+        "name": "Karlo De Leon",
+        "character": "Tricycle Driver",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1257009,
+    "title": "Primitive War",
+    "releaseDate": "2025-08-21",
+    "genres": [
+      28,
+      27,
+      10752
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/nWBqU5YXmDVJWWEDJ4u3ZSseNVL.jpg",
+    "popularity": 64.9211,
+    "rating": 6.863,
+    "cast": [
+      {
+        "name": "ג'רמי פיבן",
+        "character": "Colonel Jericho",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pBD1jcAZiDrHWcFpJtBtqLRD4gR.jpg"
+      },
+      {
+        "name": "טרישה הלפר",
+        "character": "Sofia",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cXwa8yT2Qv7EmCI8yjs5ldvMHmw.jpg"
+      },
+      {
+        "name": "ראיין קוואנטן",
+        "character": "Baker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vvbEabUWIeaHMBA2wrUChiLTjch.jpg"
+      },
+      {
+        "name": "ניק ווקסלר",
+        "character": "Eli",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vUkfhJc2x3jrO9WY7D1405g4amE.jpg"
+      },
+      {
+        "name": "Anthony Ingruber",
+        "character": "Keyes",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fUTCd1jGGQHn912czglHg28v4gR.jpg"
+      },
+      {
+        "name": "Aaron Glenane",
+        "character": "Logan",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4JjTJIgJ0GDTo4egADEn3nW79Zk.jpg"
+      },
+      {
+        "name": "Carlos Sanson Jr.",
+        "character": "Leon",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cta9cAYDh46lfDdt2sAtWD7GBmH.jpg"
+      },
+      {
+        "name": "Ana Thu Nguyen",
+        "character": "Con Nhen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cwGOgAoVgtEUVDeqW0OoPpcAYvU.jpg"
+      },
+      {
+        "name": "Adolphus Waylee",
+        "character": "Xavier",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/14jyy1SCiM2xQnG017gFCgyIaEI.jpg"
+      },
+      {
+        "name": "Marcus Johnson",
+        "character": "Ibex",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fqAZqGw6fm6R3uBRSyCi0OvVWWO.jpg"
+      },
+      {
+        "name": "Jake Ryan",
+        "character": "Major Wallace",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3OO5qc1kj2ny7rCLjKYDdEzPBdJ.jpg"
+      },
+      {
+        "name": "M.J. Kokolis",
+        "character": "Sergei",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4X75ap3aX0gB1iH0prgzn5a8nFk.jpg"
+      },
+      {
+        "name": "Henry Nixon",
+        "character": "Bishop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fQL3rtJbKL3ZTOEcoFK8Z6qYpHV.jpg"
+      },
+      {
+        "name": "Ryan Panizza",
+        "character": "Tolstoy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/iniLzLEEkZ6lBqFp2A7lLFmqIAW.jpg"
+      },
+      {
+        "name": "Jeremy Lindsay Taylor",
+        "character": "Borodin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/bW3vqOPnIFgtps6bsaixGFnxIbj.jpg"
+      },
+      {
+        "name": "Kawakawa Fox-Reo",
+        "character": "Ricardo",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lNlDmoXmmZTwkeEDo2QUEhYI00Q.jpg"
+      },
+      {
+        "name": "Lincoln Lewis",
+        "character": "Zimmer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/icC8jrmgTcfZV41N5s1Bbw7McqY.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1186350,
+    "title": "മാർക്കോ",
+    "releaseDate": "2024-12-20",
+    "genres": [
+      28,
+      80,
+      53
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/6Nj8Y1A9lcReqZZvRHOSiO3iTl6.jpg",
+    "popularity": 64.5893,
+    "rating": 6.645,
+    "cast": [
+      {
+        "name": "Unni Mukundan",
+        "character": "Marco Jr.",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7Pn9GASysyTG6ZnPhsuRq4ESArC.jpg"
+      },
+      {
+        "name": "Siddique",
+        "character": "George D'Peter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tMv7QsmYlXAXtP75D3eIxXHpgTv.jpg"
+      },
+      {
+        "name": "Ishan Shoukath",
+        "character": "Victor D'Peter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xJicLr2st7kQT7fzPC2xAZnzGUx.jpg"
+      },
+      {
+        "name": "Jagadish",
+        "character": "Tony Issac",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ml3XX5bWPIdHUPvqhW2MYYZ8H7Y.jpg"
+      },
+      {
+        "name": "Abhimanyu Thilakan",
+        "character": "Russell Issac",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6X1X5aJi9JkF9nhNuy1bEY8RD05.jpg"
+      },
+      {
+        "name": "Kabir Duhan Singh",
+        "character": "Cyrus Issac",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lAVAxFARP63oTHMYWpwHrWsXPWa.jpg"
+      },
+      {
+        "name": "Anson Paul",
+        "character": "Dev",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tuuQTQFh4qMY7EOP9rgVlz0Y57y.jpg"
+      },
+      {
+        "name": "Ajith Koshy",
+        "character": "Jahangir",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qR765VN5mOHfosx23NBMTxWuw6h.jpg"
+      },
+      {
+        "name": "Durva Thaker",
+        "character": "Isha",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2TR9HIa4CwMIHPhzN4YCOqSeT4V.jpg"
+      },
+      {
+        "name": "Yukti Thareja",
+        "character": "Mariya",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2hESBWJy0cgvY36mMf9i4FK26wW.jpg"
+      },
+      {
+        "name": "Mathew Varghese",
+        "character": "Peter D'Marco",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yfC4N6Hyj4bM6IVYeZvu4SftdwQ.jpg"
+      },
+      {
+        "name": "Sreejith Ravi",
+        "character": "Mathews",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/h1fKS7qVWJ3mhmDs0Z8RHx24iQI.jpg"
+      },
+      {
+        "name": "Dinesh Prabhakar",
+        "character": "CI Ashok",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qI85omROARp5QsUlKevz6i8kvD0.jpg"
+      },
+      {
+        "name": "Lishoy",
+        "character": "Adattu Varghese",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4d2yluJjAggVbnyXqcABFnTX0aP.jpg"
+      },
+      {
+        "name": "Arjun Nandhakumar",
+        "character": "Tarik",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/6myNeX7Mwcqm45Add5LteQPqdHE.jpg"
+      },
+      {
+        "name": "Shaji Chen",
+        "character": "Albert",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yUzs3zZsjaMjM3SpupkIw82Jp6F.jpg"
+      },
+      {
+        "name": "Bindu Sanjeev",
+        "character": "Celina George",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3UHME2qR5JB7VIbPo7lfxSH5cxA.jpg"
+      },
+      {
+        "name": "Sajitha Sreejith",
+        "character": "Ancy Mathews",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1fWOOcCNWvKLdvgboU4ECmjC0iP.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1571470,
+    "title": "המכשף: כנופיית העכברושים",
+    "releaseDate": "2025-10-29",
+    "genres": [
+      14,
+      18,
+      12
+    ],
+    "overview": "חבורה של שישה פורעי חוק לא-יוצלחים מתכננים שוד נועז, וכדי להצליח בו הם יהיו חייבים לעשות דבר שלא עשו מעולם: לסמוך אחד על השני – ועל מכשף זקן ושחוק.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/1T0kO1cgR430AC9I6jurMOezKwg.jpg",
+    "popularity": 57.1452,
+    "rating": 4.846,
+    "cast": [
+      {
+        "name": "Christelle Elwin",
+        "character": "Mistle",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1UXruA5cEqdMACjUMuem8jN1N9G.jpg"
+      },
+      {
+        "name": "Ben Radcliffe",
+        "character": "Giselher",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b24QfBFJw4H83nwxW8hIWTgr8V3.jpg"
+      },
+      {
+        "name": "Fabian McCallum",
+        "character": "Kayleigh",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sh3By1VPudyCWgUZNMZCwTlB4S4.jpg"
+      },
+      {
+        "name": "Aggy K. Adams",
+        "character": "Iskra",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9OU8Rz5VBSHAk3czTlkC0TdD7G5.jpg"
+      },
+      {
+        "name": "Connor Crawford",
+        "character": "Asse",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gGcQ5NQIfGdYaa9gZ1nU7WFWPe4.jpg"
+      },
+      {
+        "name": "Juliette Alexandra",
+        "character": "Reef",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wp4GwurXLK6DlAu9okQ8jzgDMwO.jpg"
+      },
+      {
+        "name": "דולף לונדגרן",
+        "character": "Brehen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fisJpm05tw6GCJ4v62TKBCoWuZM.jpg"
+      },
+      {
+        "name": "Ben Robson",
+        "character": "Bert Brigden",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5PC13qMbigvYXd4rhay6VgHJXhX.jpg"
+      },
+      {
+        "name": "Sharlto Copley",
+        "character": "Leo Bonhart",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/em89OJJvBRX7kNJJPASmNKQujsC.jpg"
+      },
+      {
+        "name": "פרייה אלן",
+        "character": "Princess Cirilla 'Ciri' of Cintra",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8RuLG2mePw8YgFNUjWROBuxMrwT.jpg"
+      },
+      {
+        "name": "Deoidone van der Merwe",
+        "character": "Juniper",
+        "profileUrl": null
+      },
+      {
+        "name": "Carla Fonseca Mokgata",
+        "character": "Orla",
+        "profileUrl": null
+      },
+      {
+        "name": "Warren Masemola",
+        "character": "Til Echrade",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xQykZ5j99uX6SJXKWLZfaoKiQV.jpg"
+      },
+      {
+        "name": "Innes Maas",
+        "character": "Slemmig",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xbEVFEnQdmKvCrbINaSqeTfHEzV.jpg"
+      },
+      {
+        "name": "Bianca Simone Mannie",
+        "character": "Sonora",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uQWLUQOg9rxPHXEr6KtHvNyRD9Y.jpg"
+      },
+      {
+        "name": "Litha Bam",
+        "character": "Miss Skret",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1B3q4D6YhfPk7TBVx8nXDJawRJB.jpg"
+      },
+      {
+        "name": "Tony Caprari",
+        "character": "Baron Fitz-Oesterlen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xw4AtIl36pz7ds6AMXrLFfEVLV5.jpg"
+      },
+      {
+        "name": "Aubrey Shelton",
+        "character": "Barker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tlzKYcZZKPDZ2kIF48gWsAj6D9u.jpg"
+      },
+      {
+        "name": "Stevel Marc",
+        "character": "Lord Ridot",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/n7NzuHjveJqZoEM5HFmblMGKdGp.jpg"
+      },
+      {
+        "name": "Dineo Langa",
+        "character": "Lady Ridot",
+        "profileUrl": null
+      },
+      {
+        "name": "Dianne Simpson",
+        "character": "Seamstress",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/k2L0O9J7cXsJ7sTG1ap0LJBZ6I2.jpg"
+      },
+      {
+        "name": "Khumoetsile Lebethe",
+        "character": "Lex Ridot",
+        "profileUrl": null
+      },
+      {
+        "name": "Wame Moloantoa",
+        "character": "Demitri Ridot",
+        "profileUrl": null
+      },
+      {
+        "name": "Mihir Soni",
+        "character": "Black Hand Guard",
+        "profileUrl": null
+      },
+      {
+        "name": "Shane John Kruger",
+        "character": "Bish Karrow",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sFqhMBfPi6XBMYfhrguxHfHeQgA.jpg"
+      },
+      {
+        "name": "Tamer Burjaq",
+        "character": "Crooked Nose",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rz1FOttxvkeVkAh7XxjBwd8eGgC.jpg"
+      },
+      {
+        "name": "Jarid Norman",
+        "character": "Unit",
+        "profileUrl": null
+      },
+      {
+        "name": "Simone Neethling",
+        "character": "Money Girl",
+        "profileUrl": null
+      },
+      {
+        "name": "Richard Lothian",
+        "character": "Berts Guard",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aeall4GiIxcqIzCxrWWjaKs7PeB.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1215106,
+    "title": "หมู่บ้านโคกะโหลก",
+    "releaseDate": "2025-11-06",
+    "genres": [
+      35,
+      27,
+      53
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pRWBabtsYvqpPmxNYcejIUe6lc3.jpg",
+    "popularity": 79.671,
+    "rating": 0,
+    "cast": [
+      {
+        "name": "แจ๊ส ชวนชื่น",
+        "character": "Yan",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7kSSfwkf9o83kR5pvfA84mdTgkQ.jpg"
+      },
+      {
+        "name": "ณฉัตร จันทพันธ์",
+        "character": "Chat",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gGLRvWb2nsypCXyhneiNXs0xY2Y.jpg"
+      },
+      {
+        "name": "กรรชัย กำเนิดพลอย",
+        "character": "Kapi",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fw6z4kDzpz6KdwfE16HbmtmAH71.jpg"
+      },
+      {
+        "name": "กพล ทองพลับ",
+        "character": "Pong",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3MNVl8NtfK82Ewq9nevX1LrIrlM.jpg"
+      },
+      {
+        "name": "องอาจ เจียมเจริญพรกุล",
+        "character": "Hun Xian",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/i3e4IuDngcByoViRZ8HMwNMNdRw.jpg"
+      },
+      {
+        "name": "สหัสชัย ชุมรุม",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pVtfY9QvuOXNdytPo7u6fyO7VZe.jpg"
+      },
+      {
+        "name": "ยะสะกะ ไชยสร",
+        "character": "Uncle Pae",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4trP7QqmzLLEJuxlpPTLDGO54H0.jpg"
+      },
+      {
+        "name": "Phaisan Rueangrit",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "ยศวรรธน์ ทะวาปี",
+        "character": "Get",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oEhco9gGsYh5skWYlOJ6g1frlsN.jpg"
+      },
+      {
+        "name": "Aniwat Prathumthin",
+        "character": "Yuki",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8weoSTNzOXp92WyKmJLMvJgFqdl.jpg"
+      },
+      {
+        "name": "Petch Kamutmas",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xxMMsifXK0osdGdFmO8EH1AdBlm.jpg"
+      },
+      {
+        "name": "อัครัช จิตตะศิริ",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fakIWFiC3oN64Q9JC1Uxv2iNWSp.jpg"
+      },
+      {
+        "name": "จีรพันธ์ เพชรขาว",
+        "character": "",
+        "profileUrl": null
+      },
+      {
+        "name": "Maneewan Pornsawan",
+        "character": "Lilly",
+        "profileUrl": null
+      },
+      {
+        "name": "Anan Semathong",
+        "character": "Auan",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1234821,
+    "title": "עולם היורה: חיים חדשים",
+    "releaseDate": "2025-07-01",
+    "genres": [
+      878,
+      12,
+      28
+    ],
+    "overview": "חמש שנים לאחר אירועי ״עולם היורה: עולם חדש״ הוכח כי האקולוגיה של כדור הארץ אינה מתאימה לדינוזאורים. אלה ששרדו מתקיימים רק באזורים מבודדים בקרבת קו המשווה, בעלי אקלים דומה לזה שבו הם שגשגו בעבר. שלושה מהיצורים האדירים ביותר ביבשה, בים, ובאוויר, מחזיקים בגנום שלהם את המפתח לפיתוח תרופה מהפכנית שיכולה להציל חיים.  זוכת האוסקר ג’והנסון מגלמת את זורה בנט, מומחית למבצעי חילוץ, שתפקידה הוא להוביל צוות מיומן במשימה סודית להשגת החומר הגנטי החיוני. כאשר המבצע של זורה מתנגש עם משפחה אזרחית שטיול השייט שלה הסתיים באסון בעקבות מתקפה של דינוזאורים ימיים, הם מוצאים את עצמם לכודים באי האסור - אתר מחקר סודי לשעבר של פארק היורה. שם, בין מיני דינוזאורים שונים ומסוכנים, הם נתקלים בגילוי אפל ומטלטל שהוסתר מהעולם במשך עשורים.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/33UaHmpsRjc9HMnfkledkrx0Zk.jpg",
+    "popularity": 62.9256,
+    "rating": 6.382,
+    "cast": [
+      {
+        "name": "סקרלט ג'והנסון",
+        "character": "Zora Bennett",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mjReG6rR7NPMEIWb1T4YWtV11ty.jpg"
+      },
+      {
+        "name": "מהרשלה עלי",
+        "character": "Duncan Kincaid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9ZmSejm5lnUVY5IJ1iNx2QEjnHb.jpg"
+      },
+      {
+        "name": "ג'ונתן ביילי",
+        "character": "Dr. Henry Loomis",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kMtZtavkXIXYA0CnhaWqbNo6uFV.jpg"
+      },
+      {
+        "name": "רופרט פרנד",
+        "character": "Martin Krebs",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/a3HeMHmlXnoRlHLX9h31ZdZgCXM.jpg"
+      },
+      {
+        "name": "Manuel Garcia-Rulfo",
+        "character": "Reuben Delgado",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/54Rk1hKfNdNKGHQMnONDGmNtUv3.jpg"
+      },
+      {
+        "name": "Luna Blaise",
+        "character": "Teresa Delgado",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/y4GIzipFLyC90WcA27XRrokggYR.jpg"
+      },
+      {
+        "name": "דיוויד יאקונו",
+        "character": "Xavier Dobbs",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3QTinnl70cvU3a22fLKCLk4Wpbx.jpg"
+      },
+      {
+        "name": "Audrina Miranda",
+        "character": "Isabella Delgado",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nkKWtafw6r7ekbjbHr3AmKNlybZ.jpg"
+      },
+      {
+        "name": "Philippine Velge",
+        "character": "Nina",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gqTkAEIlcDisOnfuyusqZtBb1IG.jpg"
+      },
+      {
+        "name": "Bechir Sylvain",
+        "character": "LeClerc",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wpZZVoUR9IrtsdxsX6A7Rth6AXz.jpg"
+      },
+      {
+        "name": "Ed Skrein",
+        "character": "Bobby Atwater",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/btJvbQbWf3ciYM4SM5tMWSJEkXX.jpg"
+      },
+      {
+        "name": "Adam Loxley",
+        "character": "Williams",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aokuoLXRd1x4JPzbVNCFTYxUPmz.jpg"
+      },
+      {
+        "name": "Niamh Finlay",
+        "character": "Desanto",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8vWmSnI9cT6wtrC7NRL4Cfz9dHH.jpg"
+      },
+      {
+        "name": "Julian Edgar",
+        "character": "Van Dijk's Barman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/9tHo6ObKR6w6OKRJId76za09UFD.jpg"
+      },
+      {
+        "name": "Lucy Thackeray",
+        "character": "Helicopter Pilot",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xYgQ9b2EJsSYaoNgNklgB6NPsQC.jpg"
+      },
+      {
+        "name": "בילי סמית",
+        "character": "Cop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uzFxV2l3ODxfknHhIAgvLf0ihH6.jpg"
+      },
+      {
+        "name": "Jonny Lavelle",
+        "character": "Helicopter Co-Pilot",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sJbxDXtXzUb2EDCEv2YsKa428xg.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1086910,
+    "title": "The Lost Princess",
+    "releaseDate": "2025-10-16",
+    "genres": [
+      28,
+      12
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/31S2ISsDtbnxb0kuXZl1SxSMD0K.jpg",
+    "popularity": 59.3192,
+    "rating": 6.3,
+    "cast": [
+      {
+        "name": "Cillian O'Sullivan",
+        "character": "Alec Touati",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8uazSJXtTzvtCDYNeLouHQGhyIc.jpg"
+      },
+      {
+        "name": "Gary Dourdan",
+        "character": "Nassim Ikken",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xsxjlW98I8ml4FCHV040b3XaBOi.jpg"
+      },
+      {
+        "name": "רוברט נפר",
+        "character": "Robert Goodman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/w40AttR4OPQvjYyTVanq5Rm5iOb.jpg"
+      },
+      {
+        "name": "Soraya Azzabi",
+        "character": "Princess Nour",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5IVdou5twW5S9SFfsU8JpOgHK0T.jpg"
+      },
+      {
+        "name": "אריק רוברטס",
+        "character": "The Shaman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/NiWg1TaUcal7xn1ZQeyA2dLd5F.jpg"
+      },
+      {
+        "name": "Irma Lake",
+        "character": "Nina",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/77zQmazdv5b2GWVmvzR5a2kzvxL.jpg"
+      },
+      {
+        "name": "Luka Peroš",
+        "character": "Comandante Alvarez Rodriguez",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lfh7959EpR9gAvrjObNGXaUg2qF.jpg"
+      },
+      {
+        "name": "Kacey Mottet Klein",
+        "character": "Mr. Cohen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ggOHPk5DHQzf9t4Qm4sohmtcNVf.jpg"
+      },
+      {
+        "name": "Mourad Zaoui",
+        "character": "Prince Amnati",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4IM7T4JVW1VWuvvJFZGuLt9DexG.jpg"
+      },
+      {
+        "name": "Julian Mileta",
+        "character": "Steve",
+        "profileUrl": null
+      },
+      {
+        "name": "Michael Patrick Lane",
+        "character": "The Auctioneer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4Lb3spSI9aUiiVhrX1Dy7idpVy.jpg"
+      },
+      {
+        "name": "Brice Bexter",
+        "character": "Omar",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uXLzBmeuIrORX6GVvuljgMCKsxs.jpg"
+      },
+      {
+        "name": "Carlos Valencia",
+        "character": "Emir of Ghamat",
+        "profileUrl": null
+      },
+      {
+        "name": "Melodie Casta",
+        "character": "Hana Ikken",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/d2xlL1HQmNWzweKEyZOgDtOwqk8.jpg"
+      },
+      {
+        "name": "Pierre Azéma",
+        "character": "Belet",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/91X67JBia7T40wEQkjODRxMk1RA.jpg"
+      },
+      {
+        "name": "Yousra Bouhmouch",
+        "character": "Karima",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cmYTNnkR4tquA6L7fxRAhSyvlJo.jpg"
+      },
+      {
+        "name": "Sahar El Maataoui",
+        "character": "Princess Amnati",
+        "profileUrl": null
+      },
+      {
+        "name": "MOHAMED BASSOU",
+        "character": "Ibrahim",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/miFiCNBj3dEG6xnxRDewwB42DsW.jpg"
+      },
+      {
+        "name": "Reda Hanchi",
+        "character": "Abdelkrim Khattabi",
+        "profileUrl": null
+      },
+      {
+        "name": "Haroun Cherqaoui",
+        "character": "Yusuf Ibn Tachfine",
+        "profileUrl": null
+      },
+      {
+        "name": "Yasmine Kettani",
+        "character": "Zaynab Anafzawiya",
+        "profileUrl": null
+      },
+      {
+        "name": "Brahim Ait Ben Azzouz",
+        "character": "Amnati Boy (young)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uFi12glMQ9QXTY1zRuhdh785AWp.jpg"
+      },
+      {
+        "name": "Jonathan McConnell",
+        "character": "US Diplomat",
+        "profileUrl": null
+      },
+      {
+        "name": "Richard De Mayo",
+        "character": "Swanky Guest",
+        "profileUrl": null
+      },
+      {
+        "name": "Ghali Afailal",
+        "character": "Amnati Boy",
+        "profileUrl": null
+      },
+      {
+        "name": "Wife Elmaachi",
+        "character": "Spa Receotionist",
+        "profileUrl": null
+      },
+      {
+        "name": "Adam Karotchi",
+        "character": "The Photographer",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1114967,
+    "title": "מזל משמיים",
+    "releaseDate": "2025-10-14",
+    "genres": [
+      35,
+      14
+    ],
+    "overview": "מלאך טוב לב, אך די מגושם בשם גבריאל מתערב בחייהם של עובד פשוט ויזם הון-סיכון עשיר. כאשר הוא מחליף ביניהם, העניינים מתחילים להסתבך.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/i1yBN7EQvvQQ1U2YEyu5VONGl2.jpg",
+    "popularity": 71.8758,
+    "rating": 6.736,
+    "cast": [
+      {
+        "name": "קיאנו ריבס",
+        "character": "Gabriel",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kEoUZKEG7dzbCESDjd0CKAN1r0n.jpg"
+      },
+      {
+        "name": "עזיז אנסרי",
+        "character": "Arj / Delivery Robots (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yUeQHM4ycUXrUgRWgKVYKNmKxfJ.jpg"
+      },
+      {
+        "name": "סת' רוגן",
+        "character": "Jeff",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nYl9bvQzaPQLzlf0wf75clLN6Hi.jpg"
+      },
+      {
+        "name": "קיקי פאלמר",
+        "character": "Elena",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/f5i3WzdMt02mlfm9I9LHKRJtZ4J.jpg"
+      },
+      {
+        "name": "סנדרה או",
+        "character": "Martha",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/zU8vjebHxcP60ESEL5Ok68KWZvj.jpg"
+      },
+      {
+        "name": "שרי קולה",
+        "character": "Linda",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fO6t05iJo4gqsTkOgPO1jwF4B4t.jpg"
+      },
+      {
+        "name": "סטיבן הנדרסון",
+        "character": "Azrael",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/z2weSPo4sdMNj47tP5o0me41r2z.jpg"
+      },
+      {
+        "name": "Blanca Araceli",
+        "character": "Rosa",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/kDm6OwatIx7WWGumIhPUmGu2J3v.jpg"
+      },
+      {
+        "name": "ג'ו מאנד",
+        "character": "Joe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/onIBAhW2omltRUOOK8LcYddWXwt.jpg"
+      },
+      {
+        "name": "Aditya Geddada",
+        "character": "Navid",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4yAZ9K0PWA3dY9loopG5VTolmpU.jpg"
+      },
+      {
+        "name": "Matt Rogers",
+        "character": "Peter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gNAc5laH7Lyv5KicDSCWruR7krL.jpg"
+      },
+      {
+        "name": "Michael Arnold",
+        "character": "Shabier",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ykpJJlC5RUmht73jAOCzLZg9F8e.jpg"
+      },
+      {
+        "name": "פני ג'ונסון ג'רלד",
+        "character": "Elena’s Mom",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lWB66icA4Cwyg8WfAdDmZDG1uS7.jpg"
+      },
+      {
+        "name": "Stacy Osei-Kuffour",
+        "character": "Server",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5QoYF0FX0IA8NB1TafvDmSgxpM5.jpg"
+      },
+      {
+        "name": "Elena Campbell-Martinez",
+        "character": "Union Vote Counter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jV0RXg5EEIIhfvOSvd9cddgWctS.jpg"
+      },
+      {
+        "name": "Nate Jackson",
+        "character": "Denny's Employee",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fj3t8wsfWGAokmTUiIWAvjWUIPT.jpg"
+      },
+      {
+        "name": "Addie Weyrich",
+        "character": "Dunsmoor Waiter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/g5atz9BuxatPUdLNBdzEDOYb81u.jpg"
+      },
+      {
+        "name": "Cari Shayne",
+        "character": "Plasma Donation Technician",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ukaoP0psNUxwh7F8NZMlsbrDe6f.jpg"
+      },
+      {
+        "name": "Felipe Garcia Martinez",
+        "character": "Felipe",
+        "profileUrl": null
+      },
+      {
+        "name": "Alexander Jo",
+        "character": "Arnold",
+        "profileUrl": null
+      },
+      {
+        "name": "Shoukath Ansari",
+        "character": "Salem",
+        "profileUrl": null
+      },
+      {
+        "name": "Wil Sylvince",
+        "character": "Leonard",
+        "profileUrl": null
+      },
+      {
+        "name": "Kiry Shabazz",
+        "character": "Kirby",
+        "profileUrl": null
+      },
+      {
+        "name": "Sandra Marcela Hernandez",
+        "character": "Clara",
+        "profileUrl": null
+      },
+      {
+        "name": "Lakshmi Sundaram",
+        "character": "Nurse",
+        "profileUrl": null
+      },
+      {
+        "name": "Kristen Henley",
+        "character": "There Will be Buns Employee",
+        "profileUrl": null
+      },
+      {
+        "name": "Erik Estrada Loaiza",
+        "character": "Security Guard",
+        "profileUrl": null
+      },
+      {
+        "name": "Cam Barr",
+        "character": "Cam",
+        "profileUrl": null
+      },
+      {
+        "name": "Nena Woolworth",
+        "character": "Shaman",
+        "profileUrl": null
+      },
+      {
+        "name": "Jesus Garcia",
+        "character": "Shipping Colleague",
+        "profileUrl": null
+      },
+      {
+        "name": "Jay Traynor",
+        "character": "Jay",
+        "profileUrl": null
+      },
+      {
+        "name": "Leo Gonzalez",
+        "character": "Grant",
+        "profileUrl": null
+      },
+      {
+        "name": "Mason Lawrence",
+        "character": "Party Goer",
+        "profileUrl": null
+      },
+      {
+        "name": "Shing-Hua Pa",
+        "character": "Motel Clerk",
+        "profileUrl": null
+      },
+      {
+        "name": "Randy Focazio",
+        "character": "Resturant Worker",
+        "profileUrl": null
+      },
+      {
+        "name": "Chris Kapcia",
+        "character": "Cop",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1316147,
+    "title": "מהיר ועכברי",
+    "releaseDate": "2025-07-24",
+    "genres": [
+      16,
+      12,
+      35
+    ],
+    "overview": "היא רק רצתה סלפי עם אד כוכב המרוצים שלה... אבל מצאה את עצמה דוהרת קדימה ולא עוצרת באדום! כדי להציל את הקריירה של אד ואת הלונה פארק המשפחתי שלה, היא נכנסת במקומו למסלול המרוצים הכי מהיר באירופה, בלי ניסיון, בלי רישיון - ועם הרבה בטחון. האם היא תצליח לסיים את המרוץ?",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xqOL8jHH4II3p1SVhIElzGSPlA8.jpg",
+    "popularity": 66.1614,
+    "rating": 7.5,
+    "cast": [
+      {
+        "name": "ג'מה ארטרטון",
+        "character": "Edda (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mg0CNOrCgI6MYCDcLNxTxQ9iwUI.jpg"
+      },
+      {
+        "name": "תומאס ברודי-סאנגסטר",
+        "character": "Ed (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ovfgjgaE7aAXKYaemABX6pJFwRk.jpg"
+      },
+      {
+        "name": "היילי אטוול",
+        "character": "Cindy (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/yaJv2qrKHBw5Txo5ds0wOb03PXi.jpg"
+      },
+      {
+        "name": "Lenny Henry",
+        "character": "Erwin (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aT5zYMfGI3x4sGtCs9QM4gT0G2h.jpg"
+      },
+      {
+        "name": "Rob Beckett",
+        "character": "Enzo (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cNk7UPouvNyePdmPsOITVFhpe2J.jpg"
+      },
+      {
+        "name": "Colin McFarlane",
+        "character": "Nachtkrabb (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tCLiWpKooSQJfyC260qNeNYTe9S.jpg"
+      },
+      {
+        "name": "David Menkin",
+        "character": "Magnus (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wRMjAjsSwFk1HDOFNvH2r2nL9mO.jpg"
+      },
+      {
+        "name": "Joseph Balderrama",
+        "character": "Jorge (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/8BwRFsXzWD25dPih6IePcRD3EjT.jpg"
+      },
+      {
+        "name": "Ayesha Antoine",
+        "character": "Rosa (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7EQ1NyUQzUavbUczcufkQG5Sweu.jpg"
+      },
+      {
+        "name": "DJ BoBo",
+        "character": "Böckli (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jPZtfIxKlf2hHRRwQzQvTWpk05V.jpg"
+      },
+      {
+        "name": "אדם אל הייגר",
+        "character": "Richard (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3nDGVEL52s5k3gHGrQ6lS1O3HZI.jpg"
+      },
+      {
+        "name": "Guillaume Larouche",
+        "character": "Louis (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Petra Letang",
+        "character": "Olivia (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2ZwODX2gndoEGWDXLf1AyOM1qeF.jpg"
+      },
+      {
+        "name": "Matt Moselle",
+        "character": "Mittens (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Nate Begle",
+        "character": "Fluffy (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wKiMFMmxiqrd2DE3dIbcmzuhk2D.jpg"
+      },
+      {
+        "name": "Tristan Marwa",
+        "character": "Little Ed (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Faith Delaney",
+        "character": "Finja (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jIKjTzr4dCoybQgNhyREahh9Aym.jpg"
+      },
+      {
+        "name": "Steven Kynman",
+        "character": "Peri / Disgruntled Fan (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/woTrv2jyagh5P9Hz6Y0Gsgtzsyj.jpg"
+      },
+      {
+        "name": "Waldemar Fast",
+        "character": "Wolf (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Simon Capes",
+        "character": "Carlos / Matteo (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Joffe Walters",
+        "character": "Erik (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Rebecca Kamp",
+        "character": "Antje / Chihuahua (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Bettina Kenney",
+        "character": "Additional Voices (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Dalton Deverell",
+        "character": "Chihuahua (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Michael Mack",
+        "character": "Raccoon (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Paul Mack",
+        "character": "Cheering Fan (voice)",
+        "profileUrl": null
+      },
+      {
+        "name": "Jacob Mack",
+        "character": "Cheering Fan (voice)",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1061474,
+    "title": "סופרמן",
+    "releaseDate": "2025-07-09",
+    "genres": [
+      878,
+      12,
+      28
+    ],
+    "overview": "סופרמן, עיתונאי חדש במטרופוליס, יוצא למסע כדי ליישב את המורשת הקריפטונית שלו עם החינוך האנושי שלו בתור קלארק קנט.  כמי שמייצג את האמת, הצדק והדרך האנושית, הוא מוצא את עצמו בעולם שרואה בדברים האלה משהו מיושן.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/c3x9ePT28gTO7xyA3tbmfVFbFl5.jpg",
+    "popularity": 67.6635,
+    "rating": 7.4,
+    "cast": [
+      {
+        "name": "דייוויד קורנסווט",
+        "character": "Superman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qB0hBMu4wU1nPrqtdUQP3sQeN5t.jpg"
+      },
+      {
+        "name": "רייצ'ל ברוסנהאן",
+        "character": "Lois Lane",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fgqhKKmHko115dbfHKWHmC83814.jpg"
+      },
+      {
+        "name": "ניקולס הולט",
+        "character": "Lex Luthor",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/laeAYQVBV9U3DkJ1B4Cn1XhpT8P.jpg"
+      },
+      {
+        "name": "אדי גטהאגי",
+        "character": "Mr. Terrific",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/dt8yMyycDlzxkjhmuuJJ4tXDbp4.jpg"
+      },
+      {
+        "name": "נייתן פיליון",
+        "character": "Guy Gardner",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/q31mXXgnN5PsuIjEqaaAPvBDvHc.jpg"
+      },
+      {
+        "name": "איזבלה מרסד",
+        "character": "Hawkgirl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/7O5GWIH8IHwU4kGZIhC3JkGDiZr.jpg"
+      },
+      {
+        "name": "María Gabriela de Faría",
+        "character": "The Engineer",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/joKXt8ai99udROK7VEFCDsBEm3Y.jpg"
+      },
+      {
+        "name": "סקיילר ג'יסונדו",
+        "character": "Jimmy Olsen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lJ6Sh5duegwjpoKF0QmiFHbBDXr.jpg"
+      },
+      {
+        "name": "אלן טודיק",
+        "character": "Gary",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jUuUbPuMGonFT5E2pcs4alfqaCN.jpg"
+      },
+      {
+        "name": "Grace Chan",
+        "character": "Superman Robot #12 (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vs6aMdkXkR8A0sOCXK6AGIrVeHb.jpg"
+      },
+      {
+        "name": "בראדלי קופר",
+        "character": "Jor-El",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pLD2XvxqHueLWOuqXoFngJU3A5H.jpg"
+      },
+      {
+        "name": "אנג'לה סרפיאן",
+        "character": "Lara",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/n23SKRSGUZL5sJz4MFkjnPxLgPl.jpg"
+      },
+      {
+        "name": "Michael Rooker",
+        "character": "Superman Robot #1 (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ngOuHNIAGrKyY1O7F0f9C5Q9ONg.jpg"
+      },
+      {
+        "name": "פום קלמנטיף",
+        "character": "Superman Robot #5 (voice)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hfUKAI2kXTMMWjno0i4sLPJud5N.jpg"
+      },
+      {
+        "name": "Sara Sampaio",
+        "character": "Eve Teschmacher",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/sbkNQSoD8SKwk36BjoqWEYdwUAd.jpg"
+      },
+      {
+        "name": "Tatiana Piper",
+        "character": "Boravian Tech",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fIKgWubUbsqEGvtqvXhwLJvSUn7.jpg"
+      },
+      {
+        "name": "Stephen Blackehart",
+        "character": "Sydney Happersen",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/v5niazocH1HjyCIxrnbrf93P1dK.jpg"
+      },
+      {
+        "name": "Giovannie Cruz",
+        "character": "Cheryl Kimble",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oHVCayiyaf2c9zlZE6DJDZMy70F.jpg"
+      },
+      {
+        "name": "Bonnie Discepolo",
+        "character": "Ms. Jessop",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vGIlPXkuqLhe8kVmQigbEv7dTAE.jpg"
+      },
+      {
+        "name": "Terence Rosemore",
+        "character": "Otis Berg",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mjBaREqAREvJLxDpOlUGLxaYrIP.jpg"
+      },
+      {
+        "name": "נטשה הלוי",
+        "character": "Amanda Marie McCoy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/wDHcMDjNexo3cfOUjmruaThhv6H.jpg"
+      },
+      {
+        "name": "Adriana Leonard",
+        "character": "Comms Tech",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/povFgBOQMHwPLTE331MsgII0dTv.jpg"
+      },
+      {
+        "name": "Paul Kim",
+        "character": "Larry Chin",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/acDzcUMVIgNlosYVYPDGmN1OMOX.jpg"
+      },
+      {
+        "name": "Jonah Lees",
+        "character": "Dean Farr",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jLXRVYNyQ8X2Mn9bgVelbIoQDDh.jpg"
+      },
+      {
+        "name": "Christian Lees",
+        "character": "Desmond Farr",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/aWotUX639lWuPEmMsGVKniirdpP.jpg"
+      },
+      {
+        "name": "Dinesh Thyagarajan",
+        "character": "Malik 'Mali' Ali",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cxahrM2pspDUH4taXl0s2do1nDe.jpg"
+      },
+      {
+        "name": "Rudy Quintanilla",
+        "character": "Reggie",
+        "profileUrl": null
+      },
+      {
+        "name": "Ryan J. Pezdirc",
+        "character": "Onlooker",
+        "profileUrl": null
+      },
+      {
+        "name": "Michael Ian Black",
+        "character": "Cleavis Thornwaite",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qAOJfAK6VjV7ugRfy1zbud14OkQ.jpg"
+      },
+      {
+        "name": "Wendell Pierce",
+        "character": "Perry White",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/r6yKahL6Z8l9aUX5qvWxTmWl8Nm.jpg"
+      },
+      {
+        "name": "בקי בנט",
+        "character": "Steve Lombard",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xbcVvJ1a7qUIdyYb4PJewFlNFu4.jpg"
+      },
+      {
+        "name": "Neva Howell",
+        "character": "Ma Kent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/r3x56SNHOXdaGXe0k2oU8lXPNIE.jpg"
+      },
+      {
+        "name": "פרואיט טיילור וינס",
+        "character": "Pa Kent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/jqC1v8tF92QcmkQycnaLSuJiQfl.jpg"
+      },
+      {
+        "name": "Mikaela Hoover",
+        "character": "Cat Grant",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mC2jcUUd8I9eyRm1liQiMA63Vvm.jpg"
+      },
+      {
+        "name": "Christopher McDonald",
+        "character": "Ron Troupe",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nRJCI9Ru1MkU5SuBIlY5TIkhIQI.jpg"
+      },
+      {
+        "name": "זלאטקו בוריץ'",
+        "character": "Vasil Ghurkos",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2b9ErKvUwblnByewNMXqBtFEIzQ.jpg"
+      },
+      {
+        "name": "Martin Harris",
+        "character": "Boravian General",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3CRHqBr5U8pexQdtB42P0ZzK9x0.jpg"
+      },
+      {
+        "name": "פרנק גרילו",
+        "character": "Rick Flag Sr.",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/br2nPzelch2Tb3pZHnYAbXng7cz.jpg"
+      },
+      {
+        "name": "James Hiroyuki Liao",
+        "character": "General Mori",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lF7Vs93LJAXnIuipKKnC1O3jTU2.jpg"
+      },
+      {
+        "name": "Tinashe Kajese",
+        "character": "Flo Crawley",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xL68RNuAsTOsm89DP5rOHBC24i2.jpg"
+      },
+      {
+        "name": "Luis R. Hernandez",
+        "character": "Albert Tyler",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uHaasFhk9h5supTh3uHDhJczKvq.jpg"
+      },
+      {
+        "name": "Mary Chatmon",
+        "character": "Loretto Bell",
+        "profileUrl": null
+      },
+      {
+        "name": "Savannah Lumar",
+        "character": "Young Girl",
+        "profileUrl": null
+      },
+      {
+        "name": "Xingu Del Rosario",
+        "character": "Yogurt Eater",
+        "profileUrl": null
+      },
+      {
+        "name": "Lawrence Gilligan",
+        "character": "Sphere News Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vmX0HEgCYKV0JmK8YfzEEcFiIe4.jpg"
+      },
+      {
+        "name": "Suzanne Hobbs",
+        "character": "GBS Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/s4Je4tLJjeOqAsvvvDSUtfeSLcm.jpg"
+      },
+      {
+        "name": "Kimmy Suzuki",
+        "character": "Saved Woman",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/b5qO4l9IFv1YacrkIVzPCkKc8GM.jpg"
+      },
+      {
+        "name": "Will Reeve",
+        "character": "On the Ground Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fhWnC3r2vyHzyw4XlRjjW2tFPIf.jpg"
+      },
+      {
+        "name": "Jake Tapper",
+        "character": "Jack Tapir",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/oUmhEkHiDe1k1bbyD0kPdXISeZk.jpg"
+      },
+      {
+        "name": "Ira Amyx",
+        "character": "Construction Worker",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/1ZbEurTpaEoJmhUK98US1pyWpve.jpg"
+      },
+      {
+        "name": "Abel F. Alvarado",
+        "character": "International Reporter",
+        "profileUrl": null
+      },
+      {
+        "name": "Karla Suyeon Kim",
+        "character": "International Reporter",
+        "profileUrl": null
+      },
+      {
+        "name": "Jay Westbrook",
+        "character": "TV Interviewee",
+        "profileUrl": null
+      },
+      {
+        "name": "Nea Dune",
+        "character": "Makeup Artist",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vneOxv1UiuwK7MLv7C8yzEw4ERd.jpg"
+      },
+      {
+        "name": "Darla Delgado",
+        "character": "Heather",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5BZyQGMxVQ0DIwjsZuvB6YWCQdh.jpg"
+      },
+      {
+        "name": "Ashleigh Morghan",
+        "character": "Luthorcorp Scientist",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lmfpj3myzlNqZIkIMANURhH8Hkk.jpg"
+      },
+      {
+        "name": "אנתוני קאריגן",
+        "character": "Metamorpho",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nHlu6rBHLardtTAHma3lvX27hkA.jpg"
+      },
+      {
+        "name": "Trevor Newlin",
+        "character": "Mr. Handsome",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/3TcnxO2PSErW5WsOUcM5HHiqd3I.jpg"
+      },
+      {
+        "name": "Lon Gowan",
+        "character": "Scientist #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Taylor Valentine Lupini",
+        "character": "Scientist #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pyBl3OUxzMrggYyPm0sEUgHwGiq.jpg"
+      },
+      {
+        "name": "Paige Mobley",
+        "character": "Fleurette",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/gjrdcf9utMM69ckbAbyLovXWoJb.jpg"
+      },
+      {
+        "name": "Zach Lane",
+        "character": "Tech Bro",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/lwIOG93WEY6yOpBTT36oE9y5flX.jpg"
+      },
+      {
+        "name": "Theo Kypri",
+        "character": "Thug",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4JrpMbLip6wZY0BmHvnfM5OZO3j.jpg"
+      },
+      {
+        "name": "מייקל רוזנבאום",
+        "character": "Raptor Guard #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ymiZjRwcS3gcCtsfv4w3GjRc2yc.jpg"
+      },
+      {
+        "name": "Alexis Prewitt",
+        "character": "Raptor Guard #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Bobby Hernandez",
+        "character": "Raptor Guard #3",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/z2QZ5YSHxhHOKYSGuRqanICNkXU.jpg"
+      },
+      {
+        "name": "George Howard Adams",
+        "character": "Raptor Guard #4",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/apwKiPfwvcybedJ2JMtkXHch7Be.jpg"
+      },
+      {
+        "name": "David E. Collier",
+        "character": "Raptor Sergeant #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2oIqZ91VftiUgWeibb51QRsQVuq.jpg"
+      },
+      {
+        "name": "Jimmy Chhiu",
+        "character": "Raptor Sergeant #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Louisa Krause",
+        "character": "Sapphire Stagg",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/xkIx3PWJUumeUjOa2b3GPdMHp46.jpg"
+      },
+      {
+        "name": "AJ Bernard",
+        "character": "Young Jarhanpurian Boy",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/A83gWsyteRgXz54THBXZ0pkhti.jpg"
+      },
+      {
+        "name": "Alayna Bernard",
+        "character": "Jarhanpurian Kid #1",
+        "profileUrl": null
+      },
+      {
+        "name": "Jai Soundar",
+        "character": "Jarhanpurian Kid #2",
+        "profileUrl": null
+      },
+      {
+        "name": "Annika Mazumdar",
+        "character": "Jarhanpurian Kid #3",
+        "profileUrl": null
+      },
+      {
+        "name": "Fahim Fazli",
+        "character": "Jarhanpurian Villager #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hNjSzr3quACIMwotRaRM2yKi9fU.jpg"
+      },
+      {
+        "name": "Chaim Jeraffi",
+        "character": "Jarhanpurian Villager #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/odxOLYdm8mOihxpkWzNI1FMdU1I.jpg"
+      },
+      {
+        "name": "Melissa O. Bowen",
+        "character": "Woman in Car",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cbE0R8HTSMSbfGMWpLKWC5y8uct.jpg"
+      },
+      {
+        "name": "Torsten Kellar",
+        "character": "Boravian Commander",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nM7iizdMCsOmXkim7xATeFZ3SRw.jpg"
+      },
+      {
+        "name": "Johanna Braddy",
+        "character": "Metropolis Citizen #1",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fOcoQdYRgd3Fq2uzishb79jchea.jpg"
+      },
+      {
+        "name": "Austin Freeman",
+        "character": "Metropolis Citizen #2",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ayMPH1a0QKAeiCVk77L5i5IZdlc.jpg"
+      },
+      {
+        "name": "Kim Brunhuber",
+        "character": "GBS Reporter #2",
+        "profileUrl": null
+      },
+      {
+        "name": "שון גאן",
+        "character": "Maxwell Lord",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vpU13iCGqCpCd3LH4Tem6sVr7it.jpg"
+      },
+      {
+        "name": "Sharon Carpenter",
+        "character": "Metro News Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cJ2D3IxfbM6X4VtlpvunvusXQH3.jpg"
+      },
+      {
+        "name": "Greg Clarkson",
+        "character": "Mocking Reporter",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/hZhh6HICNVg4DsTQYdaMDpDZgnS.jpg"
+      },
+      {
+        "name": "Milli M.",
+        "character": "TV Show Host",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/A46dMCDh7NRNQqDptWkpPPLCWjY.jpg"
+      },
+      {
+        "name": "Pierce Lackey",
+        "character": "Armed Sergeant",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/tS0H0v33cYWotY3iiYtvyotZjFh.jpg"
+      },
+      {
+        "name": "Oliver Diego Silva",
+        "character": "Young Clark (2 Years Old)",
+        "profileUrl": null
+      },
+      {
+        "name": "Lloyd Kaufman",
+        "character": "Metropolis Citizen #3 (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4jNIqeZBK2YbpPupBhl4l1moQn5.jpg"
+      },
+      {
+        "name": "ג'ון סינה",
+        "character": "Peacemaker (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/rgB2eIOt7WyQjdgJCOuESdDlrjg.jpg"
+      },
+      {
+        "name": "מילי אלקוק",
+        "character": "Supergirl (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cpcNqIORhZlpie8U2wSInhv0Hjf.jpg"
+      },
+      {
+        "name": "ג'ניפר הולנד",
+        "character": "Superman Robot #22 (voice) (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ynuKq1Pd6aVGwhb07uJ0PiYV4F6.jpg"
+      },
+      {
+        "name": "ג'יימס גאן",
+        "character": "Typewriting Monkeys (uncredited)",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/pnKqZub3IlKYbyH9RRTMDOoqEn0.jpg"
+      },
+      {
+        "name": "Eric Nally",
+        "character": "Metropolis Citizen #4 (uncredited)",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1446358,
+    "title": "חתן אחד, שתי כלות",
+    "releaseDate": "2025-11-06",
+    "genres": [
+      10749,
+      35
+    ],
+    "overview": "אדם אלרגי לאהבה, אבל איכשהו הוא מוצא את עצמו מאורס גם לבת של הבוס שלו וגם לאהבתו הראשונה. עכשיו הוא צריך איכשהו לשמור את חייו הכפולים בסוד.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/pofgUZkETInWRlyzFz82Kf6jOEZ.jpg",
+    "popularity": 63.659,
+    "rating": 5,
+    "cast": [
+      {
+        "name": "عبدالله بوشهري",
+        "character": "Adam",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/nuTGfd8Qis800OxJQoO2luLTMEc.jpg"
+      },
+      {
+        "name": "لولوة الملا",
+        "character": "Sama",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vTFhpx3Tn3GWOScndmnyXjOM71V.jpg"
+      },
+      {
+        "name": "ليلى عبد الله",
+        "character": "Yasmine",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/2HDP8ko5OlY0iIMOB5F7EyQRqyp.jpg"
+      },
+      {
+        "name": "حمد أشكناني",
+        "character": "Talal",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/afXSf2OnHTJpGsUo0mgJRSM0aub.jpg"
+      },
+      {
+        "name": "سارة أبي كنعان",
+        "character": "Hala",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/vTDUsabi7gIM5Tf5hifx5VRW27.jpg"
+      },
+      {
+        "name": "Shihab Hajiyeh",
+        "character": "",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/ageFBfUlM8Z4TRQeq5BsGAOy58Z.jpg"
+      }
+    ]
+  },
+  {
+    "id": 1519168,
+    "title": "הליצן 2",
+    "releaseDate": "2025-09-15",
+    "genres": [
+      27,
+      53,
+      80
+    ],
+    "overview": "נערה מתבגרת שמתעניינת בקסמים ואשליות, מוצאת את עצמה בעימות עקוב מדם עם הליצן. כשמקס נתקלת ברוצח העל-טבעי שאינו מפסיק לרדוף אותה, היא נאלצת להשתמש בכל כישורי הקסם והתחבולות שלה כדי לשרוד את הלילה. האשליות של הליצן הופכות לקטלניות, וכל ניסיון בריחה של מקס מתגלה כמלכודת. כדי להימלט מהסכנה, עליה להתעלות על רוצח שמשחק משחק קטלני עם חוקים משלו, ולבצע את ה\"טריק\" האולטימטיבי: להישאר בחיים.",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/47dsw1jSOV0Be5zmy7CtLhYpqU.jpg",
+    "popularity": 53.995,
+    "rating": 6.533,
+    "cast": [
+      {
+        "name": "Michael Sheffield",
+        "character": "The Jester",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/746gVMQooBk3oXYME0zP0BTEF6j.jpg"
+      },
+      {
+        "name": "Kaitlyn Trentham",
+        "character": "Max",
+        "profileUrl": null
+      },
+      {
+        "name": "Dingani Beza",
+        "character": "Willie",
+        "profileUrl": null
+      },
+      {
+        "name": "Hassen Kacem",
+        "character": "Logan",
+        "profileUrl": null
+      },
+      {
+        "name": "Jessica Ambuehl",
+        "character": "Mom",
+        "profileUrl": null
+      },
+      {
+        "name": "Charles Mckee",
+        "character": "Diner Patron",
+        "profileUrl": null
+      },
+      {
+        "name": "Patrick Loree",
+        "character": "Darren",
+        "profileUrl": null
+      }
+    ]
+  },
+  {
+    "id": 1241755,
+    "title": "TL",
+    "releaseDate": "2024-03-30",
+    "genres": [
+      18
+    ],
+    "overview": "",
+    "posterUrl": "https://image.tmdb.org/t/p/w500/xb1Y4LpShfJaKJwOowxfs8dZhDt.jpg",
+    "popularity": 51.5368,
+    "rating": 5.857,
+    "cast": [
+      {
+        "name": "Jenn Rosa",
+        "character": "Brenda",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/f2EItX0kOXJjDzZFZSFmGOVS8HB.jpg"
+      },
+      {
+        "name": "Nico Locco",
+        "character": "TL Carl",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/5mWKE2MAhdzpX6haB8734z1sisl.jpg"
+      },
+      {
+        "name": "Armani Hector",
+        "character": "Phil",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/fDrhynQZe8VJk62CCXLKMu6HWxN.jpg"
+      },
+      {
+        "name": "Jonica Lazo",
+        "character": "Renee",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/mxOqs2l9J0g2ZMZgKWZnOGlaKwT.jpg"
+      },
+      {
+        "name": "Manu Respall",
+        "character": "Om Joem",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/4YiyzmvPk1f5j79EW4zxxuRi1Gj.jpg"
+      },
+      {
+        "name": "Irish Tan",
+        "character": "Andrea",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/qROqG26PTPHHBLDNTqfXJYX9sgC.jpg"
+      },
+      {
+        "name": "Ayra Salvador",
+        "character": "Sheena",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/cBz7YxFkc2AQPEbswVtyHh5hfEi.jpg"
+      },
+      {
+        "name": "Amarah Faith Panlilio",
+        "character": "TL Carl's Daughter",
+        "profileUrl": null
+      },
+      {
+        "name": "Adrian Caleb Tayag",
+        "character": "TL Carl's Son",
+        "profileUrl": null
+      },
+      {
+        "name": "Aina Ashley Roque",
+        "character": "Call Center Agent",
+        "profileUrl": "https://image.tmdb.org/t/p/w200/uIjtxbtiVncGbdhSmnMPtjn9UPA.jpg"
+      }
+    ]
+  }
+]

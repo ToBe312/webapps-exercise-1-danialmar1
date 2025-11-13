@@ -50,7 +50,7 @@ const register = async (req, res) => {
     res.status(201).json(newUser);
 };        
 
-const loginDemo = async (req, res) => {
+const login = async (req, res) => {
     const { email, password } = req.body;
 
     console.log({ email, password });
@@ -69,8 +69,19 @@ const loginDemo = async (req, res) => {
     res.status(200).json(user);
 }
 
+const logout = (req, res) => {
+    req.session.destroy(err => {
+    if (err) {
+        return res.status(500).json({ error: 'Could not log out, please try again' });
+    }
+    res.clearCookie('connect.sid');
+    res.json({ message: 'Logout successful' });
+  });
+};
+
 
 module.exports = {
     register,
-    loginDemo
+    login,
+    logout
 };
