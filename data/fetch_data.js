@@ -117,15 +117,36 @@ async function fetchSeries() {
   return { allSeries, allEpisodes };
 }
 
+async function fetchGenres() {
+    const res = await fetch(
+        `https://api.themoviedb.org/3/genre/movie/list?language=he&api_key=${API_KEY}`
+    );
+    const movie = await res.json();
+
+    const res2 = await fetch(
+        `https://api.themoviedb.org/3/genre/tv/list?language=he&api_key=${API_KEY}`
+    );
+    const tv = await res.json();
+
+    const mergedArray = movie.genres.concat(tv.genres.filter(
+        item2 => !movie.genres.some(item1 => item1.id === item2.id)));
+    
+    return mergedArray;
+
+}
+
+
 async function main() {
   if (!fs.existsSync(IMAGE_DIR)) fs.mkdirSync(IMAGE_DIR);
 
   const movies = await fetchMovies();
   const { allSeries, allEpisodes } = await fetchSeries();
+  const genres = await fetchGenres();
 
   fs.writeFileSync('movies.json', JSON.stringify(movies, null, 2));
   fs.writeFileSync('series.json', JSON.stringify(allSeries, null, 2));
   fs.writeFileSync('episodes.json', JSON.stringify(allEpisodes, null, 2));
+  fs.writeFileSync('genres.json', JSON.stringify(genres, null, 2));
 
   console.log(`Saved ${movies.length} movies, ${allSeries.length} series, ${allEpisodes.length} episodes with images`);
 }

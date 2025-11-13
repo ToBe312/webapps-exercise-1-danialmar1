@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>מסך בחירת תוכן</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      background-color: #000; /* black background for streaming vibe */
+      margin: 0;
+      padding: 0;
+    }
+    /* Style for the navbar */
+    .navbar {
+      background-color: #141414; /* dark background similar to Netflix */
+    }
+    /* Logo styling */
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar .btn {
+        text-decoration: none;
+    }
+
+    .navbar .btn:hover {
+        background-color: #343434;
+        transform: scale(1.03);
+        border-bottom: 3px solid #797cc2;
+    }
+  </style>
+  <style>
+    body {
+      color: #fff;
+    }
+    /* Additional styling as needed */
+    .content-header {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+    }
+    .poster {
+      max-width: 300px;
+      margin-right: 20px;
+    }
+    .actions {
+      margin-top: 10px;
+    }
+    .similar-content {
+      display: flex;
+      overflow-x: auto;
+      margin-top: 20px;
+    }
+    .similar-item {
+      flex: 0 0 auto;
+      margin-right: 10px;
+      width: 150px;
+    }
+    .episode-list {
+      margin-top: 20px;
+    }
+    .actor-list {
+      margin-top: 20px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .actor {
+      margin: 5px 10px;
+      cursor: pointer;
+      color: #797cc2;
+    }
+  </style>
+  <style>
+    .movie-row {
+      gap: 10px;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+
+    .movie-item {
+      width: 200px;
+      flex-shrink: 0;
+      transition: opacity 0.3s, max-height 0.3s;
+      /*max-height: 100px; /* or some max value */
+
+    }
+
+    .movie-poster {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .movie-poster:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: aquamarine;
+      text-shadow: #555;
+      padding-right: 2px;
+    }
+
+    /* Optional: add hover effect for the like container if you want to animate opacity */
+    .like-container {
+      opacity: 0;
+      transition: opacity 0.3s;
+      color: pink;
+    }
+
+    .movie-item:hover .like-container {
+      opacity: 1;
+    }
+
+    .like-b {
+      color: #ccc;
+      font-size: 30px;
+    }
+
+    .hide {
+      opacity: 0;
+      max-height: 0;
+    }
+
+    .sort-button {
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .movie-feed-container h2:hover .sort-button {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body dir="rtl">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/CORNFLEX2.png" alt="Logo" />
+      </a>
+      <!-- Navigation buttons -->
+      <div class="d-flex ms-auto">
+        <button class="btn btn-link text-white mx-2">מסך הבית</button>
+        <button class="btn btn-link text-white mx-2">סדרות</button>
+        <button class="btn btn-link text-white mx-2">סרטים</button>
+        <button class="btn btn-link text-white mx-2">חדש ופופולרי</button>
+        <button class="btn btn-link text-white mx-2">הרשימה שלי</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container my-4">
+    <!-- 1. Main info section -->
+    <div class="content-header">
+      <img src="content-poster.jpg" id="content-poster" class="poster" alt="Content Poster" />
+      <div>
+        <h2 id="content-title">Content Title</h2>
+        <p id="content-overview">Brief synopsis of the content...</p>
+        <p><strong>רייטינג:</strong> <span id="content-rating">8.5</span></p>
+        <p><strong>שנה:</strong> <span id="content-year">2023</span></p>
+        <!-- Add more info as needed -->
+        <div class="actions">
+          <button class="btn btn-primary me-2" id="continue-watching">המשך צפייה</button>
+          <button class="btn btn-secondary me-2" id="watch-from-start">צפייה מההתחלה</button>
+          <button class="btn btn-outline-white" id="like-btn">Like</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Series episodes (if applicable) -->
+    <div class="episode-list" id="episode-list" style="display:none;">
+      <h4>Episodes</h4>
+      <ul class="list-group" id="episodes"></ul>
+    </div>
+
+    <!-- 3. Similar Content -->
+    <div class="similar-content" id="similar-content-section">
+      <h4>Similar Content</h4>
+      <div class="similar-content" id="similar-content"></div>
+    </div>
+
+    <!-- 4. Actors -->
+    <div class="" id="actor-list">
+      <h4>Actors</h4>
+      <!-- Actors will be appended here -->
+    </div>
+  </div>
+
+  <script>
+
+    const baseImageUrl = "images/";
+    // Example data (replace with your actual data source)
+    const contentData = {
+  "_id": {
+    "$oid": "69136347efb4bdd730152dec"
+  },
+  "tmdbId": 1062722,
+  "title": "פרנקנשטיין",
+  "releaseDate": {
+    "$date": "2025-10-17T00:00:00.000Z"
+  },
+  "genres": [
+    18,
+    27,
+    14
+  ],
+  "overview": "עיבוד של הבמאי זוכה האוסקר גיירמו דל טורו לסיפור הקלאסי של מרי שלי על ויקטור פרנקנשטיין, מדען מבריק ויהיר שמפיח חיים בגוף שיצר, אך הניסוי המפלצתי מוביל בסופו של דבר למפלה של היוצר ושל יצירתו הטרגית.",
+  "posterPath": "movie_1062722.jpg",
+  "popularity": 1005.0134,
+  "rating": 7.929,
+  "cast": [
+    {
+      "name": "אוסקר אייזק",
+      "character": "Victor Frankenstein",
+      "profilePath": "actor_אוסקר_אייזק.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152ded"
+      }
+    },
+    {
+      "name": "ג'ייקוב אלורדי",
+      "character": "The Creature",
+      "profilePath": "actor_ג'ייקוב_אלורדי.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dee"
+      }
+    },
+    {
+      "name": "כריסטוף ואלץ",
+      "character": "Harlander",
+      "profilePath": "actor_כריסטוף_ואלץ.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152def"
+      }
+    },
+    {
+      "name": "מיה גות",
+      "character": "Elizabeth",
+      "profilePath": "actor_מיה_גות.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df0"
+      }
+    },
+    {
+      "name": "Felix Kammerer",
+      "character": "William Frankenstein",
+      "profilePath": "actor_Felix_Kammerer.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df1"
+      }
+    },
+    {
+      "name": "צ'ארלס דאנס",
+      "character": "Leopold Frankenstein",
+      "profilePath": "actor_צ'ארלס_דאנס.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df2"
+      }
+    },
+    {
+      "name": "David Bradley",
+      "character": "Blind Man",
+      "profilePath": "actor_David_Bradley.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df3"
+      }
+    },
+    {
+      "name": "Lars Mikkelsen",
+      "character": "Captain Anderson",
+      "profilePath": "actor_Lars_Mikkelsen.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df4"
+      }
+    },
+    {
+      "name": "כריסטיאן קונברי",
+      "character": "Young Victor Frankenstein",
+      "profilePath": "actor_כריסטיאן_קונברי.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df5"
+      }
+    },
+    {
+      "name": "Nikolaj Lie Kaas",
+      "character": "Chief Officer Larsen",
+      "profilePath": "actor_Nikolaj_Lie_Kaas.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df6"
+      }
+    },
+    {
+      "name": "Kyle Gatehouse",
+      "character": "Young Hunter",
+      "profilePath": "actor_Kyle_Gatehouse.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df7"
+      }
+    },
+    {
+      "name": "Lauren Collins",
+      "character": "Hunter's Wife",
+      "profilePath": "actor_Lauren_Collins.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df8"
+      }
+    },
+    {
+      "name": "Sofia Galasso",
+      "character": "Anna-Maria",
+      "profilePath": "actor_Sofia_Galasso.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152df9"
+      }
+    },
+    {
+      "name": "Joachim Fjelstrup",
+      "character": "Dr. Udsen",
+      "profilePath": "actor_Joachim_Fjelstrup.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dfa"
+      }
+    },
+    {
+      "name": "ראלף אינסון",
+      "character": "Professor Krempe",
+      "profilePath": "actor_ראלף_אינסון.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dfb"
+      }
+    },
+    {
+      "name": "Peter Millard",
+      "character": "Professor Stokeld",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152dfc"
+      }
+    },
+    {
+      "name": "Peter MacNeill",
+      "character": "Professor Maurus",
+      "profilePath": "actor_Peter_MacNeill.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dfd"
+      }
+    },
+    {
+      "name": "Burn Gorman",
+      "character": "Executioner",
+      "profilePath": "actor_Burn_Gorman.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dfe"
+      }
+    },
+    {
+      "name": "Sean Sullivan",
+      "character": "Old Hunter #1",
+      "profilePath": "actor_Sean_Sullivan.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152dff"
+      }
+    },
+    {
+      "name": "Stuart Hughes",
+      "character": "Old Hunter #2",
+      "profilePath": "actor_Stuart_Hughes.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e00"
+      }
+    },
+    {
+      "name": "Gord Rand",
+      "character": "Silversmith",
+      "profilePath": "actor_Gord_Rand.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e01"
+      }
+    },
+    {
+      "name": "Kenton Craig",
+      "character": "Harlander's Butler",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e02"
+      }
+    },
+    {
+      "name": "Val Ovtcharov",
+      "character": "Outpost Clerk",
+      "profilePath": "actor_Val_Ovtcharov.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e03"
+      }
+    },
+    {
+      "name": "Anders Yates",
+      "character": "Torfussen",
+      "profilePath": "actor_Anders_Yates.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e04"
+      }
+    },
+    {
+      "name": "Adam Brown",
+      "character": "Prisoner #1",
+      "profilePath": "actor_Adam_Brown.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e05"
+      }
+    },
+    {
+      "name": "Santiago Segura",
+      "character": "Prisoner #2",
+      "profilePath": "actor_Santiago_Segura.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e06"
+      }
+    },
+    {
+      "name": "Dexter Stokes-Mellor",
+      "character": "Prisoner #3",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e07"
+      }
+    },
+    {
+      "name": "Shian Denovan",
+      "character": "Nymph",
+      "profilePath": "actor_Shian_Denovan.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e08"
+      }
+    },
+    {
+      "name": "Mark Steger",
+      "character": "Spinal Corpse",
+      "profilePath": "actor_Mark_Steger.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e09"
+      }
+    },
+    {
+      "name": "Rafe Harwood",
+      "character": "Young William Frankenstein",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0a"
+      }
+    },
+    {
+      "name": "Gregory Mann",
+      "character": "Head Urchin",
+      "profilePath": "actor_Gregory_Mann.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0b"
+      }
+    },
+    {
+      "name": "Roberto Campanella",
+      "character": "Dark Angel",
+      "profilePath": "actor_Roberto_Campanella.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0c"
+      }
+    },
+    {
+      "name": "Rebecca Lawson-Turner",
+      "character": "Woman in Confessional",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0d"
+      }
+    },
+    {
+      "name": "Warren Albert",
+      "character": "Professor Kugelmann",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0e"
+      }
+    },
+    {
+      "name": "קים מורגן",
+      "character": "Guest at Wedding and Bistro",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e0f"
+      }
+    },
+    {
+      "name": "Chris Andrews",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e10"
+      }
+    },
+    {
+      "name": "Lewis Landini",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e11"
+      }
+    },
+    {
+      "name": "William John Banks",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e12"
+      }
+    },
+    {
+      "name": "Tess Letham",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e13"
+      }
+    },
+    {
+      "name": "Alexandros Beshonges",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e14"
+      }
+    },
+    {
+      "name": "Maria Peneva",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e15"
+      }
+    },
+    {
+      "name": "Kieran Brown",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e16"
+      }
+    },
+    {
+      "name": "Jessica Roberts Smith",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e17"
+      }
+    },
+    {
+      "name": "Rachel Elderkin",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e18"
+      }
+    },
+    {
+      "name": "Jennifer Steele",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e19"
+      }
+    },
+    {
+      "name": "Jorja Follina",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1a"
+      }
+    },
+    {
+      "name": "Malcolm Sutherland",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1b"
+      }
+    },
+    {
+      "name": "Alex Henderson",
+      "character": "Bistro Dancer",
+      "profilePath": "actor_Alex_Henderson.jpg",
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1c"
+      }
+    },
+    {
+      "name": "Luke Watson",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1d"
+      }
+    },
+    {
+      "name": "Yasmin Hepburn",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1e"
+      }
+    },
+    {
+      "name": "Pawel Wieczorek",
+      "character": "Bistro Dancer",
+      "profilePath": null,
+      "_id": {
+        "$oid": "69136347efb4bdd730152e1f"
+      }
+    }
+  ],
+  "__v": 0,
+  "createdAt": {
+    "$date": "2025-11-11T16:24:39.265Z"
+  },
+  "updatedAt": {
+    "$date": "2025-11-11T16:24:39.265Z"
+  }
+}
+
+    // נניח שה־id של התוכן מגיע ב־URL: content.html?id=123&type=movie
+    const params = new URLSearchParams(window.location.search);
+    const contentId = params.get('id');
+    const type = params.get('type'); // 'movie' או 'series'
+
+    async function loadContent() {
+        const res = await fetch(`/content/${type}/${contentId}`);
+        const content = await res.json();
+        console.log(content);
+        
+        document.getElementById('content-poster').src = baseImageUrl + content.posterPath;
+        document.getElementById('content-title').textContent = content.title;
+        document.getElementById('content-overview').textContent = content.overview;
+        document.getElementById('content-year').textContent = new Date(content.releaseDate).getFullYear();
+        document.getElementById('content-rating').textContent = content.rating;
+
+        // שחקנים
+        const castList = document.getElementById('actor-list');
+        castList.innerHTML = 
+        `
+        <div class="movie-feed-container my-4">
+          <h2 class="text-white mx-4">
+            שחקנים
+            <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+          </h2>
+          <div class="movie-row d-flex overflow-auto px-4">
+            ${content.cast.map(c =>
+              `
+              <div class="movie-item" onclick="window.open('https://he.wikipedia.org/wiki/${encodeURIComponent(c.name)}', '_blank')" >
+                <img src="${c.profilePath}" alt="${c.name}" class="movie-poster">
+                <div class="movie-title">
+                  ${c.name}
+                </div>
+              </div>`
+            ).join('')}
+          </div>
+        </div>
+      `;
+        /*
+        content.cast.map(c =>
+            `<li><a href="https://he.wikipedia.org/wiki/${encodeURIComponent(c.name)}" target="_blank">${c.name}</a></li>`
+        ).join('');
+        */
+        const rowContainer = document.querySelectorAll('.movie-row');
+    
+        rowContainer.forEach(r => 
+        { console.log(r);
+        r.addEventListener('wheel', (e) => {
+            console.log(r)
+            e.preventDefault(); // Prevent default page scroll
+            const delta = -Math.sign(e.deltaY);
+            // Scroll left or right based on wheel direction
+            const scrollAmount = delta * 300; // Adjust 100 for scroll speed
+            r.scrollBy({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+        })});
+        throw new Error('stop right now');
+        // תכנים דומים
+        const similarRes = await fetch(`/content/${type}/${contentId}/similar`);
+        const similar = await similarRes.json();
+        const similarContainer = document.getElementById('similar');
+        similarContainer.innerHTML = similar.map(s =>
+            `<div class="p-2"><img src="${s.posterPath}" width="120"><p>${s.title}</p></div>`
+        ).join('');
+
+        // אם זה סדרה → רשימת פרקים
+        if (type === 'series') {
+            document.getElementById('episodesSection').style.display = 'block';
+            const episodesRes = await fetch(`/content/series/${contentId}/episodes`);
+            const episodes = await episodesRes.json();
+            const episodesList = document.getElementById('episodes');
+            episodesList.innerHTML = episodes.map(e =>
+            `<li class="list-group-item episode-item">
+                עונה ${e.seasonNumber}, פרק ${e.episodeNumber} - ${e.title}
+                ${e.lastPosition ? `<span class="badge bg-info">נמשך מהדקה ${Math.floor(e.lastPosition/60)}</span>` : ''}
+            </li>`
+            ).join('');
+        } else {
+            document.getElementById('episodesSection').style.display = 'none';
+        }
+    }
+/*
+    // כפתורי צפייה
+    document.getElementById('playBtn').addEventListener('click', () => {
+    // קריאה לשרת להתחיל/להמשיך צפייה
+    window.location.href = `/player.html?id=${contentId}&type=${type}`;
+    });
+
+    document.getElementById('restartBtn').addEventListener('click', async () => {
+    await fetch(`/watch/restart/${type}/${contentId}`, { method: 'POST' });
+    window.location.href = `/player.html?id=${contentId}&type=${type}`;
+    });
+
+    // לייק
+    document.getElementById('likeBtn').addEventListener('click', async () => {
+    await fetch(`/likes/${type}/${contentId}`, { method: 'POST' });
+    alert('עודכן בהצלחה!');
+    });
+*/
+    loadContent();
+    
+    throw new Error("stop");
+
+    const genreCodes = 
+    // Populate content info
+    document.getElementById('content-title').textContent = contentData.title;
+    document.getElementById('content-synopsis').textContent = contentData.synopsis;
+    document.getElementById('content-rating').textContent = contentData.rating;
+    document.getElementById('content-year').textContent = contentData.year;
+    document.querySelector('.content-header img').src = contentData.poster;
+
+    // Show episodes if content is series
+    if (contentData.isSeries) {
+      document.getElementById('episode-list').style.display = 'block';
+      const episodesContainer = document.getElementById('episodes');
+      contentData.episodes.forEach(ep => {
+        const li = document.createElement('li');
+        li.className = 'list-group-item d-flex justify-content-between align-items-center';
+        li.innerHTML = `${ep.title} <span>Paused at: ${ep.pausedAt || 'Not watched'}</span>`;
+        // Add click event to switch episode
+        li.onclick = () => {
+          alert(`Switching to ${ep.title}`);
+        };
+        episodesContainer.appendChild(li);
+      });
+    }
+
+    // Populate similar content
+    const similarContainer = document.getElementById('similar-content');
+    contentData.similar.forEach(item => {
+      const div = document.createElement('div');
+      div.className = 'card me-2';
+      div.style.width = '150px';
+      div.innerHTML = `
+        <img src="${item.poster}" class="card-img-top" alt="${item.title}">
+        <div class="card-body p-2">
+          <p class="card-text">${item.title}</p>
+        </div>
+      `;
+      div.onclick = () => {
+        alert(`Loading details for ${item.title}`);
+      };
+      similarContainer.appendChild(div);
+    });
+
+    // Populate actors
+    const actorContainer = document.getElementById('actor-list');
+    contentData.actors.forEach(actor => {
+      const span = document.createElement('span');
+      span.className = 'actor';
+      span.textContent = actor.name;
+      span.onclick = () => {
+        window.open(actor.wikipedia, '_blank');
+      };
+      actorContainer.appendChild(span);
+    });
+
+    // Like button toggle
+    const likeBtn = document.getElementById('like-btn');
+    let liked = false;
+    likeBtn.onclick = () => {
+      liked = !liked;
+      likeBtn.textContent = liked ? 'Unlike' : 'Like';
+    };
+
+    // Continue Watching / Watch Buttons
+    document.getElementById('continue-watching').onclick = () => {
+      alert('Continuing from where you left off...');
+    };
+    document.getElementById('watch-from-start').onclick = () => {
+      alert('Watching from the beginning...');
+    };
+  </script>
+</body>
+</html>
