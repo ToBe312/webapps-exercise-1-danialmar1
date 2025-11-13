@@ -64,7 +64,7 @@
     const emailError = document.getElementById('emailError');
     const passwordError = document.getElementById('passwordError');
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault(); // prevent actual submission for validation
 
       let valid = true;
@@ -103,14 +103,41 @@
 
       // If all validations pass, you can proceed
       if (valid) {
-        // Save login state
-        localStorage.setItem('isLoggedIn', 'true');
 
-        // User info
-        localStorage.setItem('userEmail', emailInput.value);
+        // Send fetch
+        try {
+          const res = await fetch('/user/login', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 
+              email: emailInput.value,
+              password: passwordInput.value
+            })
+          });
+          
+          const data = await res.json();
+          if (res.ok) {
+            // Save login state
+            localStorage.setItem('isLoggedIn', 'true');
 
-        // Redirect
-        window.location.href = 'Profiles.html';
+            // User info
+            localStorage.setItem('userEmail', emailInput.value);
+
+            // Redirect
+            window.location.href = 'Profiles.html';
+          }
+          else if(res.status == 401) {
+            passwordError.textContent = 'פרטי התחברות שגויים';
+            passwordInput.classList.add('is-invalid');
+          } 
+          else {
+            alert('שגיאה: ' + data.error);
+          }
+        } catch (err) {
+          alert('אין חיבור לשרת');
+        }
       }
     });
   </script>
