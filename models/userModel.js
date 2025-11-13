@@ -1,64 +1,39 @@
-const fs = require('fs');
+const mongoose = require('mongoose');
 
-const dataPath = 'data/users.json';
+const UserSchema = new mongoose.Schema({
+  username: { type: String, required: true, unique: true },
+  email:    { type: String, required: true, unique: true },
+  password: { type: String, required: true }
+});
 
-let users = [];
 
-const loadUsers = () => {
-    try {
-        const data = fs.readFileSync(dataPath, 'utf8');
-        users = JSON.parse(data);
-    } catch (err) {
-        users = [];
-    }
+const User = mongoose.model('User', UserSchema);
+
+
+const getAll = async () => {
+  return await User.find();
 }
 
-const saveUsers = () => {
-    fs.writeFileSync(dataPath, JSON.stringify(users, null, 2));
+const findByUsername = async (username) => {
+  return await User.findOne({ username });
 }
 
-const getAll = () => {
-    return users;
+const findByEmail = async (email) => {
+  return await User.findOne({ email });
 }
 
-const findByUsername = (username) => {
-    return users.find(u => u.username === username);
+const create = async (userData) => {
+  const user = new User(userData);
+  return await user.save();
 }
 
-const findByEmail = (email) => {
-    return users.find(u => u.email === email);
+const update = async (id, newData) => {
+  return await User.findByIdAndUpdate(id, newData, { new: true });
 }
 
-const create = (user) => {
-    users.push(user);
-    saveUsers();
-    return user;
+const remove = async (id) => {
+  return await User.findByIdAndDelete(id);
 }
-
-const update = (username, newData) => {
-    const user = findByUsername(username);
-    if (user) {
-        Object.assign(user, newData);
-        saveUsers();
-        return user;
-    }
-    return null;
-}
-
-const remove = (username) => {
-    const index = users.findIndex(u => u.username === username);
-    if (index !== -1) {
-        const deleted = users.splice(index, 1);
-        saveUsers();
-        return deleted[0];
-    }
-    return null;
-}
-
-
-
-
-loadUsers();
 
 module.exports = {
   getAll,
