@@ -181,8 +181,7 @@
 
     <!-- 2. Series episodes (if applicable) -->
     <div class="episode-list" id="episode-list" style="display:none;">
-      <h4>Episodes</h4>
-      <ul class="list-group" id="episodes"></ul>
+      
     </div>
 
     <!-- 3. Similar Content -->
@@ -201,444 +200,7 @@
   <script>
 
     const baseImageUrl = "images/";
-    // Example data (replace with your actual data source)
-    const contentData = {
-  "_id": {
-    "$oid": "69136347efb4bdd730152dec"
-  },
-  "tmdbId": 1062722,
-  "title": "פרנקנשטיין",
-  "releaseDate": {
-    "$date": "2025-10-17T00:00:00.000Z"
-  },
-  "genres": [
-    18,
-    27,
-    14
-  ],
-  "overview": "עיבוד של הבמאי זוכה האוסקר גיירמו דל טורו לסיפור הקלאסי של מרי שלי על ויקטור פרנקנשטיין, מדען מבריק ויהיר שמפיח חיים בגוף שיצר, אך הניסוי המפלצתי מוביל בסופו של דבר למפלה של היוצר ושל יצירתו הטרגית.",
-  "posterPath": "movie_1062722.jpg",
-  "popularity": 1005.0134,
-  "rating": 7.929,
-  "cast": [
-    {
-      "name": "אוסקר אייזק",
-      "character": "Victor Frankenstein",
-      "profilePath": "actor_אוסקר_אייזק.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152ded"
-      }
-    },
-    {
-      "name": "ג'ייקוב אלורדי",
-      "character": "The Creature",
-      "profilePath": "actor_ג'ייקוב_אלורדי.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dee"
-      }
-    },
-    {
-      "name": "כריסטוף ואלץ",
-      "character": "Harlander",
-      "profilePath": "actor_כריסטוף_ואלץ.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152def"
-      }
-    },
-    {
-      "name": "מיה גות",
-      "character": "Elizabeth",
-      "profilePath": "actor_מיה_גות.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df0"
-      }
-    },
-    {
-      "name": "Felix Kammerer",
-      "character": "William Frankenstein",
-      "profilePath": "actor_Felix_Kammerer.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df1"
-      }
-    },
-    {
-      "name": "צ'ארלס דאנס",
-      "character": "Leopold Frankenstein",
-      "profilePath": "actor_צ'ארלס_דאנס.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df2"
-      }
-    },
-    {
-      "name": "David Bradley",
-      "character": "Blind Man",
-      "profilePath": "actor_David_Bradley.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df3"
-      }
-    },
-    {
-      "name": "Lars Mikkelsen",
-      "character": "Captain Anderson",
-      "profilePath": "actor_Lars_Mikkelsen.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df4"
-      }
-    },
-    {
-      "name": "כריסטיאן קונברי",
-      "character": "Young Victor Frankenstein",
-      "profilePath": "actor_כריסטיאן_קונברי.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df5"
-      }
-    },
-    {
-      "name": "Nikolaj Lie Kaas",
-      "character": "Chief Officer Larsen",
-      "profilePath": "actor_Nikolaj_Lie_Kaas.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df6"
-      }
-    },
-    {
-      "name": "Kyle Gatehouse",
-      "character": "Young Hunter",
-      "profilePath": "actor_Kyle_Gatehouse.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df7"
-      }
-    },
-    {
-      "name": "Lauren Collins",
-      "character": "Hunter's Wife",
-      "profilePath": "actor_Lauren_Collins.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df8"
-      }
-    },
-    {
-      "name": "Sofia Galasso",
-      "character": "Anna-Maria",
-      "profilePath": "actor_Sofia_Galasso.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152df9"
-      }
-    },
-    {
-      "name": "Joachim Fjelstrup",
-      "character": "Dr. Udsen",
-      "profilePath": "actor_Joachim_Fjelstrup.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dfa"
-      }
-    },
-    {
-      "name": "ראלף אינסון",
-      "character": "Professor Krempe",
-      "profilePath": "actor_ראלף_אינסון.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dfb"
-      }
-    },
-    {
-      "name": "Peter Millard",
-      "character": "Professor Stokeld",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152dfc"
-      }
-    },
-    {
-      "name": "Peter MacNeill",
-      "character": "Professor Maurus",
-      "profilePath": "actor_Peter_MacNeill.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dfd"
-      }
-    },
-    {
-      "name": "Burn Gorman",
-      "character": "Executioner",
-      "profilePath": "actor_Burn_Gorman.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dfe"
-      }
-    },
-    {
-      "name": "Sean Sullivan",
-      "character": "Old Hunter #1",
-      "profilePath": "actor_Sean_Sullivan.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152dff"
-      }
-    },
-    {
-      "name": "Stuart Hughes",
-      "character": "Old Hunter #2",
-      "profilePath": "actor_Stuart_Hughes.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e00"
-      }
-    },
-    {
-      "name": "Gord Rand",
-      "character": "Silversmith",
-      "profilePath": "actor_Gord_Rand.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e01"
-      }
-    },
-    {
-      "name": "Kenton Craig",
-      "character": "Harlander's Butler",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e02"
-      }
-    },
-    {
-      "name": "Val Ovtcharov",
-      "character": "Outpost Clerk",
-      "profilePath": "actor_Val_Ovtcharov.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e03"
-      }
-    },
-    {
-      "name": "Anders Yates",
-      "character": "Torfussen",
-      "profilePath": "actor_Anders_Yates.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e04"
-      }
-    },
-    {
-      "name": "Adam Brown",
-      "character": "Prisoner #1",
-      "profilePath": "actor_Adam_Brown.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e05"
-      }
-    },
-    {
-      "name": "Santiago Segura",
-      "character": "Prisoner #2",
-      "profilePath": "actor_Santiago_Segura.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e06"
-      }
-    },
-    {
-      "name": "Dexter Stokes-Mellor",
-      "character": "Prisoner #3",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e07"
-      }
-    },
-    {
-      "name": "Shian Denovan",
-      "character": "Nymph",
-      "profilePath": "actor_Shian_Denovan.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e08"
-      }
-    },
-    {
-      "name": "Mark Steger",
-      "character": "Spinal Corpse",
-      "profilePath": "actor_Mark_Steger.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e09"
-      }
-    },
-    {
-      "name": "Rafe Harwood",
-      "character": "Young William Frankenstein",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0a"
-      }
-    },
-    {
-      "name": "Gregory Mann",
-      "character": "Head Urchin",
-      "profilePath": "actor_Gregory_Mann.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0b"
-      }
-    },
-    {
-      "name": "Roberto Campanella",
-      "character": "Dark Angel",
-      "profilePath": "actor_Roberto_Campanella.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0c"
-      }
-    },
-    {
-      "name": "Rebecca Lawson-Turner",
-      "character": "Woman in Confessional",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0d"
-      }
-    },
-    {
-      "name": "Warren Albert",
-      "character": "Professor Kugelmann",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0e"
-      }
-    },
-    {
-      "name": "קים מורגן",
-      "character": "Guest at Wedding and Bistro",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e0f"
-      }
-    },
-    {
-      "name": "Chris Andrews",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e10"
-      }
-    },
-    {
-      "name": "Lewis Landini",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e11"
-      }
-    },
-    {
-      "name": "William John Banks",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e12"
-      }
-    },
-    {
-      "name": "Tess Letham",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e13"
-      }
-    },
-    {
-      "name": "Alexandros Beshonges",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e14"
-      }
-    },
-    {
-      "name": "Maria Peneva",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e15"
-      }
-    },
-    {
-      "name": "Kieran Brown",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e16"
-      }
-    },
-    {
-      "name": "Jessica Roberts Smith",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e17"
-      }
-    },
-    {
-      "name": "Rachel Elderkin",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e18"
-      }
-    },
-    {
-      "name": "Jennifer Steele",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e19"
-      }
-    },
-    {
-      "name": "Jorja Follina",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1a"
-      }
-    },
-    {
-      "name": "Malcolm Sutherland",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1b"
-      }
-    },
-    {
-      "name": "Alex Henderson",
-      "character": "Bistro Dancer",
-      "profilePath": "actor_Alex_Henderson.jpg",
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1c"
-      }
-    },
-    {
-      "name": "Luke Watson",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1d"
-      }
-    },
-    {
-      "name": "Yasmin Hepburn",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1e"
-      }
-    },
-    {
-      "name": "Pawel Wieczorek",
-      "character": "Bistro Dancer",
-      "profilePath": null,
-      "_id": {
-        "$oid": "69136347efb4bdd730152e1f"
-      }
-    }
-  ],
-  "__v": 0,
-  "createdAt": {
-    "$date": "2025-11-11T16:24:39.265Z"
-  },
-  "updatedAt": {
-    "$date": "2025-11-11T16:24:39.265Z"
-  }
-}
-
+    
     // נניח שה־id של התוכן מגיע ב־URL: content.html?id=123&type=movie
     const params = new URLSearchParams(window.location.search);
     const contentId = params.get('id');
@@ -648,7 +210,6 @@
         const res = await fetch(`/content/${type}/${contentId}`);
         const content = await res.json();
         console.log(content);
-        
         document.getElementById('content-poster').src = baseImageUrl + content.posterPath;
         document.getElementById('content-title').textContent = content.title;
         document.getElementById('content-overview').textContent = content.overview;
@@ -682,12 +243,59 @@
             `<li><a href="https://he.wikipedia.org/wiki/${encodeURIComponent(c.name)}" target="_blank">${c.name}</a></li>`
         ).join('');
         */
+        
+        //throw new Error('stop right now');
+        // תכנים דומים
+        /*
+        const similarRes = await fetch(`/content/${type}/${contentId}/similar`);
+        const similar = await similarRes.json();
+        const similarContainer = document.getElementById('similar');
+        similarContainer.innerHTML = similar.map(s =>
+            `<div class="p-2"><img src="${s.posterPath}" width="120"><p>${s.title}</p></div>`
+        ).join('');
+        */
+        // אם זה סדרה → רשימת פרקים
+        if (type === 'series') {
+            const episodeList = document.getElementById('episode-list');
+            episodeList.style.display = 'block';
+            const episodesRes = await fetch(`/content/series/${contentId}/episodes`);
+            const episodes = await episodesRes.json();
+            //const episodesList = document.getElementById('episodes');
+
+            const seasons = [...new Set(episodes.map(e => e.seasonNumber))]
+            episodeList.innerHTML = seasons.map(s => `
+        <div class="movie-feed-container my-4">
+          <h2 class="text-white mx-4">
+            עונה ${s}
+          </h2>
+          <div class="movie-row d-flex overflow-auto px-4">
+            ${episodes.filter(e => e.seasonNumber === s).map(e =>
+              `
+              <div class="movie-item" onclick="window.open('', '_blank')" >
+                <img src="${e.stillPath || baseImageUrl + content.posterPath}" alt="${e.title}" class="movie-poster">
+                <div class="movie-title">
+                  ${e.title}
+                </div>
+              </div>`
+            ).join('')}
+          </div>
+        </div>
+      `).join('');
+            /*episodesList.innerHTML = episodes.map(e =>
+            `<li class="list-group-item episode-item">
+                עונה ${e.seasonNumber}, פרק ${e.episodeNumber} - ${e.title}
+                ${e.lastPosition ? `<span class="badge bg-info">נמשך מהדקה ${Math.floor(e.lastPosition/60)}</span>` : ''}
+            </li>`
+            ).join('');*/
+        } else {
+            document.getElementById('episodesSection').style.display = 'none';
+        }
+
         const rowContainer = document.querySelectorAll('.movie-row');
     
         rowContainer.forEach(r => 
-        { console.log(r);
+        { 
         r.addEventListener('wheel', (e) => {
-            console.log(r)
             e.preventDefault(); // Prevent default page scroll
             const delta = -Math.sign(e.deltaY);
             // Scroll left or right based on wheel direction
@@ -697,30 +305,6 @@
                 behavior: 'smooth'
             });
         })});
-        throw new Error('stop right now');
-        // תכנים דומים
-        const similarRes = await fetch(`/content/${type}/${contentId}/similar`);
-        const similar = await similarRes.json();
-        const similarContainer = document.getElementById('similar');
-        similarContainer.innerHTML = similar.map(s =>
-            `<div class="p-2"><img src="${s.posterPath}" width="120"><p>${s.title}</p></div>`
-        ).join('');
-
-        // אם זה סדרה → רשימת פרקים
-        if (type === 'series') {
-            document.getElementById('episodesSection').style.display = 'block';
-            const episodesRes = await fetch(`/content/series/${contentId}/episodes`);
-            const episodes = await episodesRes.json();
-            const episodesList = document.getElementById('episodes');
-            episodesList.innerHTML = episodes.map(e =>
-            `<li class="list-group-item episode-item">
-                עונה ${e.seasonNumber}, פרק ${e.episodeNumber} - ${e.title}
-                ${e.lastPosition ? `<span class="badge bg-info">נמשך מהדקה ${Math.floor(e.lastPosition/60)}</span>` : ''}
-            </li>`
-            ).join('');
-        } else {
-            document.getElementById('episodesSection').style.display = 'none';
-        }
     }
 /*
     // כפתורי צפייה
