@@ -85,7 +85,7 @@
   <script>
   
     const container = document.querySelector('.profiles');
-
+    let profiles;
     // Clear existing content if any
     container.innerHTML = '';
 
@@ -98,6 +98,7 @@
       const data = await res.json();
       if (res.ok) {
         //console.log(data);
+        profiles = data;
         const profilesList = data;
         profilesList.forEach(profile => {
           // Create the profile div
@@ -156,7 +157,7 @@
       const data = await res.json();
       if (res.ok) {
         //console.log(data);
-        localStorage.setItem('profile', JSON.stringify(data[0]));
+        localStorage.setItem('profile', JSON.stringify(profiles.find(p => p._id.toString() == profileId)));
         window.location.href = "main_menu.html";
       }
       else if(res.status == 401) {

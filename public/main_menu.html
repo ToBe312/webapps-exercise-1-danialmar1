@@ -31,6 +31,14 @@
         transform: scale(1.03);
         border-bottom: 3px solid #797cc2;
     }
+
+    .profile-name {
+      text-decoration: none;
+      color: white;
+    }
+    .profile-name:hover {
+      text-decoration: underline;
+    }
   </style>
   <style>
     .movie-row {
@@ -152,7 +160,7 @@
     };
 
     // Set greeting message
-    document.getElementById('greeting').textContent = `שלום, ${profile.name}`;
+    document.getElementById('greeting').innerHTML = `שלום, <a href='profiles.html' class="profile-name ms-3">${profile.name}</a>`;
 
     document.getElementById('profileImg').src = `profile_images/${profile.img}`;
 
@@ -198,7 +206,7 @@
           <div class="movie-row d-flex overflow-auto px-4">
             ${movies.map(m =>
               `
-              <div class="movie-item">
+              <div class="movie-item"  onclick="window.location.href = '/content_details.html?type=movie&id=${m._id}'">
                 <img src="${baseImageUrl + m.posterPath}" alt="${m.title}" class="movie-poster">
                 <div class="movie-title">
                   ${m.title}
@@ -227,7 +235,7 @@
           <div class="movie-row d-flex overflow-auto px-4">
             ${series.map(m =>
               `
-              <div class="movie-item">
+              <div class="movie-item"  onclick="window.location.href = '/content_details.html?type=series&id=${m._id}'">
                 <img src="${baseImageUrl + m.posterPath}" alt="${m.title}" class="movie-poster">
                 <div class="movie-title">
                   ${m.title}
@@ -242,10 +250,54 @@
       `;
     }
 
+    async function loadContinueWatching(profileId) {
+      const res = await fetch(`/watch/continue?profileId=${profile._id.toString()}`);
+      const items = await res.json();
+      
+      
+      const container = document.getElementById('mainPanel');
+      container.innerHTML += `
+        <div class="movie-feed-container my-4">
+          <h2 class="text-white mx-4">
+            המשך צפייה
+            <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+          </h2>
+          <div class="movie-row d-flex overflow-auto px-4">
+            ${items.map(m => {
+              const imageUrl = m.posterUrl.startsWith('http') ? m.posterUrl : baseImageUrl + m.posterUrl;
+              console.log(imageUrl);
+              return `
+              <div class="movie-item" onclick="${(m.type === 'Movie') ? 
+                "window.location.href = '/player.html?type=movie&id=" + m.contentId + "'"
+                : "window.location.href = '/player.html?type=series&id=" + m.seriesId._id + "&episodeId=" + m.contentId +"'"
+                }">
+                <img src="${imageUrl}" alt="${m.title}" class="movie-poster">
+                <div class="movie-title">
+                  ${m.title}
+                </div>
+                <div class="like-container d-flex align-items-center" style="padding: 5px 10px; border-radius: 20px;">
+                  <button type="button" class="btn btn-sm p-0 m-0 like-b" style="font-size: 1.5rem;">👍</button>
+                </div>
+              </div>`
+            }).join('')}
+          </div>
+        </div>
+      `;
+/*
+onclick="()=>{
+              ${(m.type === 'Movie')?
+                "window.location.href = `/player.html?type=movie&id=${m.contentId}`":
+                "window.location.href = `/player.html?type=series&id=${m.seriesId}&episodeId=${m.contentId}`"
+              }
+                }"*/
+    }
+
+
     async function load_feed() {
 
       await loadMovies();
       await loadSeries();
+      await loadContinueWatching();
 
       const rowContainer = document.querySelectorAll('.movie-row');
       rowContainer.forEach(r => r.addEventListener('wheel', (e) => {
@@ -260,7 +312,7 @@
       }));
     }
     load_feed();
-
+    throw new Error('stop');
     function createFeed(moviesArr) {
       moviesArr.forEach(movie => {
         const itemDiv = document.createElement('div');

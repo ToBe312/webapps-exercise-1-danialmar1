@@ -174,7 +174,7 @@
         <div class="actions">
           <button class="btn btn-primary me-2" id="continue-watching">המשך צפייה</button>
           <button class="btn btn-secondary me-2" id="watch-from-start">צפייה מההתחלה</button>
-          <button class="btn btn-outline-white" id="like-btn">Like</button>
+          <button type="button" id="like-btn" class="btn btn-sm p-0 m-0 like-b" style="font-size: 1.5rem;">👍</button>
         </div>
       </div>
     </div>
@@ -198,6 +198,11 @@
   </div>
 
   <script>
+    const profile = JSON.parse(localStorage.getItem('profile')) || {
+      '_id': 0,
+      'name': 'User',
+      'img': ''
+    };
 
     const baseImageUrl = "images/";
     
@@ -211,6 +216,18 @@
         const res = await fetch(`/content/${type}/${contentId}`);
         const content = await res.json();
         console.log(content);
+
+        const res_liked = await fetch(`/likes/toggle`, { method: 'POST', headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 
+              contentId,
+              type
+            }) });
+          const data_liked = await res_liked.json();
+          //alert('עודכן בהצלחה!');
+          document.getElementById('like-btn').innerText = data_liked.liked ? '👍' : '🖒';
+
         document.getElementById('content-poster').src = baseImageUrl + content.posterPath;
         document.getElementById('content-title').textContent = content.title;
         document.getElementById('content-overview').textContent = content.overview;
@@ -263,7 +280,7 @@
             const episodes = await episodesRes.json();
             const first = episodes[0];
 
-            const lastWatchedRes = await fetch(`/watch/lastEpisode?profileId=${profileId}&seriesId=${contentId}`);
+            const lastWatchedRes = await fetch(`/watch/lastEpisode?profileId=${profile._id.toString()}&seriesId=${contentId}`);
             const lastWached = await lastWatchedRes.json();
 
             if (lastWached) {
@@ -278,7 +295,7 @@
               document.getElementById('continue-watching').style.display = 'none';
             }
             document.getElementById('watch-from-start').onclick = () => {
-
+              // await fetch(`/watch/restart/${type}/${contentId}`, { method: 'POST' });
               window.location.href = `/player.html?type=series&id=${contentId}&episodeId=${first._id}`;
             }
 
@@ -293,7 +310,7 @@
           <div class="movie-row d-flex overflow-auto px-4">
             ${episodes.filter(e => e.seasonNumber === s).map(e =>
               `
-              <div class="movie-item" onclick="window.open('', '_blank')" >
+              <div class="movie-item"  onclick="window.location.href = '/player.html?type=series&id=${contentId}&episodeId=${e._id}'">
                 <img src="${e.stillPath || baseImageUrl + content.posterPath}" alt="${e.title}" class="movie-poster">
                 <div class="movie-title">
                   ${e.title}
@@ -311,7 +328,23 @@
             </li>`
             ).join('');*/
         } else {
-            document.getElementById('episodesSection').style.display = 'none';
+            document.getElementById('episode-list').style.display = 'none';
+            const lastWatchedRes = await fetch(`/watch/isWatched?profileId=${profile._id.toString()}&contentId=${contentId}`);
+            const lastWached = await lastWatchedRes.json();
+            console.log(lastWached)
+            if (lastWached.watched) {
+              document.getElementById('continue-watching').onclick = () => {
+                window.location.href = `/player.html?type=movie&id=${contentId}`;
+              }
+              
+            } else {
+              // לא נמצא → מתחילים מהפרק הראשון
+              document.getElementById('continue-watching').style.display = 'none';
+            }
+            
+            document.getElementById('watch-from-start').onclick = () => {
+                window.location.href = `/player.html?type=movie&id=${contentId}`;
+            }
         }
 
         const rowContainer = document.querySelectorAll('.movie-row');
@@ -328,53 +361,26 @@
                 behavior: 'smooth'
             });
         })});
+
+        // לייק
+        document.getElementById('like-btn').addEventListener('click', async () => {
+          const res = await fetch(`/likes/toggle`, { method: 'POST', headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 
+              contentId,
+              type
+            }) });
+          const data = await res.json();
+          //alert('עודכן בהצלחה!');
+          document.getElementById('like-btn').innerText = data.liked ? '👍' : '🖒';
+        });
     }
-/*
-    // כפתורי צפייה
-    document.getElementById('playBtn').addEventListener('click', () => {
-    // קריאה לשרת להתחיל/להמשיך צפייה
-    window.location.href = `/player.html?id=${contentId}&type=${type}`;
-    });
 
-    document.getElementById('restartBtn').addEventListener('click', async () => {
-    await fetch(`/watch/restart/${type}/${contentId}`, { method: 'POST' });
-    window.location.href = `/player.html?id=${contentId}&type=${type}`;
-    });
 
-    // לייק
-    document.getElementById('likeBtn').addEventListener('click', async () => {
-    await fetch(`/likes/${type}/${contentId}`, { method: 'POST' });
-    alert('עודכן בהצלחה!');
-    });
-*/
     loadContent();
     
-    throw new Error("stop");
-
-    const genreCodes = 
-    // Populate content info
-    document.getElementById('content-title').textContent = contentData.title;
-    document.getElementById('content-synopsis').textContent = contentData.synopsis;
-    document.getElementById('content-rating').textContent = contentData.rating;
-    document.getElementById('content-year').textContent = contentData.year;
-    document.querySelector('.content-header img').src = contentData.poster;
-
-    // Show episodes if content is series
-    if (contentData.isSeries) {
-      document.getElementById('episode-list').style.display = 'block';
-      const episodesContainer = document.getElementById('episodes');
-      contentData.episodes.forEach(ep => {
-        const li = document.createElement('li');
-        li.className = 'list-group-item d-flex justify-content-between align-items-center';
-        li.innerHTML = `${ep.title} <span>Paused at: ${ep.pausedAt || 'Not watched'}</span>`;
-        // Add click event to switch episode
-        li.onclick = () => {
-          alert(`Switching to ${ep.title}`);
-        };
-        episodesContainer.appendChild(li);
-      });
-    }
-
+/*
     // Populate similar content
     const similarContainer = document.getElementById('similar-content');
     contentData.similar.forEach(item => {
@@ -392,34 +398,7 @@
       };
       similarContainer.appendChild(div);
     });
-
-    // Populate actors
-    const actorContainer = document.getElementById('actor-list');
-    contentData.actors.forEach(actor => {
-      const span = document.createElement('span');
-      span.className = 'actor';
-      span.textContent = actor.name;
-      span.onclick = () => {
-        window.open(actor.wikipedia, '_blank');
-      };
-      actorContainer.appendChild(span);
-    });
-
-    // Like button toggle
-    const likeBtn = document.getElementById('like-btn');
-    let liked = false;
-    likeBtn.onclick = () => {
-      liked = !liked;
-      likeBtn.textContent = liked ? 'Unlike' : 'Like';
-    };
-
-    // Continue Watching / Watch Buttons
-    document.getElementById('continue-watching').onclick = () => {
-      alert('Continuing from where you left off...');
-    };
-    document.getElementById('watch-from-start').onclick = () => {
-      alert('Watching from the beginning...');
-    };
+*/
   </script>
 </body>
 </html>

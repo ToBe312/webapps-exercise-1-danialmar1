@@ -107,6 +107,11 @@
   </div>
 
   <script>
+    const profile = JSON.parse(localStorage.getItem('profile')) || {
+      '_id': 0,
+      'name': 'User',
+      'img': ''
+    };
     // Params: player.html?id=<contentId>&type=<movie|series>&episodeId=<optional>
     const params = new URLSearchParams(window.location.search);
     const contentId = params.get('id');
@@ -147,7 +152,7 @@
       try {
         // בקשת מקור ווידאו: מחזירה url + נקודת התחלה (lastPosition) לפי פרופיל
         // דוגמה: /player/source?type=series&id=...&episodeId=...
-        const qs = new URLSearchParams({ type, id: contentId });
+        const qs = new URLSearchParams({ profileId: profile._id.toString(), type, id: contentId });
         if (type === 'series' && initialEpisodeId) qs.set('episodeId', initialEpisodeId);
         const res = await fetch(`/player/source?${qs.toString()}`);
         const data = await res.json();
@@ -278,6 +283,7 @@
         const payload = {
           type,
           contentId,
+          profileId: profile._id.toString(),
           episodeId: video.dataset.episodeId || null,
           position
         };
@@ -292,7 +298,7 @@
     // Mark completed when video ends
     video.addEventListener('ended', async () => {
       try {
-        const payload = { type, contentId, episodeId: video.dataset.episodeId || null };
+        const payload = { type, profileId: profile._id.toString(), contentId, episodeId: video.dataset.episodeId || null };
         await fetch('/watch/complete', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

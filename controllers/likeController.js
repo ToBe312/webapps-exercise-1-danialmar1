@@ -16,3 +16,18 @@ exports.toggleLike = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+
+exports.isLiked = async (req, res) => {
+  const profileId = req.session.profileId;
+  const { type, contentId } = req.body;
+  try {
+    const existing = await Like.findOne({ profileId, contentType: type, contentId });
+    if (existing) {
+      return res.json({ liked: true });
+    } else {
+      return res.json({ liked: false });
+    }
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
