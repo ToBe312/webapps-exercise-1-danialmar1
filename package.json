@@ -1,0 +1,15 @@
+{
+  "name": "webapps-exercise-3-danialmar1",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
