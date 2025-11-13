@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מסך הרשמה</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+  /* Background style */
+  #vidBackground {
+	  position: fixed;
+	  right: 0;
+	  bottom: 0;
+	  min-width: 100%;
+	  min-height: 100%;
+  }
+  </style>
+</head>
+<body dir=rtl class="bg-light d-flex align-items-center justify-content-center vh-100">
+  <video autoplay muted loop id="vidBackground">
+	<source src="videos/back3.mp4" type="video/mp4">
+  </video>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card shadow p-4 rounded" style="background-color: antiquewhite; opacity: 0.8;">
+          <h3 class="card-title text-center mb-4">יצירת חשבון</h3>
+          <form id="loginForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">כתובת אימייל</label>
+              <input type="email" class="form-control" id="email" placeholder="הזן כאן אימייל..." required />
+              <div class="invalid-feedback" id="emailError"></div>
+            </div>
+            <div class="mb-3">
+              <label for="username" class="form-label">שם משתמש</label>
+              <input type="username" class="form-control" id="username" placeholder="הזן כאן שם משתמש..." required />
+              <div class="invalid-feedback" id="usernameError"></div>
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">סיסמא</label>
+              <input type="password" class="form-control" id="password" placeholder="הזן כאן סיסמא..." required />
+              <div class="invalid-feedback" id="passwordError"></div>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">הרשמה</button>
+          </form>
+        </div>
+        <div id="registerSuccess" class="card shadow mt-2 p-4 rounded d-none" style="background-color: rgb(170, 211, 170); opacity: 1;">
+          <h3 class="card-title mb-4 fw-bold" style="color: #0a443f; opacity: 1">נרשמת בהצלחה!</h3>
+          <p class="m-0 p-0">מעבר לעמוד הכניסה בעוד 3 שניות...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById('loginForm');
+    const emailInput = document.getElementById('email');
+    const passwordInput = document.getElementById('password');
+    const usernameInput = document.getElementById('username');
+
+    const emailError = document.getElementById('emailError');
+    const passwordError = document.getElementById('passwordError');
+    const usernameError = document.getElementById('usernameError');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // prevent actual submission for validation
+
+      let valid = true;
+
+      // Reset previous errors
+      emailError.textContent = '';
+      emailInput.classList.remove('is-invalid');
+      passwordError.textContent = '';
+      passwordInput.classList.remove('is-invalid');
+      usernameError.textContent = '';
+      usernameInput.classList.remove('is-invalid');
+
+      // Validate email
+      if (!emailInput.value) {
+        emailError.textContent = 'יש להזין כתובת אימייל.';
+        emailInput.classList.add('is-invalid');
+        valid = false;
+      } else {
+        // Additional email pattern validation if needed
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailPattern.test(emailInput.value)) {
+          emailError.textContent = 'נא להזין כתובת אימייל תקינה.';
+          emailInput.classList.add('is-invalid');
+          valid = false;
+        }
+      }
+
+      // Validate password length
+      if (!passwordInput.value) {
+        passwordError.textContent = 'יש להזין סיסמא.';
+        passwordInput.classList.add('is-invalid');
+        valid = false;
+      } else if (passwordInput.value.length < 6) {
+        passwordError.textContent = 'סיסמא חייבת להיות לפחות 6 תווים.';
+        passwordInput.classList.add('is-invalid');
+        valid = false;
+      }
+
+      // If all validations pass, you can proceed
+      if (valid) {
+        // Send fetch
+        try {
+          const res = await fetch('/user/register', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ 
+              email: emailInput.value,
+              username: usernameInput.value,
+              password: passwordInput.value
+            })
+          });
+          
+          const data = await res.json();
+          if (res.ok) {
+            document.getElementById('registerSuccess').classList.remove('d-none');
+            setTimeout(()=>{
+              window.location.href = 'login.html';
+            }, 3000);
+          }
+          else if(res.status == 409) {
+            console.log(data);
+            if(data.error.startsWith('Username')) {
+              usernameError.textContent = 'שם המשתמש תפוס.';
+              usernameInput.classList.add('is-invalid');
+            }
+            else if(data.error.startsWith('Email')) {
+              emailError.textContent = 'כתובת מייל זו כבר רשומה';
+              emailInput.classList.add('is-invalid');
+            }
+          } 
+          else {
+            alert('שגיאה: ' + data.error);
+          }
+        } catch (err) {
+          alert('אין חיבור לשרת');
+        }
+
+      }
+    });
+  </script>
+</body>
+</html>
