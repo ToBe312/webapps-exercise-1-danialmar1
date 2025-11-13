@@ -19,6 +19,10 @@ async function findById(_id) {
   return await Profile.find({ _id }).populate('userId');
 }
 
+async function findByUserAndId(userId, _id) {
+  return await Profile.find({ userId, _id }).populate('userId');
+}
+
 async function findByUserId(userId) {
   return await Profile.find({ userId }).populate('userId');
 }
@@ -43,6 +47,7 @@ async function remove(id) {
 module.exports = {
   getAll,
   findById,
+  findByUserAndId,
   findByUserId,
   create,
   createMany,
