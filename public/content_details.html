@@ -205,6 +205,7 @@
     const params = new URLSearchParams(window.location.search);
     const contentId = params.get('id');
     const type = params.get('type'); // 'movie' או 'series'
+    const profileId = localStorage.getItem('profileId');
 
     async function loadContent() {
         const res = await fetch(`/content/${type}/${contentId}`);
@@ -260,6 +261,27 @@
             episodeList.style.display = 'block';
             const episodesRes = await fetch(`/content/series/${contentId}/episodes`);
             const episodes = await episodesRes.json();
+            const first = episodes[0];
+
+            const lastWatchedRes = await fetch(`/watch/lastEpisode?profileId=${profileId}&seriesId=${contentId}`);
+            const lastWached = await lastWatchedRes.json();
+
+            if (lastWached) {
+              // יש פרק אחרון בסדרה הזו
+              document.getElementById('continue-watching').onclick = () => {
+                window.location.href = `/player.html?type=series&id=${contentId}&episodeId=${lastWached.episodeId}`;
+              }
+              document.getElementById('continue-watching').innerText += 
+                `(עונה ${lastWached.seasonNumber} פרק ${lastWached.episodeNumber})`;
+            } else {
+              // לא נמצא → מתחילים מהפרק הראשון
+              document.getElementById('continue-watching').style.display = 'none';
+            }
+            document.getElementById('watch-from-start').onclick = () => {
+
+              window.location.href = `/player.html?type=series&id=${contentId}&episodeId=${first._id}`;
+            }
+
             //const episodesList = document.getElementById('episodes');
 
             const seasons = [...new Set(episodes.map(e => e.seasonNumber))]
@@ -275,6 +297,7 @@
                 <img src="${e.stillPath || baseImageUrl + content.posterPath}" alt="${e.title}" class="movie-poster">
                 <div class="movie-title">
                   ${e.title}
+                  ${e.lastPosition ? `<span class="badge bg-info">נמשך מהדקה ${Math.floor(e.lastPosition/60)}</span>` : ''}
                 </div>
               </div>`
             ).join('')}

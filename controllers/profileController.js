@@ -20,23 +20,23 @@ const getProfilesByUserId = async (req, res) => {
 
 const profileLogin = async (req, res) => {
     try {
+        console.log('gggg')
         const userId = req.session.userId;
         if (!userId) {
             return res.status(401).json({ error: 'Not logged in' });
         }
-        const profile = await ProfileModel.findById(req.body.profileId);
-        console.log(profile);
+        const profile = (await ProfileModel.findByUserAndId(userId, req.body.profileId))[0];
+        //console.log(profile);
+        //console.log(userId);
         if (!profile) {
             return res.status(404).json({ error: 'No profiles found for this user222' });
         }
 
-        else if(profile.userId !== userId._id) {
-            return res.status(403).json({ error: 'Not the right user' });
-        }
+        //console.log(profile._id.toString());
+        req.session.profileId = profile._id.toString();
 
-        req.session.profileId = profile._id;
-
-        res.json(profile);
+        return res.json(profile);
+       
     } catch (err) {
         res.status(500).json({ error: err.message });
     }
