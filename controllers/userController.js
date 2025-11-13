@@ -1,6 +1,7 @@
 
 const bcrypt = require('bcrypt');
 const User = require('../models/userModel');
+const Profile = require('../models/profileModel');
 
 const register = async (req, res) => {
     const { email, username, password } = req.body;
@@ -16,8 +17,37 @@ const register = async (req, res) => {
         return res.status(409).json({ error: 'Email already exists' });
     }
 
-  const newUser = User.create({ email, username, password: hashedPassword });
-  res.status(201).json(newUser);
+    const newUser = await User.create({ email, username, password: hashedPassword });
+
+    await Profile.createMany([
+        {
+            userId: newUser._id,
+            name: "דובי",
+            img: "bear.jpg"
+        },
+        {
+            userId: newUser._id,
+            name: "מיצי",
+            img: "cat.jpg"
+        },
+        {
+            userId: newUser._id,
+            name: "שמשון",
+            img: "bald-eagle.jpg"
+        },
+        {
+            userId: newUser._id,
+            name: "נחמה",
+            img: "polar-bear.jpg"
+        },
+        {
+            userId: newUser._id,
+            name: "פיני",
+            img: "penguin.jpg"
+        }
+    ]);
+
+    res.status(201).json(newUser);
 };        
 
 const loginDemo = async (req, res) => {
