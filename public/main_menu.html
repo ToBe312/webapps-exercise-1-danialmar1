@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>מסך תפריט ראשי</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  
+  <style>
+    body {
+      background-color: #000; /* black background for streaming vibe */
+      margin: 0;
+      padding: 0;
+    }
+    /* Style for the navbar */
+    .navbar {
+      background-color: #141414; /* dark background similar to Netflix */
+    }
+    /* Logo styling */
+    .navbar-brand img {
+      height: 40px;
+    }
+
+    .navbar .btn {
+        text-decoration: none;
+    }
+
+    .navbar .btn:hover {
+        background-color: #343434;
+        transform: scale(1.03);
+        border-bottom: 3px solid #797cc2;
+    }
+  </style>
+  <style>
+    .movie-row {
+      gap: 10px;
+      scrollbar-width: none;
+      scroll-behavior: smooth;
+    }
+
+    .movie-item {
+      width: 200px;
+      flex-shrink: 0;
+      transition: opacity 0.3s, max-height 0.3s;
+      /*max-height: 100px; /* or some max value */
+
+    }
+
+    .movie-poster {
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+
+    .movie-poster:hover {
+      transform: scale(1.05);
+    }
+
+    .movie-title {
+      font-size: 14px;
+      font-weight: bold;
+      color: aquamarine;
+      text-shadow: #555;
+      padding-right: 2px;
+    }
+
+    /* Optional: add hover effect for the like container if you want to animate opacity */
+    .like-container {
+      opacity: 0;
+      transition: opacity 0.3s;
+      color: pink;
+    }
+
+    .movie-item:hover .like-container {
+      opacity: 1;
+    }
+
+    .like-b {
+      color: #ccc;
+      font-size: 30px;
+    }
+
+    .hide {
+      opacity: 0;
+      max-height: 0;
+    }
+
+    .sort-button {
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .movie-feed-container h2:hover .sort-button {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body dir="rtl">
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid px-4">
+      <!-- Logo -->
+      <a class="navbar-brand" href="#">
+        <img src="images/CORNFLEX2.png" alt="Logo" />
+      </a>
+      <!-- Navigation buttons -->
+      <div class="d-flex ms-auto">
+        <button class="btn btn-link text-white mx-2">מסך הבית</button>
+        <button class="btn btn-link text-white mx-2">סדרות</button>
+        <button class="btn btn-link text-white mx-2">סרטים</button>
+        <button class="btn btn-link text-white mx-2">חדש ופופולרי</button>
+        <button class="btn btn-link text-white mx-2">הרשימה שלי</button>
+      </div>
+      <!-- Search Field -->
+      <div class="me-3 ms-4">
+        <input id="search" type="text" class="form-control form-control-sm" placeholder="חיפוש..." />
+      </div>
+
+      <!-- Profile Info & Logout -->
+      <div class="d-flex align-items-center">
+        <!-- Profile Image -->
+        <img id="profileImg" alt="Profile" class="rounded-circle ms-1" style="width:40px; height:40px; object-fit:cover;" />
+
+        <!-- Greeting -->
+        <span class="text-white ms-3" id="greeting">Hello, User</span>
+
+        <!-- Logout Button -->
+        <button class="btn btn-outline-light text-white btn-sm ms-3" id="logoutBtn">החוצה</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Rest of the page -->
+  <div style="height: calc(100vh - 56px);">
+    <div class="movie-feed-container my-4">
+      <h2 class="text-white mx-4">
+        הכי שווים
+        <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+      </h2>
+      <div class="movie-row d-flex overflow-auto px-4">
+        <!-- Movie/TV posters will be injected here -->
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Assume your profile name is stored in localStorage under 'profileName'
+    const profile = JSON.parse(localStorage.getItem('profile')) || {
+      '_id': 0,
+      'name': 'User',
+      'img': ''
+    };
+
+    // Set greeting message
+    document.getElementById('greeting').textContent = `שלום, ${profile.name}`;
+
+    document.getElementById('profileImg').src = `profile_images/${profile.img}`;
+
+    // Logout button functionality
+    document.getElementById('logoutBtn').addEventListener('click', async () => {
+      try {
+          const res = await fetch('/user/logout', {
+            method: 'POST',
+          });
+          
+          const data = await res.json();
+          if (res.ok) {
+            // Clear localStorage and redirect to login page
+            localStorage.clear();
+
+            window.location.href = 'login.html';
+          }
+          else {
+            alert('שגיאה: ' + data.error);
+          }
+        } catch (err) {
+          alert('אין חיבור לשרת');
+        }
+    });
+  </script>
+
+  <script>
+    const movies = [
+      {"adult":false,"backdrop_path":"/1RgPyOhN4DRs225BGTlHJqCudII.jpg","genre_ids":[16,28,14,53],"id":1311031,"original_language":"ja","original_title":"劇場版「鬼滅の刃」無限城編 第一章 猗窩座再来","overview":"טנג'ירו והקבוצה השלימו את אימוני השיקום שלהם באחוזת הפרפר, והם מגיעים למשימה הבאה שלהם ברכבת ה’מוגן’, שם נעלמו יותר מ-40 אנשים בפרק זמן קצר מאוד.  טנג'ירו ונזוקו, יחד עם זניצו ואינוסקה, מצטרפים לאחד החרבנים החזקים ביותר באגודת קוטלי השדים — עמוד הלהבה קיוג'ורו רנגוקו — כדי להתמודד עם השד שעל סיפון רכבת ה’מוגן’.","popularity":856.2691,"poster_path":"/tlNFKrkb0LzhnwvyiMSOoCB5dbj.jpg","release_date":"2025-07-18","title":"קוטל השדים: טירת האינסוף","video":false,"vote_average":7.67,"vote_count":227},
+      {"adult":false,"backdrop_path":"/iZLqwEwUViJdSkGVjePGhxYzbDb.jpg","genre_ids":[878,53],"id":755898,"original_language":"en","original_title":"War of the Worlds","overview":"פלישה ענקית מגיעה עם הגרסה החדשה הזאת של הרומן המפורסם בעל אותו השם. השחקנית הנודעת אווה לונגוריה משתפת פעולה עם הראפר והשחקן האייקוני אייס קיוב, וביחד עם מייקל אוניל ואימאן בנסון יוצאים להרפתקה מותחת שלא מהעולם הזה, מלאה בנושאים עכשוויים של טכנולוגיה, מעקב ופרטיות.","popularity":554.7928,"poster_path":"/yvirUYrva23IudARHn3mMGVxWqM.jpg","release_date":"2025-07-29","title":"מלחמת העולמות","video":false,"vote_average":4.335,"vote_count":531},
+      {"adult":false,"backdrop_path":"/Q2OajDi2kcO6yErb1IAyVDTKMs.jpg","genre_ids":[27,9648],"id":1078605,"original_language":"en","original_title":"Weapons","overview":"כשכל הילדים בכיתה, מלבד ילד אחד, נעלמים במסתוריות בלילה אחד בדיוק בשעה 02:17, הקהילה של עיירה קטנה נשארת לאסוף את השברים ולהבין מי או מה עומד מאחורי היעלמותם.","popularity":460.1982,"poster_path":"/nQloccvRqmerjcswEZmDYfsLs51.jpg","release_date":"2025-08-04","title":"שעת הנעלמים","video":false,"vote_average":7.402,"vote_count":1349},
+      {"adult":false,"backdrop_path":"/fq8gLtrz1ByW3KQ2IM3RMZEIjsQ.jpg","genre_ids":[27],"id":1038392,"original_language":"en","original_title":"The Conjuring: Last Rites","overview":"\"לזמן את הרוע: הפרק האחרון\" ממשיך את יקום האימה האייקוני ומחזיר את פטריק וילסון וורה פרמיגה לנעליהם של חוקרי העל טבעי, אד ולוריין וורן, בהרפתקה מצמררת במיוחד.","popularity":405.6182,"poster_path":"/X1BsFk45MDjEeO4v8jSof5AyRN.jpg","release_date":"2025-09-03","title":"לזמן את הרוע 4: הפרק האחרון","video":false,"vote_average":6.628,"vote_count":324},
+      {"adult":false,"backdrop_path":"/mEW9XMgYDO6U0MJcIRqRuSwjzN5.jpg","genre_ids":[28,53],"id":1007734,"original_language":"en","original_title":"Nobody 2","overview":"עבר זמן רב מאז שהאץ' (זוכה האמי בוב אודנקירק \"סמוך על סול\", \"שובר שורות\")  ומשפחתו בילו זמן איכות יחד.  רגע לפני החופש הגדול, האץ' מחליט לקחת פסק זמן ויחד עם אביו הפנסיונר - יוצאת כל המשפחה לחופשה משפחתית בעיירת נופש מנומנמת לצד אגם, אלא שמהר מאוד, מגלה האץ' כי העיירה נמצאת בנתיב סחר סמים ונשק המנוהל על ידי פושעת אלימה (סיגורני וויבר \"הנוסע השמיני\") והחופשה הנעימה הופכת בבת אחת למלחמה של איש אחד - בארגון פשע שלם.","popularity":328.7692,"poster_path":"/snWF4eT5NhHA5El0xd2eWnso52y.jpg","release_date":"2025-08-13","title":"סתם אחד 2","video":false,"vote_average":7.3,"vote_count":526},{"adult":false,"backdrop_path":"/rzGHVq2BCMwjp93QaKYoLPSaSrp.jpg","genre_ids":[28,14,12,9648],"id":506763,"original_language":"zh","original_title":"狄仁杰之四大天王","overview":"","popularity":296.6281,"poster_path":"/lVhgQfBG2B3mXtN807qqsr6ni7l.jpg","release_date":"2018-07-27","title":"ארבעת המלכים השמימיים","video":false,"vote_average":6.205,"vote_count":200},{"adult":false,"backdrop_path":"/JMlVj6X2F1PuDz9OyHShThzpa2.jpg","genre_ids":[28,80,53],"id":1369679,"original_language":"en","original_title":"Get Fast","overview":"","popularity":242.6208,"poster_path":"/2MZBpW0bfQNJdWPCDM7OZetem1L.jpg","release_date":"2024-12-12","title":"Get Fast","video":false,"vote_average":5.8,"vote_count":17},{"adult":false,"backdrop_path":"/eU7IfdWq8KQy0oNd4kKXS0QUR08.jpg","genre_ids":[878,12,28],"id":1061474,"original_language":"en","original_title":"Superman","overview":"סופרמן, עיתונאי חדש במטרופוליס, יוצא למסע כדי ליישב את המורשת הקריפטונית שלו עם החינוך האנושי שלו בתור קלארק קנט.  כמי שמייצג את האמת, הצדק והדרך האנושית, הוא מוצא את עצמו בעולם שרואה בדברים האלה משהו מיושן.","popularity":239.0731,"poster_path":"/c3x9ePT28gTO7xyA3tbmfVFbFl5.jpg","release_date":"2025-07-09","title":"סופרמן","video":false,"vote_average":7.509,"vote_count":3125},{"adult":false,"backdrop_path":"/kzeBfhXMRWiykBsqoL3UbfaM0S.jpg","genre_ids":[35,28,80],"id":1035259,"original_language":"en","original_title":"The Naked Gun","overview":"רק אדם אחד בורך בכישורים המסוימים... להנהיג יחידה משטרתית ולהציל את העולם! סגן פרנק דרבין ג'וניור הולך בעקבותיו של אביו ב\"האקדח מת מצחוק\".","popularity":215.7143,"poster_path":"/hzoZD7aLAPF3MGHO6JepklRNvnU.jpg","release_date":"2025-07-30","title":"האקדח מת מצחוק","video":false,"vote_average":6.723,"vote_count":655},{"adult":false,"backdrop_path":"/7FTOVQO3pndOuswVS3iNt3odVq5.jpg","genre_ids":[27],"id":691363,"original_language":"fr","original_title":"La Chose Derrière La Porte","overview":"","popularity":204.7468,"poster_path":"/yMBMPRyrgSxuWeswuplS5rTqfsw.jpg","release_date":"2023-01-16","title":"La Chose Derrière La Porte","video":false,"vote_average":5.7,"vote_count":20},{"adult":false,"backdrop_path":"/ZtcGMc204JsNqfjS9lU6udRgpo.jpg","genre_ids":[28,18],"id":911430,"original_language":"en","original_title":"F1","overview":"סוני הייז, שזכה לכינוי “הטוב ביותר שמעולם לא היה”, היה הכישרון המבטיח ביותר של פורמולה 1 בשנות ה-90 – עד שהתרסק בצורה מרהיבה ואיבד הכול.  שלושים שנה מאוחר יותר, הוא פרילנסר, מסתובב בין מסלולי מרוצים, שכיר חרב של ההגה, כאשר חברו לקבוצה לשעבר, רובן סרוונטס, הבעלים של קבוצת פורמולה 1 כושלת העומדת בפני קריסה - מציע לו הצעה בלתי צפויה. רובן משכנע את סוני לחזור לפורמולה 1 להזדמנות אחת אחרונה – להציל את הקבוצה ולנסות שוב להיות הטוב בעולם. הוא יתחרה לצד ג’ושוע פירס הכוכב הצעיר של הקבוצה, שמכוון גבוה ורוצה לעשות הכול בדרך שלו. אך כאשר המנועים שואגים, עברו של סוני שב לרדוף אותו, והוא מגלה שבפורמולה 1, השותף שלך הוא גם המתחרה המסוכן ביותר שלך – ושהדרך לגאולה אינה מסלול שאפשר לנסוע בו לבד.","popularity":198.217,"poster_path":"/1yUJor6SkZqX04gEPNVymAVqWdM.jpg","release_date":"2025-06-25","title":"פורמולה 1: הסרט","video":false,"vote_average":7.818,"vote_count":2068},{"adult":false,"backdrop_path":"/6nCy4OrV7gxhDc3lBSUxkNALPej.jpg","genre_ids":[28,36,18,12,10752],"id":1051486,"original_language":"en","original_title":"Stockholm Bloodbath","overview":"","popularity":193.3051,"poster_path":"/tzXOB8nxO70SfSbOhrYcY94x6MI.jpg","release_date":"2024-01-19","title":"Stockholm Bloodbath","video":false,"vote_average":6.2,"vote_count":32},{"adult":false,"backdrop_path":"/zNriRTr0kWwyaXPzdg1EIxf0BWk.jpg","genre_ids":[878,12,28],"id":1234821,"original_language":"en","original_title":"Jurassic World Rebirth","overview":"חמש שנים לאחר אירועי ״עולם היורה: עולם חדש״ הוכח כי האקולוגיה של כדור הארץ אינה מתאימה לדינוזאורים. אלה ששרדו מתקיימים רק באזורים מבודדים בקרבת קו המשווה, בעלי אקלים דומה לזה שבו הם שגשגו בעבר. שלושה מהיצורים האדירים ביותר ביבשה, בים, ובאוויר, מחזיקים בגנום שלהם את המפתח לפיתוח תרופה מהפכנית שיכולה להציל חיים.  זוכת האוסקר ג’והנסון מגלמת את זורה בנט, מומחית למבצעי חילוץ, שתפקידה הוא להוביל צוות מיומן במשימה סודית להשגת החומר הגנטי החיוני. כאשר המבצע של זורה מתנגש עם משפחה אזרחית שטיול השייט שלה הסתיים באסון בעקבות מתקפה של דינוזאורים ימיים, הם מוצאים את עצמם לכודים באי האסור - אתר מחקר סודי לשעבר של פארק היורה. שם, בין מיני דינוזאורים שונים ומסוכנים, הם נתקלים בגילוי אפל ומטלטל שהוסתר מהעולם במשך עשורים.","popularity":190.6502,"poster_path":"/33UaHmpsRjc9HMnfkledkrx0Zk.jpg","release_date":"2025-07-01","title":"עולם היורה: חיים חדשים","video":false,"vote_average":6.4,"vote_count":2095},{"adult":false,"backdrop_path":"/538U9snNc2fpnOmYXAPUh3zn31H.jpg","genre_ids":[28,12,53],"id":575265,"original_language":"en","original_title":"Mission: Impossible - The Final Reckoning","overview":"אית'ן האנט והצוות שלו ממשיכים בחיפושיהם אחר הבינה המלאכותית המפחידה הידועה בשם \"הישות\", אשר חדרה לרשתות מודיעין ברחבי העולם. כשהוא מצטרף לבעלי ברית חדשים ומצויד באמצעים לסגור את הישות אחת ולתמיד, האנט נמצא במרוץ חוצה יבשות במאבק שיקבע את גורל העולם.","popularity":173.9196,"poster_path":"/AfbkoVEq420wZA71pYqY27vXiqi.jpg","release_date":"2025-05-17","title":"משימה בלתי אפשרית: חשבון סופי","video":false,"vote_average":7.3,"vote_count":1716},{"adult":false,"backdrop_path":"/w3Bi0wygeFQctn6AqFTwhGNXRwL.jpg","genre_ids":[16,35,14,10402],"id":803796,"original_language":"en","original_title":"KPop Demon Hunters","overview":"אלילות הקיי‑פופ רומי, מירה וזואי ממלאות אולמות – ועל הדרך גם משתמשות בכוחותיהן הסודיים כדי להגן על המעריצים מפני סכנות על‑טבעיות.","popularity":162.4869,"poster_path":"/22AouvwlhlXbe3nrFcjzL24bvWH.jpg","release_date":"2025-06-20","title":"ציידות השדים של הקיי פופ","video":false,"vote_average":8.3,"vote_count":1396},{"adult":false,"backdrop_path":"/vHTFrcqJoCi1is3XN0PZe2LSnI2.jpg","genre_ids":[14,10751,28,12],"id":1087192,"original_language":"en","original_title":"How to Train Your Dragon","overview":"האי ברק, מקום המגורים של יריבות הויקינגים מול דרקונים עתיקת היומין, היקאפ הוא עוף מוזר והבן הפחות מוערך של הצ'יף סטויק הרחב. היקאפ מפר את המנהג העתיק כשהוא מתחבר לשום שן, דרקון מסוג זעם לילי. הקשר הבלתי צפוי שלהם חושף את האמת על טבעם של דרקונים, ומאתגר את כל היסודות של הויקינגים.  בכדיי להסתיר את חברו החדש מאנשי הכפר, היקאפ רותם לעזרתו את אסטריד והרתך המצחיק של הכפר, גובר.  כשאיום עתיק יומין מגיח ומאיים על הויקינגים והדרקונים כאחד, החברות של היקאפ ושום שן היא המפתח ליצירת עתיד חדש. יחדיו, הם חייבים לסלול את הדרך לשלום, ולהתרומם מעל הגבולות של העולמות שלהם בכדיי להגדיר מחדש את המשמעות של גיבור ומנהיג.","popularity":160.5537,"poster_path":"/sc4vMq38T3YwG0bu0tRQsH4miXu.jpg","release_date":"2025-06-06","title":"הדרקון הראשון שלי","video":false,"vote_average":8.026,"vote_count":1903},{"adult":false,"backdrop_path":"/uBB1aMga5ngZxsUQL5k36zeW3pB.jpg","genre_ids":[27,10749],"id":1242011,"original_language":"en","original_title":"Together","overview":"לאחר שנים ביחד, טים ומילי בורחים אל השקט של הכפר, בתקווה להציל מה שנשאר מהקשר שלהם. אבל השקט הזה מטעה. היחסים בין השניים עומדים למבחן כשהם מתמודדים עם נוכחות על טבעית שמשחיתה כל מה שהיא נוגעת בו: את נפשם, את גופם ואת אהבתם.","popularity":138.4769,"poster_path":"/tsYJ7uXv7VvtJGciFQO7FO9HHpI.jpg","release_date":"2025-07-28","title":"צמודים","video":false,"vote_average":7.132,"vote_count":421},{"adult":false,"backdrop_path":"/2nwhxEyefcIFKwOrSigiamoIzu2.jpg","genre_ids":[28,53,18],"id":1119878,"original_language":"en","original_title":"Ice Road: Vengeance","overview":"המשך ל\"דרך הקרח\" מ-2021. נהג דרך הקרח, מייק מקאן, מתוך כבוד לבקשתו האחרונה של אחיו המנוח, נוסע לנפאל כדי לפזר את אפרו על הר האוורסט. באוטובוס תיירים עמוס החוצה את השטח הקטלני בגובה 3.5 קילומטר של הדרך הידועה לשמצה, \"הדרך לשמיים\", מייק ומדריכת ההרים שלו נתקלים בקבוצה של שכירי חרב וחייבים להילחם כדי להציל את עצמם, אוטובוס עמוס מטיילים חפים מפשע ואת מולדת הכפריים המקומיים.","popularity":132.2473,"poster_path":"/1ExK4LGysSlrfIVPUDS8lFcexP0.jpg","release_date":"2025-06-27","title":"דרך הקרח: נקמה","video":false,"vote_average":6.5,"vote_count":365},{"adult":false,"backdrop_path":"/jvpkBenB6hv19WWYVlaiow8zklq.jpg","genre_ids":[16,10751,35,80,12],"id":1175942,"original_language":"en","original_title":"The Bad Guys 2","overview":"הפושעים האהובים עליכם חוזרים, והפעם עם חיזוק! החבר'ה הרעים מתאמצים מאוד מאוד להיות טובים, אבל מוצאים את עצמם באמצע שוד עולמי בסיכון גבוה, באחריותם של צוות חדש של פושעים שאף אחד לא ראה מגיע : החבר'ה הרעות.","popularity":128.2952,"poster_path":"/gRuF4OHtPtd79mC3YD9KeHV5gIO.jpg","release_date":"2025-07-24","title":"לא רעים בכלל 2","video":false,"vote_average":7.8,"vote_count":362},{"adult":false,"backdrop_path":"/i8QHgJKnsd8csNBo8fH9wYW2Y9E.jpg","genre_ids":[10749,35],"id":1321439,"original_language":"en","original_title":"The Wrong Paris","overview":"דון חושבת שהצטרפה לתוכנית שידוכים בפריז שבצרפת, רק כדי לנחות בפריז שבטקסס. כבר יש לה תוכנית בריחה – אבל הרווק הקאובוי הזה ממש חמוד.","popularity":121.7885,"poster_path":"/A0KRoR842OgNByCfw9iFHbWoeR9.jpg","release_date":"2025-09-11","title":"הפריז הלא נכונה","video":false,"vote_average":6.894,"vote_count":71}];
+
+    const baseImageUrl = "images/"; // or your image base URL
+
+    const rowContainer = document.querySelector('.movie-row');
+
+
+    function createFeed(moviesArr) {
+      moviesArr.forEach(movie => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'movie-item';
+
+        const img = document.createElement('img');
+        img.src = baseImageUrl + movie.poster_path;
+        img.alt = movie.title;
+        img.className = 'movie-poster';
+
+        const titleDiv = document.createElement('div');
+        titleDiv.className = 'movie-title';
+        titleDiv.textContent = movie.title;
+
+        // Like button container
+        const likeContainer = document.createElement('div');
+        likeContainer.className = 'like-container d-flex align-items-center';
+
+        // Like icon using emoji
+        const likeIcon = document.createElement('button');
+        likeIcon.type = 'button';
+        likeIcon.className = 'btn btn-sm p-0 m-0 like-b';
+        likeIcon.style.fontSize = '1.5rem';
+
+        // Initialize liked state and count
+        let count = localStorage.getItem('movies/'+movie.id) || 0;
+        let liked = count > 0 ? true: false;
+
+        // Set initial emoji
+        likeIcon.textContent = liked ? '👍' : '🖒';//'🤍'; // hollow heart as placeholder, or you can use 👍
+
+        // Like count span
+        const likeCount = document.createElement('span');
+        likeCount.className = 'ms-2';
+
+        // Append icon and count
+        likeContainer.appendChild(likeIcon);
+        likeContainer.appendChild(likeCount);
+
+        // Toggle like on click
+        likeIcon.addEventListener('click', (e) => {
+          //e.preventDefault();
+          likeIcon.textContent = '👍'; // filled thumbs-up
+          localStorage.setItem('movies/'+movie.id, liked);
+        });
+
+
+        itemDiv.appendChild(img);
+        itemDiv.appendChild(titleDiv);
+
+        //likeContainer.style.bottom = '10px';
+        //likeContainer.style.right = '10px';
+        //likeContainer.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+        likeContainer.style.padding = '5px 10px';
+        likeContainer.style.borderRadius = '20px';
+
+        itemDiv.appendChild(likeContainer);
+
+        // Optional: add click event
+        itemDiv.addEventListener('click', () => {
+          //alert(`You clicked on ${movie.title}`);
+        });
+
+        document.querySelector('.movie-row').appendChild(itemDiv);
+
+      });
+    }
+    createFeed(movies);
+
+    items = Array.from(document.querySelectorAll('.movie-row .movie-item'));
+
+    rowContainer.addEventListener('wheel', (e) => {
+      e.preventDefault(); // Prevent default page scroll
+      const delta = -Math.sign(e.deltaY);
+      // Scroll left or right based on wheel direction
+      const scrollAmount = delta * 300; // Adjust 100 for scroll speed
+      rowContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    });
+
+    const searchInput = document.getElementById('search');
+
+    searchInput.addEventListener('input', () => {
+      const query = searchInput.value.toLowerCase();
+
+      items.forEach(item => {
+        const text = item.querySelector('.movie-title').textContent.toLowerCase();
+        if (text.includes(query)) {
+          // Show
+          item.style.display = 'block'; // Make it visible
+          // Allow layout to update
+          requestAnimationFrame(() => {
+            item.classList.remove('hide');
+          });
+        } else {
+          // Animate out
+          item.classList.add('hide');
+
+          // After transition, set display:none
+          item.addEventListener('transitionend', () => {
+            if (item.classList.contains('hide')) {
+              item.style.display = 'none';
+            }
+          }, { once: true });
+        }
+      });
+
+    });
+
+    document.getElementById('sortBtn').addEventListener('click', () => {
+      const m = movies.sort((a, b) => a.title.localeCompare(b.title));
+      rowContainer.innerHTML = '';
+      createFeed(m);
+    });
+
+  </script>
+
+</body>
+</html>

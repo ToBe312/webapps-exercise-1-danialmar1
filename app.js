@@ -5,8 +5,11 @@ const port = 3000;
 
 const connectDB = require('./config/db');
 
+const loadData = require('./data/load_data.js')
+
 async function start() {
   await connectDB();
+  await loadData.loadData();
   
   app.use(express.json());
 
