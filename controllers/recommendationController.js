@@ -4,6 +4,33 @@ const Movie = require('../models/movieModel');
 const Series = require('../models/seriesModel');
 const Episode = require('../models/episodeModel');
 
+
+exports.getContentByGenre = async (req, res) => {
+  try {
+    // שליפת כל הז'אנרים הקיימים
+    const genres = await Movie.distinct("genres");
+    const seriesGenres = await Series.distinct("genres");
+    const allGenres = [...new Set([...genres, ...seriesGenres])];
+
+    const result = {};
+
+    for (const genre of allGenres) {
+      const movies = await Movie.find({ genres: genre }).lean();
+      const series = await Series.find({ genres: genre }).lean();
+
+      // הוספת contentType לכל דוקיומנט
+      const movieDocs = movies.map(m => ({ ...m, contentType: 'movie' }));
+      const seriesDocs = series.map(s => ({ ...s, contentType: 'series' }));
+
+      result[genre] = [...movieDocs, ...seriesDocs];
+    }
+
+    res.json(result);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
 exports.getRecommendations = async (req, res) => {
   const { profileId } = req.query;
 

@@ -217,14 +217,17 @@
         const content = await res.json();
         console.log(content);
 
-        const res_liked = await fetch(`/likes/toggle`, { method: 'POST', headers: {
+        const res_liked = await fetch(`likes/isLiked`, { method: 'POST', headers: {
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({ 
+              profileId: profile._id.toString(),
               contentId,
               type
             }) });
           const data_liked = await res_liked.json();
+          console.log('asdgsdg');
+          console.log(data_liked);
           //alert('עודכן בהצלחה!');
           document.getElementById('like-btn').innerText = data_liked.liked ? '👍' : '🖒';
 
@@ -368,6 +371,7 @@
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({ 
+              profileId: profile._id.toString(),
               contentId,
               ttype
             }) });

@@ -320,6 +320,48 @@
       catch(err) { console.log(err) }
     }
 
+    async function loadByGenres() {
+      let genres = await fetch('/genres');
+      genres = await genres.json();
+      const res = await fetch('by-genre');
+      const data = await res.json();
+      console.log(data)
+      console.log(genres)
+      //return;
+      const container = document.getElementById('mainPanel');
+      for(s in data) {
+        const series = data[s];
+        const gen = genres.find(e => e.id == s);
+        if(!gen) continue;
+        const genreName = gen.name;
+        console.log(genreName);
+        container.innerHTML += `
+        <div class="movie-feed-container my-4">
+          <h2 class="text-white mx-4">
+          ${genreName}
+            <a id="sortBtn" class="small text-decoration-none sort-button">מיין לפי שם (א"ב)</a>
+          </h2>
+          <div class="movie-row d-flex overflow-auto px-4">
+            ${series.map(m =>
+              `
+              <div class="movie-item"  onclick="window.location.href = '/content_details.html?type=series&id=${m._id}'">
+                <img src="${baseImageUrl + m.posterPath}" alt="${m.title}" class="movie-poster">
+                <div class="movie-title">
+                  ${m.title}
+                </div>
+                <div class="like-container d-flex align-items-center" style="padding: 5px 10px; border-radius: 20px;">
+                  <button type="button" class="btn btn-sm p-0 m-0 like-b" style="font-size: 1.5rem;">👍</button>
+                </div>
+              </div>`
+            ).join('')}
+          </div>
+        </div>
+      `;
+      }
+      //return;
+      
+    }
+
 // load all genres dynamically
 async function loadAllGenres() {
   try {
@@ -370,7 +412,8 @@ async function loadGenreRow(genreId, genreName) {
       await loadContinueWatching();
       await loadRecommendations();
 
-      await loadAllGenres();
+      //await loadAllGenres();
+      await loadByGenres();
       
       const rowContainer = document.querySelectorAll('.movie-row');
       rowContainer.forEach(r => r.addEventListener('wheel', (e) => {

@@ -55,6 +55,9 @@ async function start() {
   
   // Log every incoming request
   app.use(requestLogger);
+  
+  // Error logging middleware
+  app.use(errorLogger);
 
   // Serve static files
   app.use(express.static('public'));
@@ -91,8 +94,6 @@ async function start() {
   app.use('/admin', adminRoutes);
   app.use('/genres', genreRoutes);
 
-  // Error logging middleware
-  app.use(errorLogger);
 
 
   app.listen(port, () => {

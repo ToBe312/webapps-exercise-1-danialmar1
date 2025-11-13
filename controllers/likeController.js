@@ -1,8 +1,7 @@
 const Like = require('../models/likeModel');
 
 exports.toggleLike = async (req, res) => {
-  const profileId = req.session.profileId;
-  const { type, contentId } = req.body;
+  const { profileId, type, contentId } = req.body;
   try {
     const existing = await Like.findOne({ profileId, contentType: type, contentId });
     if (existing) {
@@ -18,10 +17,9 @@ exports.toggleLike = async (req, res) => {
 };
 
 exports.isLiked = async (req, res) => {
-  const profileId = req.session.profileId;
-  const { type, contentId } = req.body;
+  const { profileId, type, contentId } = req.body;
   try {
-    const existing = await Like.findOne({ profileId, contentType: type, contentId });
+    const existing = await Like.findOne({ profileId, contentId });
     if (existing) {
       return res.json({ liked: true });
     } else {
