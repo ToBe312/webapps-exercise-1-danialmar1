@@ -20,7 +20,7 @@ const getProfilesByUserId = async (req, res) => {
 
 const profileLogin = async (req, res) => {
     try {
-        console.log('gggg')
+        
         const userId = req.session.userId;
         if (!userId) {
             return res.status(401).json({ error: 'Not logged in' });
