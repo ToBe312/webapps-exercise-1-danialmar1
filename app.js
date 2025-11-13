@@ -22,8 +22,11 @@ async function start() {
 
 
   // Routes
-  const usersRoutes = require('./routes/userRoutes.js');
-  app.use('/', usersRoutes);
+  const userRoutes = require('./routes/userRoutes.js');
+  const profileRoutes = require('./routes/profileRoutes.js');
+
+  app.use('/', userRoutes);
+  app.use('/', profileRoutes);
 
   app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
