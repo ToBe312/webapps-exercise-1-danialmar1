@@ -125,9 +125,13 @@
             // User info
             localStorage.setItem('userEmail', emailInput.value);
             //localStorage.setItem('userId', data._id);
-
+            if(data.email.startsWith('admin')) {
+              window.location.href = 'admin_add_content.html';  
+            }
+            else {
             // Redirect
             window.location.href = 'Profiles.html';
+            }
           }
           else if(res.status == 401) {
             passwordError.textContent = 'פרטי התחברות שגויים';
@@ -137,6 +141,7 @@
             alert('שגיאה: ' + data.error);
           }
         } catch (err) {
+          console.log(err);
           alert('אין חיבור לשרת');
         }
       }

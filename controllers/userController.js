@@ -66,6 +66,11 @@ const login = async (req, res) => {
     }
     
     req.session.userId = user._id;
+
+    if (user.username === 'admin' || user.email === 'admin@admin.com') {
+        req.session.isAdmin = true;
+    }
+    
     res.status(200).json(user);
 }
 
