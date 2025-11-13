@@ -5,7 +5,7 @@ const Movie = require('../models/movieModel');
 const Series = require('../models/seriesModel');
 const Episode = require('../models/episodeModel');
 
-const IMAGE_DIR = 'images';
+const IMAGE_DIR = '';
 
 async function loadMovies() {
   const data = JSON.parse(fs.readFileSync('./data/movies.json'));
