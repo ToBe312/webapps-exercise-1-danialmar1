@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+  <meta charset="UTF-8">
+  <title>פרטי תוכן</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #000; color: #fff; }
+    .poster { width: 250px; border-radius: 8px; }
+    .like-btn { font-size: 1.5rem; cursor: pointer; }
+    .episode-item { cursor: pointer; }
+    .episode-item:hover { background-color: #222; }
+  </style>
+</head>
+<body dir="rtl">
+  <div class="container my-4">
+    <div class="row">
+      <!-- פוסטר -->
+      <div class="col-md-4">
+        <img id="poster" class="poster" alt="Poster">
+      </div>
+      <!-- מידע -->
+      <div class="col-md-8">
+        <h2 id="title"></h2>
+        <p id="overview"></p>
+        <p><strong>שנת הפצה:</strong> <span id="releaseDate"></span></p>
+        <p><strong>דירוג:</strong> <span id="rating"></span></p>
+        
+        <!-- כפתורי צפייה -->
+        <button id="playBtn" class="btn btn-success">הפעל / המשך צפייה</button>
+        <button id="restartBtn" class="btn btn-secondary">צפייה מההתחלה</button>
+        
+        <!-- לייק -->
+        <button id="likeBtn" class="btn btn-outline-light like-btn">👍 אהבתי</button>
+        
+        <!-- תכנים דומים -->
+        <h4 class="mt-4">תכנים דומים</h4>
+        <div id="similar" class="d-flex flex-wrap"></div>
+        
+        <!-- רשימת שחקנים -->
+        <h4 class="mt-4">שחקנים</h4>
+        <ul id="cast"></ul>
+      </div>
+    </div>
+    
+    <!-- עבור סדרות: רשימת פרקים -->
+    <div id="episodesSection" class="mt-5">
+      <h3>רשימת פרקים</h3>
+      <ul id="episodes" class="list-group"></ul>
+    </div>
+  </div>
+  
+  <script src="contentDetails.js"></script>
+</body>
+</html>

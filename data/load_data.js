@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const Movie = require('../models/movieModel');
 const Series = require('../models/seriesModel');
 const Episode = require('../models/episodeModel');
+const Genre = require('../models/genreModel');
 
 const IMAGE_DIR = '';
 
@@ -23,7 +24,7 @@ async function loadMovies() {
       cast: m.cast.map(c => ({
         name: c.name,
         character: c.character,
-        profilePath: c.profileUrl ? path.join(IMAGE_DIR, `actor_${c.name.replace(/\s+/g,'_')}.jpg`) : null
+        profilePath: c.profileUrl
       }))
     })));
     console.log('Movies loaded');
@@ -46,7 +47,7 @@ async function loadSeries() {
       cast: s.cast.map(c => ({
         name: c.name,
         character: c.character,
-        profilePath: c.profileUrl ? path.join(IMAGE_DIR, `actor_${c.name.replace(/\s+/g,'_')}.jpg`) : null
+        profilePath: c.profileUrl
       }))
     })));
     console.log('Series loaded');
@@ -78,10 +79,23 @@ async function loadEpisodes() {
   }
 }
 
+async function loadGenres() {
+  const data = JSON.parse(fs.readFileSync('./data/genres.json'));
+  const count = await Genre.countDocuments();
+  if (count === 0) {
+    await Genre.insertMany(data.map(m => ({
+      id: m.id,
+      name: m.name,
+    })));
+    console.log('Genres loaded');
+  }
+}
+
 async function loadData() {
     await loadMovies();
     await loadSeries();
     await loadEpisodes();
+    await loadGenres();
 }
 
 module.exports = {
