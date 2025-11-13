@@ -10,7 +10,7 @@ const loadData = require('./data/load_data.js')
 async function start() {
   await connectDB();
   await loadData.loadData();
-  
+
   app.use(express.json());
 
   app.use(session({
@@ -27,9 +27,13 @@ async function start() {
   // Routes
   const userRoutes = require('./routes/userRoutes.js');
   const profileRoutes = require('./routes/profileRoutes.js');
+  const movieRoutes = require('./routes/movieRoutes.js');
+  const seriesRoutes = require('./routes/seriesRoutes.js');
 
   app.use('/', userRoutes);
   app.use('/', profileRoutes);
+  app.use('/content', movieRoutes);
+  app.use('/content', seriesRoutes);
 
   app.listen(port, () => {
     console.log(`Server listening at http://localhost:${port}`);
